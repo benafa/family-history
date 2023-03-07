@@ -21,17 +21,17 @@
 title: Colombo Chetty History
 email: ben.anandappa@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This website documents the history of the Colombo Chetty people. 
+  The goal of this website is to document the history of the Colombo Chetty people. 
   Currently, it primarily focuses on the Anandappa and Casie Chetty families.  
 #baseurl: "/docs/" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-pdf-embed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -52,3 +52,19 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  photos:
+    output: true
+  conversations: 
+    output: true
+  newspaper:
+    output: true
+  vital:
+    output: true 
+
+header_pages:
+  - trees.html
+  - newspapers
+    - newspapers.html
+    - vital_records.html

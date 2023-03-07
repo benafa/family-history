@@ -1,0 +1,23 @@
+---
+layout: page
+title: Newspaper Articles
+---
+
+<h1> Ceylon Observer </h1>
+{% for article in site.newspaper %}
+  {% if article.source == "Ceylon Observer" %}
+    <div class="article">
+      <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+    </div>
+  {% endif %}
+{% endfor %}
+
+<h1> Ceylon Government Gazette </h1>
+{% for article in site.newspaper %}
+  {% if article.source == "Ceylon Government Gazette" %}
+    <div class="article">
+      <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+    </div>
+  {% endif %}
+{% endfor %}
+

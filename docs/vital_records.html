@@ -1,0 +1,31 @@
+---
+layout: page
+title: Vital Records 
+---
+
+<h1> Marriage Records </h1>
+{% for record in site.vital %}
+  {% if record.type == "Marriage" %}
+    <div class="record">
+      <h3><a href="{{ record.url }}">{{ record.title }}</a></h3>
+    </div>
+  {% endif %}
+{% endfor %}
+
+<h1> Birth/Baptism Records </h1>
+{% for record in site.vital %}
+  {% if record.type == "Birth" %}
+    <div class="record">
+      <h3><a href="{{ record.url }}">{{ record.title }}</a></h3>
+    </div>
+  {% endif %}
+{% endfor %}
+
+<h1> Death/Obituary Records </h1>
+{% for record in site.vital %}
+  {% if record.type == "Birth" %}
+    <div class="record">
+      <h3><a href="{{ record.url }}">{{ record.title }}</a></h3>
+    </div>
+  {% endif %}
+{% endfor %}
