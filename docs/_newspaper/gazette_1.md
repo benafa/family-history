@@ -11,5 +11,5 @@ Source: {{ page.source }}
 
 Date: {{ page.source_date }}
 
-{% pdf {{ page.pdf_file }} %}
+<object data="{{ page.pdf_file }}" width="1000" height="1000" type='application/pdf'></object>
 

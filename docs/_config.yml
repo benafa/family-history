@@ -63,8 +63,3 @@ collections:
   vital:
     output: true 
 
-header_pages:
-  - trees.html
-  - newspapers
-    - newspapers.html
-    - vital_records.html
