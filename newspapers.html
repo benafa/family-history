@@ -43,18 +43,64 @@
   </header>
 
   <div class="post-content">
-    <table>
-  <th>Article</th>
-  <th>Source</th>
-  <th>Date</th>
+    <head>
+  <script src="/family-history//assets/js/table.js"></script>
+  <style type="text/css">
+    .sorted-asc::after {
+      content: " ▲";
+      color: green;
+    }
+
+    .sorted-desc::after {
+      content: " ▼";
+      color: red;
+    }
+
+    .sorted-none::after {
+      content: " ▲▼";
+      color: grey;
+    }
+  </style>
+</head>
+
+<input type="text" id="searchInput" placeholder="Search...">
+
+<br></br>
+<table id="myTable">
+  <th onclick="sortTable(0)">Article</th>
+  <th onclick="sortTable(1)">Source</th>
+  <th onclick="sortTable(2)">Date</th>
 
   <tr>
-    <td> <a href="/family-history//newspaper/gazette/dominic_philip_anandappa">Testementary of Dominic Philip Anandappa</a></td>
+    <td> <a href="/family-history//newspaper/gazette/dominic-philip-anandappa">Testementary of Dominic Philip Anandappa</a></td>
     <td>Ceylon Government Gazette</td>
     <td>October 1931</td>
   </tr>
 
+  <tr>
+    <td> <a href="/family-history//newspaper/gazette/helena-perera">Testementary of Helena Perera</a></td>
+    <td>Ceylon Government Gazette</td>
+    <td>October 1931</td>
+  </tr>
+
+  <tr>
+    <td> <a href="/family-history//newspaper/gazette/peter-benedict-anandappa">Testementary of Peter Benedict Anandappa</a></td>
+    <td>Ceylon Government Gazette</td>
+    <td>June 1916</td>
+  </tr>
+
 </table>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      // Add the 'sorted-none' class to all column headers
+      var headers = document.getElementsByTagName("th");
+      for (var i = 0; i < headers.length; i++) {
+        headers[i].classList.add("sorted-none");
+      }
+    });
+</script>
+
 
 
   </div>
