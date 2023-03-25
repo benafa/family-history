@@ -1,23 +1,52 @@
 ---
-layout: page
-title: Newspaper Articles
+layout: single
+title: Testementary Articles
 ---
+<head>
+  <script src="{{ site.baseurl }}/assets/js/table.js"></script>
+  <style type="text/css">
+    .sorted-asc::after {
+      content: " ▲";
+      color: green;
+    }
 
-<h1> Ceylon Observer </h1>
-{% for article in site.newspaper %}
-  {% if article.source == "Ceylon Observer" %}
-    <div class="article">
-      <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
-    </div>
-  {% endif %}
-{% endfor %}
+    .sorted-desc::after {
+      content: " ▼";
+      color: red;
+    }
 
-<h1> Ceylon Government Gazette </h1>
+    .sorted-none::after {
+      content: " ▲▼";
+      color: grey;
+    }
+  </style>
+</head>
+
+<br>
+<input type="text" id="searchInput" placeholder="Search...">
+
+<br>
+<table id="myTable">
+  <th onclick="sortTable(0)">Deceased</th>
+  <th onclick="sortTable(1)">Petitioner</th>
+  <th onclick="sortTable(2)">Year</th>
 {% for article in site.newspaper %}
-  {% if article.source == "Ceylon Government Gazette" %}
-    <div class="article">
-      <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
-    </div>
-  {% endif %}
+  <tr>
+    <td> <a href="{{ article.url | prepend:site.baseurl }}">{{ article.name }}</a></td>
+    <td>{{ article.petitioner }}</td>
+    <td>{{ article.year }}</td>
+  </tr>
 {% endfor %}
+</table>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      // Add the 'sorted-none' class to all column headers
+      var headers = document.getElementsByTagName("th");
+      for (var i = 0; i < headers.length; i++) {
+        headers[i].classList.add("sorted-none");
+      }
+    });
+</script>
+
 
