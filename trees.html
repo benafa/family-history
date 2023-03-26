@@ -165,7 +165,152 @@
 
       <section class="page__content" itemprop="text">
         
-        
+        <style> 
+	li.has-child {
+	  cursor: pointer;
+	}
+	ul .nested {
+	  display: none;
+	}
+
+	ul .active {
+	  display: block;
+	}
+</style>
+
+<button onclick="activateAll()" class="btn btn--primary">Expand/Collapse All</button>  <br />
+
+Abraham Peter (A.P.) Casie Chitty married Mary Clara Anandappa (daughter of Emmanuel Anandappa and Maria Nathalia Canjemanaden)
+<ul class="level-0 nested">
+	<li class="has-child">Anthony Mervyn Remington Casie Chitty married Julie Alles</li>
+	<ul class="level-1 nested">
+		<li>Andrea Cassie Chitty</li>
+		<li>Roshan Cassie Chitty</li>
+		<li>Cheryl Cassie Chitty</li>
+		<li>Maryse Cassie Chitty</li>
+	</ul>
+	<li class="has-child">Emmanuel Joseph Gasper (Joy) Casie Chetty married Poomani Fernandopulle</li>
+	<ul class="level-1 nested">
+		<li>Mano Cassie Chitty married Noel Anandappa (son of Theodore Ignatius Anthony Anandappa and Enid Augusta Anandappa)</li>
+		<li class="has-child">Sharma Cassie Chitty married Lushan De Silva</li>
+		<ul class="level-2 nested">
+			<li>Nouresh De Silva</li>
+			<li>Dinesh De Silva</li>
+			<li>Onesh De Silva</li>
+			<li>Imesh De Silva</li>
+		</ul>
+		<li class="has-child">Esha Cassie Chitty married Jith Wijeyesekera</li>
+		<ul class="level-2 nested">
+			<li>Ronali Wijeyesekera</li>
+			<li>Romesh Wijeyesekera</li>
+		</ul>
+		<li class="has-child">Girlie Cassie Chitty married Sarath Mirando</li>
+		<ul class="level-2 nested">
+			<li>Sanjay Mirando</li>
+			<li>Anushka Mirando</li>
+		</ul>
+	</ul>
+	<li class="has-child">Annabelle Mary Nathalia Rasappopathy Casie Chetty married Benedict Anthony Xavier Anandappa (son of Philip Raphael Anandappa and Mary Louise )</li>
+	<ul class="level-1 nested">
+		<li class="has-child">Paulinus Romello Anandappa married Nooshini Ramasamy</li>
+		<ul class="level-2 nested">
+			<li>Annabelle Jacinta Anandappa</li>
+			<li>Michael Anandappa</li>
+			<li>Ben Alexander Francisco Anandappa</li>
+		</ul>
+		<li class="has-child">Oswin Anandappa married Adela </li>
+		<ul class="level-2 nested">
+			<li>Christine Anandappa</li>
+		</ul>
+		<li>Fiona Anandappa married Dion Schoorman</li>
+		<li>Charmaine Anandappa</li>
+	</ul>
+	<li class="has-child">Marie Hyacinth Genevieve Antoinette Casie Chitty married Pius Anandappa (son of Joseph Kaitan Anandappa and Magdalene Peiris Tavarayan)</li>
+	<ul class="level-1 nested">
+		<li>Irwin Anandappa married  </li>
+		<li>Manick Anandappa married  </li>
+		<li>Farina Anandappa</li>
+		<li>Ingrid Anandappa married  </li>
+		<li>Erold Anandappa</li>
+		<li>Graham Anandappa</li>
+		<li>Beverly Anandappa married  </li>
+	</ul>
+	<li class="has-child">Queenie Bertha Immaculate Casie Chitty married Bede Leonard Anandappa (son of Joseph Kaitan Anandappa and Magdalene Peiris Tavarayan)</li>
+	<ul class="level-1 nested">
+		<li>Glossinda Anandappa</li>
+		<li>Hilary Anandappa</li>
+		<li>Gladwyn Anandappa</li>
+		<li>Frank Anandappa</li>
+		<li>Christrine Anandappa</li>
+		<li>Trevor Anandappa</li>
+		<li>Carmel Anandappa</li>
+		<li>Pamela Anandappa</li>
+		<li>Max Anandappa married Ophelia </li>
+	</ul>
+	<li class="has-child">Beda Lourdes Therese Marcelline Casie Chitty married Linus Casie Chitty</li>
+	<ul class="level-1 nested">
+		<li>Shyma Cassie Chitty</li>
+		<li>Flarvy Cassie Chitty</li>
+		<li>Elmo Cassie Chitty</li>
+	</ul>
+</ul>
+<script type="text/javascript">
+	function changeActiveClassRecursive(element) {
+	  // Check if the element has a class "active"
+	  if (element.classList.contains("active")) {
+	    // Change the class to "active"
+	    element.classList.remove("active");
+	  }
+	  // Recursively call the function for all child ul elements
+	  var ulElements = element.getElementsByTagName("ul");
+	  for (var i = 0; i < ulElements.length; i++) {
+	    changeActiveClassRecursive(ulElements[i]);
+	  }
+	}
+
+	// Get all list items with a nested list
+	var items = document.querySelectorAll("ul");
+
+	// Loop through the items and add a click event listener to each parent
+	for (var i = 0; i < items.length; i++) {
+	  var current = items[i]
+	  if (current.classList.contains('nested')) {
+	  	current.previousElementSibling.addEventListener("click", function () {
+		    //Toggle the class "active" on the nested list
+		    var nestedList = this.nextElementSibling;
+		    if (nestedList.classList.contains("active")) {
+		      changeActiveClassRecursive(nestedList)
+		    } else {
+		      nestedList.classList.add("active");
+		    }
+		  });
+	  }
+	}
+
+	var isExpanded = false;
+	function activateAll() {
+	  
+	  // Get all nested lists in the document
+	  var nestedLists = document.getElementsByClassName("nested");
+
+	  // Loop through each nested list
+	  for (var i = 0; i < nestedLists.length; i++) {
+	    var nestedList = nestedLists[i];
+
+	    // Add the "active" class to the nested list
+	    if (!isExpanded) {
+	    	nestedList.classList.add("active");
+	    } else {
+	    	nestedList.classList.remove("active");
+	    }
+	  }
+	  isExpanded = !isExpanded
+	}
+</script>
+
+
+
+
         
       </section>
 
