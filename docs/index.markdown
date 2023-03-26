@@ -18,7 +18,7 @@ Welcome to Colombo Chetty Genealogy! Explore family trees, photos, newspaper art
 
 <p style="text-align: center;"> <b>Higlighted Profile</b>  <br /> Anthony Xavier Anandappa <br /> First President of the Colombo Chetty Association  </p> 
 
-Anthony Xavier Anandappa was born on January 24th, 1873 to Anthony Anandappa and Anthonia Wijeratnam. In the 1890s, he married Anna Pieris Tavarayan, daughter of Saviel Pieris Tavarayan and Cecilia Rodrigo. They had 6 children together: Mary Louise, Anthony Joseph Nicholas "Joe", Ignatius Boniface "Bonnie", Cecilia Johanna Josephine, Mary Rose and Aloysius Gonzaga. 
+Anthony Xavier Anandappa was born on January 24th, 1873 to Anthony Anandappa and Anthonia Wijeratnam. In the 1890s, he married Anna Pieris Tavarayan, daughter of [Saviel Pieris Tavarayan](/family-history//newspaper/saviel-pieris-tavarayen.html) and Cecilia Rodrigo. They had 6 children together: Mary Louise, Anthony Joseph Nicholas "Joe", Ignatius Boniface "Bonnie", Cecilia Johanna Josephine, Mary Rose and Aloysius Gonzaga. 
 
 <figure>
   <img src="assets/images/anthony_xavier_anandappa_around_1920.jpg" alt="assets/images/anthony_xavier_anandappa_around_1920.jpg">
