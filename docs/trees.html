@@ -4,9 +4,6 @@ title: Trees
 ---
 
 <style> 
-	li.has-child {
-	  cursor: pointer;
-	}
 	ul .nested {
 	  display: none;
 	}
@@ -14,84 +11,795 @@ title: Trees
 	ul .active {
 	  display: block;
 	}
+
+	.collapsible {
+	  background-color: transparent;
+	  color: #444;
+	  cursor: pointer;
+	  padding: 10px;
+	  border: none;
+	  text-align: left;
+	  width: auto;
+	  outline: none;
+	  font-size: 12px;
+	  transition: background-color 0.3s;
+	  display: inline-block;
+  	  align-items: center;
+	}
+
+	.collapsible:hover {
+		background-color: #ccc;
+	}
+
+	.collapsible:after {
+		content: '\002B';
+		color: #777;
+		font-weight: bold;
+		float: right;
+		display: block;
+  		text-align: center;
+	}
+
+	.collapsible.active:after {
+		content: "\2212";
+	}
+
+	.collapsible.active {
+	  background-color: transparent;
+	  color: #444;
+	  cursor: pointer;
+	  padding: 10px;
+	  border: none;
+	  text-align: left;
+	  width: auto;
+	  outline: none;
+	  font-size: 12px;
+	  transition: background-color 0.3s;
+	  display: inline-block;
+	}
+
+	.collapsible.active:hover {
+		background-color: #ccc;
+	}
+
+	div.root {
+	  display: inline-block;
+	  margin: 0.5rem;
+	  padding: 0.5rem;
+	  border-radius: 0.25rem;
+	  color: white;
+	  background-color: rgba(100, 100, 255, 0.5);
+	}
+
+
+	ul.nested > li {
+	  display: inline-block;
+	  margin: 0.5rem;
+	  padding: 0.5rem;
+	  border-radius: 0.25rem;
+	  color: white;
+	}
+
+	ul.level-0 > li {
+	  background-color: rgba(0, 100, 255, 0.5);
+	}
+
+	ul.level-1 > li {
+	  background-color: rgba(0, 100, 0, 0.5);
+	}
+
+	ul.level-2 > li {
+	  background-color: rgba(100, 0, 0, 0.5);
+	}
+
+	ul.level-3 > li {
+	  background-color: rgba(50, 0, 100, 0.5);
+	}
+
+	ul.level-4 > li {
+	  background-color: rgba(0, 0, 255, 0.5);
+	}
+
+
 </style>
 
 <button onclick="activateAll()" class="btn btn--primary">Expand/Collapse All</button>  <br />
 
-Abraham Peter (A.P.) Casie Chitty married Mary Clara Anandappa (daughter of Emmanuel Anandappa and Maria Nathalia Canjemanaden)
+<div class="root">
+Casper Casie Chetty married Mary Theresa 
+</div>
 <ul class="level-0 nested">
-	<li class="has-child">Anthony Mervyn Remington Casie Chitty married Julie Alles</li>
+	<li>
+		<div>
+			<span>John Caitan Anthony Casie Chetty married Anna </span>
+			<button class="collapsible"></button>
+		</div>
+	</li>
 	<ul class="level-1 nested">
-		<li>Andrea Cassie Chitty</li>
-		<li>Roshan Cassie Chitty</li>
-		<li>Cheryl Cassie Chitty</li>
-		<li>Maryse Cassie Chitty</li>
-	</ul>
-	<li class="has-child">Emmanuel Joseph Gasper (Joy) Casie Chetty married Poomani Fernandopulle</li>
-	<ul class="level-1 nested">
-		<li>Mano Cassie Chitty married Noel Anandappa (son of Theodore Ignatius Anthony Anandappa and Enid Augusta Anandappa)</li>
-		<li class="has-child">Sharma Cassie Chitty married Lushan De Silva</li>
+		<li>
+			<div>
+				<span>Casper Lazarus Joseph Casie Chetty married Poomanie Rodrigo Muniaram Perumal (daughter of Steven Rodrigo Muniaram Perumal and Rose Angelina Anandappa)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
 		<ul class="level-2 nested">
-			<li>Nouresh De Silva</li>
-			<li>Dinesh De Silva</li>
-			<li>Onesh De Silva</li>
-			<li>Imesh De Silva</li>
+			<li>Brighton Casie Chetty</li>
+			<li>Sherril Casie Chetty</li>
+			<li>Nihal Casie Chetty</li>
+			<li>Brightley Casie Chetty</li>
+			<li>Christine Casie Chetty</li>
+			<li>Robin Casie Chetty</li>
+			<li>Lucky Casie Chetty</li>
+			<li>Ranjan Casie Chetty</li>
+			<li>John Casie Chetty</li>
 		</ul>
-		<li class="has-child">Esha Cassie Chitty married Jith Wijeyesekera</li>
+		<li>
+			<div>
+				<span>Maria Theresa Josephina Casie Chetty married Joseph Marcian Anandappa (son of Unknown Anandappa and Unknown)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
 		<ul class="level-2 nested">
-			<li>Ronali Wijeyesekera</li>
-			<li>Romesh Wijeyesekera</li>
+			<li>
+				<div>
+					<span>Mary Estelle Christina Anandappa married Christopher Ernest Anthony John Anandappa (son of Joseph Caitan Anandappa and Magdalene Pieris Tavarayan)</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Francis Anthony Ranjith Anandappa</li>
+				<li>Marie Bernadette Anandappa</li>
+				<li>Indranee Therese Anandappa</li>
+				<li>Jacinta Magdalene Anandappa</li>
+				<li>Anthony Franciso Nihal Anandappa</li>
+				<li>Paul Xavier Anandappa</li>
+				<li>Eugene Cajetan Anandappa</li>
+			</ul>
+			<li>
+				<div>
+					<span>Dennis Anandappa married Agnes Casie Chetty (daughter of Charles Borromeo Casie Chetty and Philippa Unknown)</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Maxwell Joseph Anandappa</li>
+				<li>Brian Anandappa married Ruth Anandappa (daughter of Justin Anandappa and Raji Pulle)</li>
+			</ul>
+			<li>
+				<div>
+					<span>Josephine Sabina Victoria Anandappa married Gabriel Silvapulle (son of Philip Silvapulle and Anna Maria Anandappa)</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Elmo Eusebius Christopher Silvapulle</li>
+				<li>
+					<div>
+						<span>Ivor Joseph Silvapulle</span>
+						<button class="collapsible"></button>
+					</div>
+				</li>
+				<ul class="level-4 nested">
+					<li>Stephen Silvapulle</li>
+					<li>Christopher Silvapulle</li>
+				</ul>
+				<li>Rosemarie Sabina Silvapulle</li>
+				<li>Florence Mary Marlene Silvapulle</li>
+				<li>Victor Caspar Lazarus Silvapulle</li>
+				<li>Marietta Anne Philomena Genevieve Silvapulle</li>
+				<li>Irangani Marie Perpetua Silvapulle</li>
+				<li>Lorraine Mary Josephine Silvapulle</li>
+			</ul>
 		</ul>
-		<li class="has-child">Girlie Cassie Chitty married Sarath Mirando</li>
+		<li>
+			<div>
+				<span>Casper Lazarus Victor Casie Chetty married Florence Alles</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
 		<ul class="level-2 nested">
-			<li>Sanjay Mirando</li>
-			<li>Anushka Mirando</li>
+			<li>Neville Casie Chetty married Philomena Damasca Laurentana Anandappa (daughter of Anthony Athenasias Anandappa and Hermia Perpetua Josephine Casie Chetty)</li>
+			<li>Sheila Casie Chetty married Justice Corea</li>
 		</ul>
-	</ul>
-	<li class="has-child">Annabelle Mary Nathalia Rasappopathy Casie Chetty married Benedict Anthony Xavier Anandappa (son of Philip Raphael Anandappa and Mary Louise )</li>
-	<ul class="level-1 nested">
-		<li class="has-child">Paulinus Romello Anandappa married Nooshini Ramasamy</li>
+		<li>
+			<div>
+				<span>Anthony Francis Joseph Casie Chetty married Stella Alles</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
 		<ul class="level-2 nested">
-			<li>Annabelle Jacinta Anandappa</li>
-			<li>Michael Anandappa</li>
-			<li>Ben Alexander Francisco Anandappa</li>
+			<li>Rose Marie Stella Casie Chetty</li>
 		</ul>
-		<li class="has-child">Oswin Anandappa married Adela </li>
+		<li>Edward Emmanuel Gabriel Casie Chetty married Ethel Fernandopulle</li>
+	</ul>
+	<li>
+		<div>
+			<span>Abraham Peter Casie Chetty married Mary Clara Anandappa (daughter of Emmanuel Anandappa and Maria Nathalia Canjemanaden)</span>
+			<button class="collapsible"></button>
+		</div>
+	</li>
+	<ul class="level-1 nested">
+		<li>
+			<div>
+				<span>Anthony Mervyn Remington Casie Chetty married Julie Alles</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
 		<ul class="level-2 nested">
-			<li>Christine Anandappa</li>
+			<li>Andrea Casie Chetty</li>
+			<li>Roshan Casie Chetty</li>
+			<li>Cheryl Casie Chetty</li>
+			<li>Maryse Casie Chetty</li>
 		</ul>
-		<li>Fiona Anandappa married Dion Schoorman</li>
-		<li>Charmaine Anandappa</li>
+		<li>
+			<div>
+				<span>Emmanuel Joseph Gasper Casie Chetty married Poomani Fernandopulle</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Mano Casie Chetty married Noel Anandappa (son of Theodore Ignatius Anthony Anandappa and Enid Augusta Anandappa)</li>
+			<li>
+				<div>
+					<span>Sharma Casie Chetty married Lushan De Silva</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Nouresh De Silva</li>
+				<li>Dinesh De Silva</li>
+				<li>Onesh De Silva</li>
+				<li>Imesh De Silva</li>
+			</ul>
+			<li>
+				<div>
+					<span>Esha Casie Chetty married Jith Wijeyesekera</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Romesh Wijeyesekera</li>
+				<li>Ronali Wijeyesekera</li>
+			</ul>
+			<li>
+				<div>
+					<span>Girlie Casie Chetty married Sarath Mirando</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Sanjay Mirando</li>
+				<li>Anushka Mirando</li>
+			</ul>
+		</ul>
+		<li>
+			<div>
+				<span>Annabelle Mary Nathalia Rasappopathy Casie Chetty married Anthony Xavier Benedict Anandappa (son of Philip Raphael Anandappa and Mary Louise Anandappa)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>
+				<div>
+					<span>Paulinus Romello Anandappa married Nooshini Ramasamy</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Annabelle Jacinta Anandappa</li>
+				<li>Michael Anandappa</li>
+				<li>Ben Alexander Francisco Anandappa</li>
+			</ul>
+			<li>
+				<div>
+					<span>Oswin Anandappa married Adela Agcaoili</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Christine Anandappa</li>
+			</ul>
+			<li>Fiona Anandappa married Dion Schoorman</li>
+			<li>Charmaine Anandappa</li>
+		</ul>
+		<li>
+			<div>
+				<span>Marie Hyacinth Genevieve Antoinette Casie Chetty married Pius Anthony Xavier Anandappa (son of Joseph Caitan Anandappa and Magdalene Pieris Tavarayan)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Manick Anandappa</li>
+			<li>Farina Anandappa</li>
+			<li>Ingrid Anandappa</li>
+			<li>Erold Anandappa</li>
+			<li>Graham Anandappa</li>
+			<li>Beverly Anandappa</li>
+		</ul>
+		<li>
+			<div>
+				<span>Queenie Bertha Immaculate Casie Chetty married Bede Leonard Anandappa (son of Joseph Caitan Anandappa and Magdalene Pieris Tavarayan)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Gladwyn Anandappa</li>
+			<li>Frank Anandappa</li>
+			<li>Christrine Anandappa</li>
+			<li>Carmel Anandappa</li>
+			<li>Max Anandappa married Ophelia Anandappa</li>
+			<li>Trevor Anandappa</li>
+			<li>Pamela Anandappa</li>
+			<li>Glossinda Anandappa</li>
+			<li>Hilary Anandappa</li>
+		</ul>
+		<li>
+			<div>
+				<span>Beda Lourdes Therese Marcelline Casie Chetty married Linus Casie Chetty</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Elmo Casie Chetty</li>
+			<li>Shyma Casie Chetty</li>
+			<li>Flarvy Casie Chetty</li>
+		</ul>
 	</ul>
-	<li class="has-child">Marie Hyacinth Genevieve Antoinette Casie Chitty married Pius Anandappa (son of Joseph Kaitan Anandappa and Magdalene Peiris Tavarayan)</li>
+	<li>
+		<div>
+			<span>Francis Xavier Casie Chetty married Lucy Mary Silva Candappa (daughter of Anthony Silva Candappa and Dominga Casie Chetty)</span>
+			<button class="collapsible"></button>
+		</div>
+	</li>
 	<ul class="level-1 nested">
-		<li>Irwin Anandappa married  </li>
-		<li>Manick Anandappa married  </li>
-		<li>Farina Anandappa</li>
-		<li>Ingrid Anandappa married  </li>
-		<li>Erold Anandappa</li>
-		<li>Graham Anandappa</li>
-		<li>Beverly Anandappa married  </li>
+		<li>
+			<div>
+				<span>Caspar Joseph Casie Chetty married Mary Ceclia Anandappa (daughter of Dominic Philip Anandappa and Unknown)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Francis Casie Chetty married Norah Unknown</li>
+			<li>Freddy Casie Chetty married Unknown</li>
+			<li>
+				<div>
+					<span>Neville Casie Chetty married Yvonne Adaman</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Clyde Casie Chetty</li>
+			</ul>
+			<li>Constance Casie Chetty</li>
+			<li>Patricia Casie Chetty</li>
+			<li>Eileen Casie Chetty married Neil Anandappa (son of Anthony Joseph Nicholas Anandappa and Joyce Perumal)</li>
+		</ul>
+		<li>
+			<div>
+				<span>Anna Theresa Casie Chetty married Michael Joseph Clement Anandappa (son of Dominic Philip Anandappa and Unknown)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Giles Anandappa</li>
+			<li>
+				<div>
+					<span>Mani Anandappa married Eileen Unknown</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Ian Anandappa</li>
+				<li>Priscilla Anandappa</li>
+				<li>Tania Anandappa</li>
+				<li>Niraj Anandappa</li>
+			</ul>
+			<li>
+				<div>
+					<span>Mary Josephine Christobelle Anandappa married Marcelline Rodrigopulle</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Sandra Rodrigopulle married Roshan Jude Anandappa (son of Ignatius Boniface Anandappa and Victoria Candappa)</li>
+			</ul>
+			<li>Euphy Anandappa</li>
+			<li>Stephanie Anandappa</li>
+		</ul>
+		<li>
+			<div>
+				<span>Alice Dominga Casie Chetty married Louis Fernandopulle</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>
+				<div>
+					<span>Helen Juliana Fernandopulle married Prosper Rodrigo Muniaram Perumal (son of J.C. Rodrigo Muniaram Perumal and Maria Johanna Anandappa)</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>
+					<div>
+						<span>Godwin Rodrigo Muniaram Perumal married Dawn Casie Chetty (daughter of Victor Casie Chetty and Patricia Rodrigo)</span>
+						<button class="collapsible"></button>
+					</div>
+				</li>
+				<ul class="level-4 nested">
+					<li>Radley Rodrigo Muniaram Perumal</li>
+				</ul>
+				<li>Granville Rodrigo Muniaram Perumal</li>
+				<li>Eunice Rodrigo Muniaram Perumal</li>
+			</ul>
+			<li>Elizabeth Fernandopulle married Anthony Clarence Anandappa (son of Joseph Jerome Theodore Anandappa and Mary Magdalene Anandappa)</li>
+			<li>
+				<div>
+					<span>Josephine Fernandopulle married J. Camillus A. Anandappa (son of Dominic Philip Anandappa and Unknown)</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Maureen Anandappa</li>
+				<li>Yvonne Anandappa</li>
+				<li>Conrad Anandappa</li>
+				<li>Jeremy Anandappa</li>
+			</ul>
+			<li>Linux Fernandopulle</li>
+			<li>Felix Fernandopulle</li>
+		</ul>
+		<li>John Anthony Emmanuel Casie Chetty</li>
+		<li>Clara Mary Juwana Casie Chetty</li>
+		<li>Anthony Vincent Casie Chetty</li>
 	</ul>
-	<li class="has-child">Queenie Bertha Immaculate Casie Chitty married Bede Leonard Anandappa (son of Joseph Kaitan Anandappa and Magdalene Peiris Tavarayan)</li>
+	<li>
+		<div>
+			<span>Phillip Joseph Casie Chetty married Lucia Rodrigo Babapulle (daughter of Domingo Rodrigo Babapulle and Unknown)</span>
+			<button class="collapsible"></button>
+		</div>
+	</li>
 	<ul class="level-1 nested">
-		<li>Glossinda Anandappa</li>
-		<li>Hilary Anandappa</li>
-		<li>Gladwyn Anandappa</li>
-		<li>Frank Anandappa</li>
-		<li>Christrine Anandappa</li>
-		<li>Trevor Anandappa</li>
-		<li>Carmel Anandappa</li>
-		<li>Pamela Anandappa</li>
-		<li>Max Anandappa married Ophelia </li>
+		<li>
+			<div>
+				<span>Mary Casie Chetty married Charlie Fernandopulle</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Terry Fernandopulle</li>
+			<li>
+				<div>
+					<span>Philomena Fernandopulle married Patrick Casie Chetty (son of Walter Patrick Casie Chetty and Jane Rodrigo Babapulle)</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Padmini Casie Chetty</li>
+				<li>Tyronne Casie Chetty</li>
+				<li>Savitry Casie Chetty</li>
+			</ul>
+		</ul>
+		<li>
+			<div>
+				<span>Cicilia Casie Chetty married Unknown Sathianathan</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Jerry Sathianathan</li>
+			<li>Clarice Sathianathan</li>
+			<li>
+				<div>
+					<span>Bernice Sathianathan married J. Felix A. Anandappa (son of Dominic Philip Anandappa and Unknown)</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Hillary Anandappa</li>
+				<li>Allan Anandappa</li>
+			</ul>
+			<li>Ranjie Sathianathan</li>
+			<li>
+				<div>
+					<span>Josephine Sathianathan married Benjamin Anandappa (son of Andrew Gabriel Anandappa and Mary Magdalena Anandappa)</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Natascha Anandappa</li>
+			</ul>
+		</ul>
+		<li>
+			<div>
+				<span>Joseph Casie Chetty married Barbara Fernandopulle</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Dennis Casie Chetty</li>
+			<li>Marie Casie Chetty</li>
+			<li>Nellie Casie Chetty</li>
+			<li>Augusta Casie Chetty</li>
+			<li>Merl Casie Chetty</li>
+		</ul>
+		<li>
+			<div>
+				<span>Rose Casie Chetty married Philip Benedict Anandappa (son of Unknown Anandappa and Unknown)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Philip Anandappa married Unknown</li>
+		</ul>
+		<li>
+			<div>
+				<span>Dominic Casie Chetty married Milred Mutthu-pulle</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Russel Casie Chetty</li>
+			<li>Ridley Casie Chetty</li>
+			<li>Luella Casie Chetty</li>
+		</ul>
+		<li>Clement Casie Chetty</li>
 	</ul>
-	<li class="has-child">Beda Lourdes Therese Marcelline Casie Chitty married Linus Casie Chitty</li>
+	<li>
+		<div>
+			<span>Charles Borromeo Casie Chetty married Philippa Unknown</span>
+			<button class="collapsible"></button>
+		</div>
+	</li>
 	<ul class="level-1 nested">
-		<li>Shyma Cassie Chitty</li>
-		<li>Flarvy Cassie Chitty</li>
-		<li>Elmo Cassie Chitty</li>
+		<li>Joseph Casie Chetty</li>
+		<li>
+			<div>
+				<span>Victor Casie Chetty married Patricia Rodrigo (daughter of Peter Rodrigo and Therese Rodrigo Muniaram Perumal)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Erma Casie Chetty</li>
+			<li>
+				<div>
+					<span>Dawn Casie Chetty married Godwin Rodrigo Muniaram Perumal (son of Prosper Rodrigo Muniaram Perumal and Helen Juliana Fernandopulle)</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Radley Rodrigo Muniaram Perumal</li>
+			</ul>
+			<li>Rohan Casie Chetty</li>
+		</ul>
+		<li>
+			<div>
+				<span>Therese Casie Chetty married Roche Rodrigo Muniaram Perumal (son of J.C. Rodrigo Muniaram Perumal and Maria Johanna Anandappa)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Malcom Rodrigo Muniaram Perumal</li>
+			<li>Rienze Rodrigo Muniaram Perumal</li>
+		</ul>
+		<li>
+			<div>
+				<span>Agnes Casie Chetty married Dennis Anandappa (son of Joseph Marcian Anandappa and Maria Theresa Josephina Casie Chetty)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Maxwell Joseph Anandappa</li>
+			<li>Brian Anandappa married Ruth Anandappa (daughter of Justin Anandappa and Raji Pulle)</li>
+		</ul>
+		<li>
+			<div>
+				<span>Catherine Casie Chetty married Peter Candappa</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Desmond Candappa</li>
+			<li>Ridley Candappa</li>
+			<li>Heather Candappa married Unknown Alles</li>
+			<li>Daphne Candappa married  </li>
+		</ul>
+		<li>
+			<div>
+				<span>Peter Casie Chetty married Unknown</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Philomena Casie Chetty</li>
+		</ul>
+		<li>Bridget Casie Chetty married Anthony Candappa</li>
+		<li>Florence Casie Chetty married Unknown Pulle</li>
 	</ul>
+	<li>
+		<div>
+			<span>Edward Emmanuel Casie Chetty married Mary Johanna Wijeratnam</span>
+			<button class="collapsible"></button>
+		</div>
+	</li>
+	<ul class="level-1 nested">
+		<li>Clara Casie Chetty</li>
+		<li>Helen Lavinia Casie Chetty</li>
+		<li>
+			<div>
+				<span>Anthony Joseph Faustin Casie Chetty married Mary Rose Anandappa (daughter of Anthony Xavier Anandappa and Anna Pieris Tavarayan)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Elmo Phillip Nerie Casie Chetty</li>
+			<li>Edward Martin Casie Chetty</li>
+			<li>Jacinta Maria Antonita Casie Chetty married Maurice Wijeratnam (son of Unknown Wijeratnam and Anna Rodrigo Muniaram Perumal)</li>
+		</ul>
+	</ul>
+	<li>
+		<div>
+			<span>Walter Patrick Casie Chetty married Jane Rodrigo Babapulle (daughter of Domingo Rodrigo Babapulle and Unknown)</span>
+			<button class="collapsible"></button>
+		</div>
+	</li>
+	<ul class="level-1 nested">
+		<li>
+			<div>
+				<span>Gertrude Casie Chetty married Joseph Fernandopulle</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Selvaranee Fernandopulle</li>
+		</ul>
+		<li>
+			<div>
+				<span>Justin Casie Chetty married Henrietta Anandappa (daughter of Xavier Anandappa and Unknown)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Renee Casie Chetty</li>
+			<li>Delrene Casie Chetty</li>
+			<li>Langsford Casie Chetty</li>
+			<li>Shiranee Casie Chetty</li>
+			<li>Rohan Casie Chetty</li>
+			<li>Warrel Casie Chetty</li>
+			<li>Arlene Casie Chetty</li>
+		</ul>
+		<li>Anthony Casie Chetty married Clair Corea</li>
+		<li>
+			<div>
+				<span>Patrick Casie Chetty married Philomena Fernandopulle (daughter of Charlie Fernandopulle and Mary Casie Chetty)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Padmini Casie Chetty</li>
+			<li>Tyronne Casie Chetty</li>
+			<li>Savitry Casie Chetty</li>
+		</ul>
+		<li>
+			<div>
+				<span>Daisy Casie Chetty married Anthony Silva Candappa (son of Xavier Silva Candappa and Mary Helen Rodrigo)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Muthrani Silva Candappa</li>
+			<li>Nihal Silva Candappa</li>
+			<li>Fatima Silva Candappa</li>
+			<li>Mysthree Silva Candappa</li>
+			<li>Walter Silva Candappa</li>
+		</ul>
+		<li>Romauld Casie Chetty</li>
+		<li>Isidore Casie Chetty</li>
+		<li>Philomena Casie Chetty</li>
+	</ul>
+	<li>
+		<div>
+			<span>Juliana Casie Chetty married Henry Theobold Muttukisna</span>
+			<button class="collapsible"></button>
+		</div>
+	</li>
+	<ul class="level-1 nested">
+		<li>
+			<div>
+				<span>Florence Muttukisna married Basil Anandappa</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Bertram Anandappa</li>
+			<li>Terencia Anandappa</li>
+		</ul>
+		<li>Philip Joseph Giles Muttukisna married Su Pathmanathan</li>
+		<li>
+			<div>
+				<span>Evelyn Muttukisna married Felix Anandappa (son of Patrick Francis Xavier Anandappa and Clara de Rosairo)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>
+				<div>
+					<span>Patrick Anandappa married Tula Cabraal</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Celina Anandappa</li>
+				<li>Suresh Anandappa</li>
+			</ul>
+			<li>Rohini Anandappa</li>
+		</ul>
+		<li>
+			<div>
+				<span>Anthony Colin Muttukisna married Lily Mary Silva Candappa (daughter of Xavier Silva Candappa and Mary Helen Rodrigo)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>Anthony Venantius Henry Muttukisna married Sheran Perera</li>
+			<li>Ephrem Joseph Durand Muttukisna married Kirsten Moller Andreasen</li>
+			<li>
+				<div>
+					<span>Praxede Charmaine Juliana Muttukisna married Somarajin Christopher Somaskandan</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Chamilla Somaskandan</li>
+				<li>Radhika Somaskandan married James White</li>
+			</ul>
+			<li>
+				<div>
+					<span>Philip Joseph Giles Mark Muttukisna married Indranee Unknown</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Anthony Avishka Muttukisna</li>
+			</ul>
+		</ul>
+	</ul>
+	<li>
+		<div>
+			<span>Maria Anthonia Casie Chetty married John Philip Rodrigo Muniarem</span>
+			<button class="collapsible"></button>
+		</div>
+	</li>
+	<ul class="level-1 nested">
+		<li>
+			<div>
+				<span>Stanislaus Joseph Rodrigo Muniarem married Maria Lucy Anandappa (daughter of Emmanuel Anandappa and Christina Rodrigo)</span>
+				<button class="collapsible"></button>
+			</div>
+		</li>
+		<ul class="level-2 nested">
+			<li>
+				<div>
+					<span>Johnnie Martin Joseph Rodrigo Muniarem married Mercy Philomena Josephine Pieris Tavarayan (daughter of Caitan Pieris Tavarayan and Unknown)</span>
+					<button class="collapsible"></button>
+				</div>
+			</li>
+			<ul class="level-3 nested">
+				<li>Rienze Peter Joseph Rodrigo Muniarem</li>
+				<li>Rani Marie Monica Rodrigo Muniarem</li>
+				<li>Romany Lucy Rodrigo Muniarem</li>
+				<li>Stanislaus John Rodrigo Muniarem</li>
+				<li>Madona Bernadette Rodrigo Muniarem</li>
+			</ul>
+			<li>Sunny Rodrigo Muniarem</li>
+			<li>Clatilda Rodrigo Muniarem</li>
+			<li>Rita Rodrigo Muniarem</li>
+			<li>Lu Rodrigo Muniarem</li>
+		</ul>
+		<li>Austen Rodrigo Muniarem</li>
+	</ul>
+	<li>Jane Catherine Casie Chetty</li>
 </ul>
+
 <script type="text/javascript">
 	function changeActiveClassRecursive(element) {
 	  // Check if the element has a class "active"
@@ -106,24 +814,7 @@ Abraham Peter (A.P.) Casie Chitty married Mary Clara Anandappa (daughter of Emma
 	  }
 	}
 
-	// Get all list items with a nested list
-	var items = document.querySelectorAll("ul");
-
-	// Loop through the items and add a click event listener to each parent
-	for (var i = 0; i < items.length; i++) {
-	  var current = items[i]
-	  if (current.classList.contains('nested')) {
-	  	current.previousElementSibling.addEventListener("click", function () {
-		    //Toggle the class "active" on the nested list
-		    var nestedList = this.nextElementSibling;
-		    if (nestedList.classList.contains("active")) {
-		      changeActiveClassRecursive(nestedList)
-		    } else {
-		      nestedList.classList.add("active");
-		    }
-		  });
-	  }
-	}
+	
 
 	var isExpanded = false;
 	function activateAll() {
@@ -147,4 +838,23 @@ Abraham Peter (A.P.) Casie Chitty married Mary Clara Anandappa (daughter of Emma
 </script>
 
 
+<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				// this will toggle active for all descendents 
+				this.classList.toggle("active");
+				console.log(this.classList)
+				if (this.classList.contains("active")) {
+			        this.textContent = "";
+			    } else {
+			    	this.textContent = "";
+			    }
+			    console.log(this.parentElement.parentElement.nextElementSibling)
+			    this.parentElement.parentElement.nextElementSibling.classList.toggle("active");
+			});
+		}
+</script>
 
