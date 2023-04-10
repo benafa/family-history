@@ -172,7 +172,7 @@
 	}
 
 	ul.nested:before {
-	  background-color: grey;
+	  background-color: lightgray;
 	  width: 2px;
 	  content: '';
 	  position: absolute;
@@ -182,13 +182,24 @@
 	}
 
 	ul.level-0:before {
-	  background-color: grey;
+	  background-color: lightgray;
 	  width: 2px;
 	  content: '';
 	  position: absolute;
 	  top: 110px;
 	  bottom: 15px;
 	  left: 30px;
+	}
+
+	@media screen and (max-width: 480px) {
+	  /* Adjust the top position for smaller screens */
+	  ul.nested:before {
+	  	left: 26px;
+	  }
+	  ul.level-0:before{
+	    top: 85px;
+	    left: 28px;
+	  }
 	}
 
 	ul .active {
@@ -199,6 +210,7 @@
 	  content: '-▶';
 	  position: absolute;
 	  left: -20px;
+	  color: lightgray;
 	}
 
 	.collapsible {
@@ -328,6 +340,7 @@
 	Casper Casie Chetty &#128141; Mary Theresa 
 </div>
 
+<div>
 <ul class="level-0 nested">
 	<li class="tree">
 		<div class="tree">
@@ -1019,7 +1032,7 @@
 	</ul>
 	<li class="tree">Jane Catherine Casie Chetty</li>
 </ul>
-
+</div>
 <script type="text/javascript">
 	function changeActiveClassRecursive(element) {
 	  // Check if the element has a class "active"
