@@ -3,6 +3,8 @@ main:
     url: /about
   - title: "Trees"
     url: /trees
+  - title: "Posts"
+    url: /posts 
   - title: "Newspapers"
     url: /newspapers
   - title: "Photos"

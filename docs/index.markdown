@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: single
+layout: home
 gallery:
   - url: /assets/images/PB_Anandappa_1787.jpg
     image_path: /assets/images/PB_Anandappa_1787.jpg
@@ -12,13 +12,33 @@ gallery:
     image_path: /assets/images/DB_Anandappa_1816.jpg
     alt: "DB_Anandappa_1816.jpg"
     title: "D.B. Anandappa, born 1816"
+
+header:
+  image: /assets/images/ben_annabelle_wedding.jpg
+  overlay_filter: 0.5
+
 ---
+
+<style>
+	img.page__hero-image {
+	  opacity: 0.4;
+	}
+
+	div.page__hero {
+		margin-bottom: 0;
+	}
+
+	h2.archive__item-title {
+		margin-top: 5px;
+	}
+
+</style>
 
 Welcome to Colombo Chetty Genealogy! Explore family trees, photos, newspaper articles and other historical documents related to the Colombo Chetty people. 
 
-<p style="text-align: center;"> <b>Higlighted Profile</b>  <br /> Anthony Xavier Anandappa <br /> First President of the Colombo Chetty Association  </p> 
+<p style="text-align: center;"> <b>Higlighted Profile</b>  <br /> Anthony Xavier Anandappa <br /> First President of the Colombo Chetty Association </p> 
 
-Anthony Xavier Anandappa was born on January 24th, 1873 to Anthony Anandappa and Anthonia Wijeratnam. In the 1890s, he married Anna Pieris Tavarayan, daughter of [Saviel Pieris Tavarayan](/family-history//newspaper/saviel-pieris-tavarayen.html) and Cecilia Rodrigo. They had 6 children together: Mary Louise, Anthony Joseph Nicholas "Joe", Ignatius Boniface "Bonnie", Cecilia Johanna Josephine, Mary Rose and Aloysius Gonzaga. 
+Anthony Xavier Anandappa was born on January 24th, 1873 to Anthony Anandappa and Anthonia Wijeratnam. In the 1890s, he married Anna Pieris Tavarayan, daughter of [Saviel Pieris Tavarayan](/family-history/newspaper/saviel-pieris-tavarayen.html) and Cecilia Rodrigo. Anthony Xavier and Anna had 6 children together: Mary Louise, Anthony Joseph Nicholas "Joe", Ignatius Boniface "Bonnie", Cecilia Johanna Josephine, Mary Rose and Aloysius Gonzaga. 
 
 <figure>
   <img src="assets/images/anthony_xavier_anandappa_around_1920.jpg" alt="assets/images/anthony_xavier_anandappa_around_1920.jpg">
@@ -33,15 +53,20 @@ Anthony Xavier's father Anthony was Muppu of Mater Dolorosa Church, and Anthony 
 </figure>
 
 
-Mater Dolorosa Church was built in 1820. Plaques on Mater Dolorosa have the names P.B. Anandappa (born 29 May, 1787) and D.B. Anandappa (born 9 June, 1816). The role of "Muppu" is said be passed from father to son, so it is possible P.B. Anandappa and D.B. Anandappa are ancestors of Anthony Xavier Anandappa. 
+Mater Dolorosa Church was built in 1820, and plaques on the church have the names P.B. Anandappa (born 29 May, 1787) and D.B. Anandappa (born 9 June, 1816). The role of "Muppu" is said be passed from father to son, so it is possible P.B. Anandappa and D.B. Anandappa are ancestors of Anthony Xavier Anandappa. 
 
 {% include gallery %}
 
-Anthony Xavier was elected the first president of the Colombo Chetty Association in 1919, and held this role unitl 1932. He passed away at age 78 on Jan 2, 1952. 
+Anthony Xavier was elected the first president of the Colombo Chetty Association in 1919, and held this role unitl 1932. Around 1930, his brother Joseph Caitan passed away, and Anthony Xavier took care of two of Joseph Caitan's children - Bede Leonard (still living) and Pius Anthony Xavier. 
+
+Anthony Xaiver passed away at age 78 on Jan 2, 1952. While he was the eldest in his family, only one of his 8 siblings - Laura Angelina - is known to have outlived him. 
 
 <figure>
   <img src="assets/images/anthony_xavier_around_1940.jpg" alt="anthony_xavier_around_1940.jpg">
   <figcaption style="text-align: center;">Anthony Xavier Anandappa with his eldest daughter Mary Louise Anandappa, her husband Philip Raphael Anandappa, and their children Mary Anna Philomena, Regis Peter Joseph, Anthony Eubaldus, Anthony Xavier Benedict annd Ronald Millanius</figcaption>
 </figure>
+
+
+
 
 
