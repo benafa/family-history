@@ -32,20 +32,34 @@ header:
 		margin-top: 5px;
 	}
 
+  .link {
+    color: #0077CC;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .link:hover {
+    color: #004466;
+    text-decoration: underline;
+  }
+
 </style>
 
-Welcome to Colombo Chetty Genealogy! Explore family trees, photos, newspaper articles and other historical documents related to the Colombo Chetty people. 
+Welcome to Colombo Chetty Genealogy! Explore <a href="/family-history/trees" class="link">family trees</a> , <a href="/family-history/photos" class="link">photos</a>, <a href="/family-history/newspapers" class="link">newspaper articles and other historical documents</a> related to the Colombo Chetty people. To get added to our mailing list or contribute to the project, please <a href="/family-history/contribute" class="link">submit this form</a> or email ben@colombochetty.com. 
 
-<p style="text-align: center;"> <b>Higlighted Profile</b>  <br /> Anthony Xavier Anandappa <br /> First President of the Colombo Chetty Association </p> 
 
-Anthony Xavier Anandappa was born on January 24th, 1873 to Anthony Anandappa and Anthonia Wijeratnam. In the 1890s, he married Anna Pieris Tavarayan, daughter of [Saviel Pieris Tavarayan](/family-history/newspaper/saviel-pieris-tavarayen.html) and Cecilia Rodrigo. Anthony Xavier and Anna had 6 children together: Mary Louise, Anthony Joseph Nicholas "Joe", Ignatius Boniface "Bonnie", Cecilia Johanna Josephine, Mary Rose and Aloysius Gonzaga. 
+<p style="text-align: center;"> <b>Higlighted Profile</b>  <br /> Anthony Xavier Anandappa <br /> <i> First President of the Colombo Chetty Association </i> </p> 
+
+Anthony Xavier Anandappa was born on **January 24th, 1873** to Anthony Anandappa and Anthonia Wijeratnam. In the 1890s, he married Anna Pieris Tavarayan, daughter of <a href="/family-history/newspaper/saviel-pieris-tavarayen.html" class="link">Saviel Pieris Tavarayan</a> and Cecilia Rodrigo. Anthony Xavier and Anna had 6 children together: 
+- 3 daughters: Mary Louise, Cecilia Johanna Josephine, and Mary Rose (*pictured below*)
+- 3 sons: Anthony Joseph Nicholas "Joe", Ignatius Boniface "Bonnie", and Aloysius Gonzaga. 
 
 <figure>
   <img src="assets/images/anthony_xavier_anandappa_around_1920.jpg" alt="assets/images/anthony_xavier_anandappa_around_1920.jpg">
   <figcaption style="text-align: center;">Anthony Xavier Anandappa and Anna Pieris Tavarayan with their three daughters Mary, Rose and Josephine</figcaption>
 </figure>
 
-Anthony Xavier's father Anthony was Muppu of Mater Dolorosa Church, and Anthony Xavier took over this role on June 22, 1916.
+Anthony Xavier's father Anthony was **Muppu** of Mater Dolorosa Church on New Chetty Street, and Anthony Xavier took over this role on June 22, 1916.
  
 <figure>
   <img src="assets/images/anthony_xavier_anandappa_muppu_cert_1916.jpg" alt="anthony_xavier_anandappa_muppu_cert_1916.jpg">
@@ -53,13 +67,13 @@ Anthony Xavier's father Anthony was Muppu of Mater Dolorosa Church, and Anthony 
 </figure>
 
 
-Mater Dolorosa Church was built in 1820, and plaques on the church have the names P.B. Anandappa (born 29 May, 1787) and D.B. Anandappa (born 9 June, 1816). The role of "Muppu" is said be passed from father to son, so it is possible P.B. Anandappa and D.B. Anandappa are ancestors of Anthony Xavier Anandappa. 
+Mater Dolorosa Church was built in 1820, and plaques on the church have the names P.B. Anandappa (born **29 May, 1787**) and D.B. Anandappa (born **9 June, 1816**). The role of "Muppu" is said be passed from father to son, so it is possible P.B. Anandappa and D.B. Anandappa are ancestors of Anthony Xavier Anandappa. 
 
 {% include gallery %}
 
-Anthony Xavier was elected the first president of the Colombo Chetty Association in 1919, and held this role unitl 1932. Around 1930, his brother Joseph Caitan passed away, and Anthony Xavier took care of two of Joseph Caitan's children - Bede Leonard (still living) and Pius Anthony Xavier. 
+Anthony Xavier was elected the first president of the **Colombo Chetty Association** in 1919, and held this role unitl 1932. Around 1930, his brother Joseph Caitan passed away, and Anthony Xavier took care of two of Joseph Caitan's children - Bede Leonard (still living) and Pius Anthony Xavier. 
 
-Anthony Xaiver passed away at age 78 on Jan 2, 1952. While he was the eldest in his family, only one of his 8 siblings - Laura Angelina - is known to have outlived him. 
+Anthony Xaiver passed away at age 78 on **Jan 2, 1952**. While he was the eldest in his family, only one of his 8 siblings - Laura Angelina - is known to have outlived him. After his passing, his son Bonnie became Muppu of Mater Dolorsa Church.
 
 <figure>
   <img src="assets/images/anthony_xavier_around_1940.jpg" alt="anthony_xavier_around_1940.jpg">
