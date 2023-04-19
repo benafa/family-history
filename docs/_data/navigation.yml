@@ -5,9 +5,10 @@ main:
     url: /trees
   - title: "Posts"
     url: /posts 
-  - title: "Newspapers"
+  - title: "Contribute"
+    url: /contribute
+  - title: "Records"
     url: /newspapers
   - title: "Photos"
     url: /photos
-  - title: "Vital Records"
-    url: /vital_records
+ 
