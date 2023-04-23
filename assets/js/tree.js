@@ -11,42 +11,20 @@ function recruseiveDeactivate(element) {
 }
 
 function adjustHeight(parent_li, parent_ul, recursive) {
+	// Get all li elements within the ul
+	const allLiElements = parent_ul.querySelectorAll(':scope > li');
+
+	// Get the last li element
+	const lastLi = allLiElements[allLiElements.length - 1];
+    const liHeight_half = lastLi.getBoundingClientRect().height/2;
+    const liDim = lastLi.getBoundingClientRect();
+    const parent_li_dim = parent_li.getBoundingClientRect();
+	const correct_hi = liDim.bottom - parent_li_dim.bottom - liHeight_half;
+	parent_ul.style.setProperty('--ul-before-margin', `${correct_hi}px`);
+
 	parent_of_parent_ul = parent_ul.parentElement;
-	const parent_of_parent_ul_children = parent_of_parent_ul.querySelectorAll(':scope > li');
-	const parent_of_parent_ul_last_li = parent_of_parent_ul_children[parent_of_parent_ul_children.length - 1];
-	console.log("compare")
-	console.log(parent_of_parent_ul)
-	console.log(parent_of_parent_ul_last_li)
-	console.log(parent_li)
-	console.log(parent_ul)
-	console.log("end of comapre")
-
-		// Get all li elements within the ul
-		const allLiElements = parent_ul.querySelectorAll(':scope > li');
-
-		// Get the last li element
-		const lastLi = allLiElements[allLiElements.length - 1];
-		console.log("hello_time")
-		console.log(lastLi)
-		console.log(lastLi.getBoundingClientRect())
-	    const liHeight_half = lastLi.getBoundingClientRect().height/2;
-	    const ul_dim = parent_ul.getBoundingClientRect();
-	    const parent_li_dim = parent_li.getBoundingClientRect();
-		//const liTop = lastLi.getBoundingClientRect().top;
-		//const ulTop = parent_ul.getBoundingClientRect().top;
-		//const ulBeforeHeight = liTop + liHeight / 2 - ulTop;
-		console.log(ul_dim)
-		console.log(parent_li_dim)
-		const correct_hi = ul_dim.bottom - parent_li_dim.bottom - liHeight_half
-		//parent_ul.style.setProperty('--ul-before-margin', `${liHeight_half}px`);
-		parent_ul.style.setProperty('--ul-before-margin', `${correct_hi}px`);
-
-
-	if (parent_of_parent_ul_last_li !== parent_li) {
-
-		if (recursive & parent_of_parent_ul.tagName === 'UL' & !parent_of_parent_ul.classList.contains("level-0")) {
-			adjustHeight(parent_of_parent_ul.previousElementSibling, parent_of_parent_ul, true)
-		}
+	if (recursive & parent_of_parent_ul.tagName === 'UL' & !parent_of_parent_ul.classList.contains("level-0")) {
+		adjustHeight(parent_of_parent_ul.previousElementSibling, parent_of_parent_ul, true)
 	}
 }
 
