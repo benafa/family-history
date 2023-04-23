@@ -1,0 +1,48 @@
+---
+layout: single
+---
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/tree.css" type="text/css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pagination.css" type="text/css">
+
+<div class="master">
+	<button onclick="activateAll()" class="btn btn--primary">Expand/Collapse All</button>  <br />
+</div>
+
+<div class="sticky-bar bar-hidden">
+  <div class="legend">
+    <div class="legend-item">
+    	<div class="color leg-root"></div>
+    	<span>Gen 1</span>
+    </div>
+	<div class="legend-item">   
+	    <div class="color leg-0"></div>
+	    <span>Gen 2</span>
+	</div>
+	<div class="legend-item">
+	    <div class="color leg-1"></div>
+	    <span>Gen 3</span>
+	</div>
+	<div class="legend-item">
+	    <div class="color leg-2"></div>
+	    <span>Gen 4</span>
+	</div>
+	<div class="legend-item ">
+	    <div class="color leg-3"></div>
+	    <span>Gen 5</span>
+	</div>
+	<div class="legend-item ">
+	    <div class="color leg-4"></div>
+	    <span>Gen 6</span>
+	</div>
+	<div class="legend-item ">
+	    <div class="color leg-5"></div>
+	    <span>Gen 7</span>
+	</div>
+  </div>
+</div>
+
+
+{{ content }}
+
+<script src="{{ site.baseurl }}/assets/js/tree.js"></script>
