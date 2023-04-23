@@ -3,6 +3,8 @@ title: Family Trees
 layout: single
 ---
 
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
+
 Discover family trees of various  Colombo Chetty families below! Please note: while the website is designed to be veiwed on any device, we recommend a laptop/tablet for the best viewing experience due to the large amount of information. We hope you enjoy exploring! 
 
 <h2> Guide: Viewing trees </h2>
@@ -20,13 +22,22 @@ Here is a quick guide to the tree visualizations with an example screenshot:
 	- **Expand/Collapse All**: button will allow you to view all descendents. Clicking it again will hide all descendents
 
 <h2> Guide: Search all people </h2>
-You can search a person's name here which will show some bio information along with trees they are included in. If you would like to add stories or photos for individuals, please contact ben@colombochetty.com 
+You can search a person's name here which will show some bio information along with trees they are included in. If you would like to add stories or photos for individuals, please contact <a href = "mailto: ben@colombochetty.com"  class="link">ben@colombochetty.com</a>. 
 
 <h2> Adaman Families </h2>
 <ul>
 {% for tree in site.tree %}
   {% if tree.tags contains 'adaman' %}
-  	<li> <a href="{{ tree.url | prepend:site.baseurl }}">{{ tree.title }}</a></li>
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h2> Alles Families </h2>
+<ul>
+{% for tree in site.tree %}
+  {% if tree.tags contains 'alles' %}
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" Class="link">{{ tree.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
@@ -35,7 +46,34 @@ You can search a person's name here which will show some bio information along w
 <ul>
 {% for tree in site.tree %}
   {% if tree.tags contains 'anandappa' %}
-  	<li> <a href="{{ tree.url | prepend:site.baseurl }}">{{ tree.title }}</a></li>
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h2> Babapulle Families </h2>
+<ul>
+{% for tree in site.tree %}
+  {% if tree.tags contains 'babapulle' %}
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h2> Canjemenaden Families </h2>
+<ul>
+{% for tree in site.tree %}
+  {% if tree.tags contains 'canjemenaden' %}
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h2> Candappa Families </h2>
+<ul>
+{% for tree in site.tree %}
+  {% if tree.tags contains 'candappa' %}
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
@@ -44,7 +82,7 @@ You can search a person's name here which will show some bio information along w
 <ul>
 {% for tree in site.tree %}
   {% if tree.tags contains 'casie_chetty' %}
-  	<li> <a href="{{ tree.url | prepend:site.baseurl }}">{{ tree.title }}</a></li>
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
@@ -53,7 +91,25 @@ You can search a person's name here which will show some bio information along w
 <ul>
 {% for tree in site.tree %}
   {% if tree.tags contains 'fernandopulle' %}
-  	<li> <a href="{{ tree.url | prepend:site.baseurl }}">{{ tree.title }}</a></li>
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h2> Laity Ramenaden Families </h2>
+<ul>
+{% for tree in site.tree %}
+  {% if tree.tags contains 'l_ramenaden' %}
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h2> Perumal Families </h2>
+<ul>
+{% for tree in site.tree %}
+  {% if tree.tags contains 'perumal' %}
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
@@ -62,34 +118,7 @@ You can search a person's name here which will show some bio information along w
 <ul>
 {% for tree in site.tree %}
   {% if tree.tags contains 'rodrigo' %}
-  	<li> <a href="{{ tree.url | prepend:site.baseurl }}">{{ tree.title }}</a></li>
-  {% endif %}
-{% endfor %}
-</ul>
-
-<h2> Rodrigo Candappa Families </h2>
-<ul>
-{% for tree in site.tree %}
-  {% if tree.tags contains 'rodrigo_candappa' %}
-  	<li> <a href="{{ tree.url | prepend:site.baseurl }}">{{ tree.title }}</a></li>
-  {% endif %}
-{% endfor %}
-</ul>
-
-<h2> Rodrigo Muniarem Perumal Families </h2>
-<ul>
-{% for tree in site.tree %}
-  {% if tree.tags contains 'rm_perumal' %}
-  	<li> <a href="{{ tree.url | prepend:site.baseurl }}">{{ tree.title }}</a></li>
-  {% endif %}
-{% endfor %}
-</ul>
-
-<h2> Silva Candappa Families </h2>
-<ul>
-{% for tree in site.tree %}
-  {% if tree.tags contains 'silva_candappa' %}
-  	<li> <a href="{{ tree.url | prepend:site.baseurl }}">{{ tree.title }}</a></li>
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
@@ -98,7 +127,7 @@ You can search a person's name here which will show some bio information along w
 <ul>
 {% for tree in site.tree %}
   {% if tree.tags contains 'tavarayan' %}
-  	<li> <a href="{{ tree.url | prepend:site.baseurl }}">{{ tree.title }}</a></li>
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
@@ -107,10 +136,10 @@ You can search a person's name here which will show some bio information along w
 <ul>
 {% for tree in site.tree %}
   {% if tree.tags contains 'wijeratnam' %}
-  	<li> <a href="{{ tree.url | prepend:site.baseurl }}">{{ tree.title }}</a></li>
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
 
 <h1> Would you like to contribute? </h1>
-If you have family tree information you would like to share with the community, please [submit this form](/family-history/contribute) or email ben@colombochetty.com. 
+If you have family tree information you would like to share with the community, please <a href="/family-history/contribute" class="link">submit this form</a>  or email <a href = "mailto: ben@colombochetty.com"  class="link">ben@colombochetty.com</a>. 

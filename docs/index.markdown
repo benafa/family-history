@@ -36,7 +36,7 @@ header:
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
 
 
-Welcome to Colombo Chetty Genealogy! Explore <a href="/family-history/trees" class="link">family trees</a>, <a href="/family-history/photos" class="link">photos</a>, <a href="/family-history/newspapers" class="link">newspaper articles and other historical documents</a> related to the Colombo Chetty people. To get added to our mailing list or contribute to the project, please <a href="/family-history/contribute" class="link">submit this form</a> or email ben@colombochetty.com. 
+Welcome to Colombo Chetty Genealogy! Explore <a href="/family-history/trees" class="link">family trees</a>, <a href="/family-history/photos" class="link">photos</a>, and <a href="/family-history/newspapers" class="link">other historical documents</a> related to the Colombo Chetty people. To get added to our mailing list or contribute to the project, please <a href="/family-history/contribute" class="link">submit this form</a> or send an email to <a href = "mailto: ben@colombochetty.com" class="link">ben@colombochetty.com</a>. 
 
 
 <p style="text-align: center;"> <b>Higlighted Profile</b>  <br /> Anthony Xavier Anandappa <br /> <i> First President of the Colombo Chetty Association </i> </p> 
