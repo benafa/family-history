@@ -35,9 +35,9 @@ csv_data.each do |row|
     file.write("\n\n  **Source**: {{ page.source }}")
     file.write("\n\n  **Year**: {{ page.year }}")
     file.write("\n\n  **Petitioner**: {{ page.petitioner }}")
-    file.write("\n\n  **Petitioner reationship to deceased**: {{ page.relationship }} \n\n ")
+    file.write("\n\n  **Petitioner relationship to deceased**: {{ page.relationship }} \n\n ")
 
-    file.write('<img src="/family-history/assets/images/gazette/{{ page.image_file }}" alt="{{ page.image_file }}">')
+    file.write('<img src="{{ site.baseurl }}/assets/images/gazette/{{ page.image_file }}" alt="{{ page.image_file }}">')
     file.write("\n\n **Transcript** \n\n")
     file.write("#{content}")
     file.write()

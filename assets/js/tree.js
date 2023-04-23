@@ -23,8 +23,13 @@ function adjustHeight(parent_li, parent_ul, recursive) {
 	parent_ul.style.setProperty('--ul-before-margin', `${correct_hi}px`);
 
 	parent_of_parent_ul = parent_ul.parentElement;
-	if (recursive & parent_of_parent_ul.tagName === 'UL' & !parent_of_parent_ul.classList.contains("level-0")) {
-		adjustHeight(parent_of_parent_ul.previousElementSibling, parent_of_parent_ul, true)
+	if (recursive & parent_of_parent_ul.tagName === 'UL') {
+		if (!parent_of_parent_ul.classList.contains("level-0")) {
+			adjustHeight(parent_of_parent_ul.previousElementSibling, parent_of_parent_ul, true)
+		} else {
+			var root = document.getElementsByClassName("root")[0];
+			adjustHeight(root, parent_of_parent_ul, true)
+		}
 	}
 }
 
@@ -61,6 +66,7 @@ for (i = 0; i < coll.length; i++) {
 	});
 }
 
+// the below is used to expand or collapse all descendents 
 var isExpanded = false;
 function activateAll() {
   
@@ -98,8 +104,6 @@ function activateAll() {
 }
 
 
-
-
 // Code to get sticky bar to show or hide 
 // it will show once the person scrolls more than half the page
 var stickyBar = document.querySelector('.sticky-bar');
@@ -115,57 +119,8 @@ function onScroll() {
 
 window.addEventListener('scroll', onScroll);
 
-
-
-
-/////// BELOW IS UNUSED
-// Get all the <ul> elements on the page
-var uls = document.getElementsByClassName("nested");
-
-// Loop through each <ul> element
-function setLastLiHeight() {
-	for (var i = 0; i < uls.length; i++) {
-	  // Get the last <li> element in the current <ul>
-	  uls[i].style.display = 'block';
-	}
-
-	for (var i = 0; i < uls.length; i++) {
-	  // Get the last <li> element in the current <ul>
-	  var lastLi = uls[i].querySelector('li:last-of-type');
-
-		// Get the computed style of the li element
-		const liStyle = window.getComputedStyle(lastLi);
-
-		// Get the values of the line-height, font-size, and padding-bottom properties
-		const lineHeight = parseFloat(liStyle.getPropertyValue('line-height'));
-		const liBeforeHi = parseFloat(window.getComputedStyle(lastLi, ':before').getPropertyValue('height'));
-		const fontSize = parseFloat(liStyle.getPropertyValue('font-size'));
-		const paddingBottom = parseFloat(liStyle.getPropertyValue('padding-bottom'));
-
-		// Calculate the distance between the bullet point and the bottom of the li element
-		const distance = lineHeight - fontSize + paddingBottom;
-
-	  // Get the height of the last <li> element
-	  var lastLiHeight = lastLi.clientHeight;
-	  console.log(uls[i])
-	  console.log(lastLi)
-	  console.log(lastLiHeight)
-	  console.log(distance)
-	  console.log(lineHeight)
-	  console.log(paddingBottom)
-	  console.log(liBeforeHi)
-
-	  // Set the CSS variable on the current <ul> element
-	  uls[i].style.setProperty('--last-li-height', lineHeight - paddingBottom + 'px');
-	}
-
-	for (var i = 0; i < uls.length; i++) {
-	  // Get the last <li> element in the current <ul>
-	  uls[i].style.display = '';
-	}
-
-}
-
 window.onload = function() {
-  //setLastLiHeight();
+  var root = document.getElementsByClassName("root")[0];
+  var level_0 = document.getElementsByClassName("level-0")[0];
+  adjustHeight(root, level_0, false)
 };
