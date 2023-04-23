@@ -1,3 +1,4 @@
+	
 	ul .nested {
 	  display: none;
 	  position: relative;
@@ -11,6 +12,8 @@
 	  top: -8px;
 	  bottom: 0px;
 	  left: 30px;
+	  /* Set in JS */
+	  height: var(--ul-before-margin, auto);
 	}
 
 	ul.level-0:before {
@@ -26,7 +29,8 @@
 	@media screen and (max-width: 480px) {
 	  /* Adjust the top position for smaller screens */
 	  ul.nested:before {
-	  	left: 26px;
+	  	left: 28px;
+	  	height: calc(var(--ul-before-margin) + 2px);
 	  }
 	  ul.level-0:before{
 	    top: 85px;
@@ -43,7 +47,8 @@
 	  position: absolute;
 	  left: -20px;
 	  color: lightgray;
-	  top: 30%;
+	  top: 50%; /* Position at 50% height of li */
+      transform: translateY(-50%); /* Center the pseudo-element vertically */
 	}
 
 	.collapsible {
@@ -164,13 +169,6 @@
 	div.tree {
 	  display: flex;
 	  justify-content: space-between;
-	}
-
-	nav.pagination {
-		font-size: 14px;
-		padding: 10px;
-		margin: 10px;
-		margin-top: 0px;
 	}
 
 
