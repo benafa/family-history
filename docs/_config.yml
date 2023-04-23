@@ -79,3 +79,6 @@ footer:
 # for posts
 permalink: /:year/:month/:day/:title.html
 
+logo: "/assets/images/emmanuel.jpg"
+
+
