@@ -142,4 +142,4 @@ You can search a person's name here which will show some bio information along w
 </ul>
 
 <h1> Would you like to contribute? </h1>
-If you have family tree information you would like to share with the community, please <a href="/family-history/contribute" class="link">submit this form</a>  or email <a href = "mailto: ben@colombochetty.com"  class="link">ben@colombochetty.com</a>. 
+If you have family tree information you would like to share with the community, please <a href="{{ site.baseurl }}/contribute" class="link">submit this form</a>  or email <a href = "mailto: ben@colombochetty.com"  class="link">ben@colombochetty.com</a>. 
