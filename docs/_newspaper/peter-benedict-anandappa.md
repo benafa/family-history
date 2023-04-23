@@ -18,9 +18,9 @@ categories: newspaper gazette
 
   **Petitioner**: {{ page.petitioner }}
 
-  **Petitioner reationship to deceased**: {{ page.relationship }} 
+  **Petitioner relationship to deceased**: {{ page.relationship }} 
 
- <img src="/family-history/assets/images/gazette/{{ page.image_file }}" alt="{{ page.image_file }}">
+ <img src="{{ site.baseurl }}/assets/images/gazette/{{ page.image_file }}" alt="{{ page.image_file }}">
 
  **Transcript** 
 
