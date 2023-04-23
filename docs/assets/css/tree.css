@@ -266,3 +266,12 @@
 	  background-color: #FFCAC890;
 	}
 
+	ul.fun-facts {
+		margin-top:0;
+	}
+
+	p.fun-facts {
+		margin-bottom:5px;
+	}
+
+
