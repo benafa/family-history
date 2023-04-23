@@ -3,7 +3,7 @@ title: Family Trees
 layout: single
 ---
 
-Discover family trees of various Colombo Chetty families below! Please note: while the website is designed to be veiwed on any device, we recommend a laptop/tablet for the best viewing experience due to the large amount of information. We hope you enjoy exploring! 
+Discover family trees of various  Colombo Chetty families below! Please note: while the website is designed to be veiwed on any device, we recommend a laptop/tablet for the best viewing experience due to the large amount of information. We hope you enjoy exploring! 
 
 <h2> Guide: Viewing trees </h2>
 
@@ -112,5 +112,5 @@ You can search a person's name here which will show some bio information along w
 {% endfor %}
 </ul>
 
-<h2> Would you like to contribute? </h2>
+<h1> Would you like to contribute? </h1>
 If you have family tree information you would like to share with the community, please [submit this form](/family-history/contribute) or email ben@colombochetty.com. 
