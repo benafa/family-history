@@ -41,7 +41,9 @@ Welcome to Colombo Chetty Genealogy! Explore <a href="{{ site.baseurl }}/trees" 
 
 <p style="text-align: center;"> <b>Higlighted Profile</b>  <br /> Anthony Xavier Anandappa <br /> <i> First President of the Colombo Chetty Association </i> </p> 
 
-Anthony Xavier Anandappa was born on **January 24th, 1873** to Anthony Anandappa and Anthonia Wijeratnam. In the 1890s, he married Anna Pieris Tavarayan, daughter of <a href="{{ site.baseurl }}/newspaper/saviel-pieris-tavarayen.html" class="link">Saviel Pieris Tavarayan</a> and Cecilia Rodrigo. Anthony Xavier and Anna had 6 children together: 
+Anthony Xavier Anandappa was born on **January 24th, 1873** to Anthony Anandappa and Anthonia Wijeratnam. 
+
+In the 1890s, he married Anna Pieris Tavarayan, daughter of <a href="{{ site.baseurl }}/newspaper/saviel-pieris-tavarayen.html" class="link">Saviel Pieris Tavarayan</a> and Cecilia Rodrigo. Anthony Xavier and Anna had 6 children together: 
 - 3 daughters: Mary Louise, Cecilia Johanna Josephine, and Mary Rose (*pictured below*)
 - 3 sons: Anthony Joseph Nicholas "Joe", Ignatius Boniface "Bonnie", and Aloysius Gonzaga. 
 
@@ -50,15 +52,22 @@ Anthony Xavier Anandappa was born on **January 24th, 1873** to Anthony Anandappa
   <figcaption style="text-align: center;">Anthony Xavier Anandappa and Anna Pieris Tavarayan with their three daughters Mary, Rose and Josephine</figcaption>
 </figure>
 
-Anthony Xavier's father Anthony was **Muppu** of Mater Dolorosa Church on New Chetty Street, and Anthony Xavier took over this role on June 22, 1916.
+Like many Colombo Chetties, Anthony Xavier was educated at **St. Benedicts College**. Having a talent for math, he won 2nd prize for arithmetic when studying in the the VII Standard in 1888. After his schooling, he went on to work as a broker at **Messrs. Carson & Co**. 
+
+<figure>
+  <img src="assets/images/ax_anandappa_seventh_standard.png" alt="ax_anandappa_seventh_standard.png">
+  <figcaption style="text-align: center;">Ceylon Observer 1888: A.X. Anandappa winning a prize while at St. Benedict's College (Note: modified from original, source: NewsBank)</figcaption>
+</figure>
+
+Anthony Xavier's father Anthony was **Muppu of Mater Dolorosa Church** on New Chetty Street, and Anthony Xavier took over this role on June 22, 1916.
  
 <figure>
   <img src="assets/images/anthony_xavier_anandappa_muppu_cert_1916.jpg" alt="anthony_xavier_anandappa_muppu_cert_1916.jpg">
-  <figcaption style="text-align: center;">Anthony Xavier Anandappa's Muppu Certificate</figcaption>
+  <figcaption style="text-align: center;">Anthony Xavier Anandappa's Muppu Certificate for Mater Dolorsa Church from the Archbishop of Colombo in 1916</figcaption>
 </figure>
 
 
-Mater Dolorosa Church was built in 1820, and plaques on the church have the names P.B. Anandappa (born **29 May, 1787**) and D.B. Anandappa (born **9 June, 1816**). The role of "Muppu" is said be passed from father to son, so it is possible P.B. Anandappa and D.B. Anandappa are ancestors of Anthony Xavier Anandappa. 
+Mater Dolorosa Church was built in 1820, and plaques on the church have the names **P.B. Anandappa (born 29 May, 1787)** and **D.B. Anandappa (born 9 June, 1816)**. The role of Muppu is said to be passed from father to son, so it is possible P.B. Anandappa and D.B. Anandappa are ancestors of Anthony Xavier Anandappa. 
 
 {% include gallery %}
 
