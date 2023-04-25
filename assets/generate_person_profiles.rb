@@ -58,7 +58,7 @@ csv_data.each do |row|
     file.write("layout: person\n")
     file.write("title: #{title}\n")
 
-    file.write("id: #{person_id}\n")
+    file.write("person_id: #{person_id}\n")
     file.write("first_name: #{person_first_name}\n")
     file.write("last_name: #{person_last_name}\n")
     file.write("full_name: #{person_full_name}\n")
@@ -88,7 +88,8 @@ csv_data.each do |row|
     end
 
     file.write("sex: #{sex}\n")
-    file.write("categories: newspaper gazette\n")
+    file.write("categories: #{person_id} \n")
+    file.write("permalink: /person/:categories \n")
     file.write("---\n\n")
     file.write()
   end
