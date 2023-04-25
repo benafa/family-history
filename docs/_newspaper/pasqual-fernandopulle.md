@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: testamentary
 title: Testementary of Pasqual Fernandopulle
 name: Pasqual Fernandopulle
 year: 1920
@@ -9,20 +9,6 @@ petitioner: Joseph Louis Fernandopulle
 relationship: Brother
 categories: newspaper gazette
 ---
-
-
-
-  **Source**: {{ page.source }}
-
-  **Year**: {{ page.year }}
-
-  **Petitioner**: {{ page.petitioner }}
-
-  **Petitioner relationship to deceased**: {{ page.relationship }} 
-
- <img src="{{ site.baseurl }}/assets/images/gazette/{{ page.image_file }}" alt="{{ page.image_file }}">
-
- **Transcript** 
 
 In the District Court of Colombo.
 

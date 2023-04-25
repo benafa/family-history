@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: testamentary
 title: Testementary of Anthony Anandappa 
 name: Anthony Anandappa 
 year: 1906
@@ -9,20 +9,6 @@ petitioner: Helena Perera
 relationship: Wife (based on her own testementary)
 categories: newspaper gazette
 ---
-
-
-
-  **Source**: {{ page.source }}
-
-  **Year**: {{ page.year }}
-
-  **Petitioner**: {{ page.petitioner }}
-
-  **Petitioner relationship to deceased**: {{ page.relationship }} 
-
- <img src="{{ site.baseurl }}/assets/images/gazette/{{ page.image_file }}" alt="{{ page.image_file }}">
-
- **Transcript** 
 
 IN THE DISTRICT COURT OF COLOMBO
 

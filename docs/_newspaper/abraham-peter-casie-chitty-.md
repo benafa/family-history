@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: testamentary
 title: Testementary of Abraham Peter Casie Chitty 
 name: Abraham Peter Casie Chitty 
 year: 1953
@@ -9,20 +9,6 @@ petitioner: Mary Clara Casie Chitty (and others)
 relationship: Unclear
 categories: newspaper gazette
 ---
-
-
-
-  **Source**: {{ page.source }}
-
-  **Year**: {{ page.year }}
-
-  **Petitioner**: {{ page.petitioner }}
-
-  **Petitioner relationship to deceased**: {{ page.relationship }} 
-
- <img src="{{ site.baseurl }}/assets/images/gazette/{{ page.image_file }}" alt="{{ page.image_file }}">
-
- **Transcript** 
 
 IN THE DISTRICT COURT OF COLOMBO
 

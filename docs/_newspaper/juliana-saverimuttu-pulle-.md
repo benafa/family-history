@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: testamentary
 title: Testementary of Juliana Saverimuttu Pulle 
 name: Juliana Saverimuttu Pulle 
 year: 1912
@@ -9,20 +9,6 @@ petitioner: Francis Silva Candappa
 relationship: Unclear
 categories: newspaper gazette
 ---
-
-
-
-  **Source**: {{ page.source }}
-
-  **Year**: {{ page.year }}
-
-  **Petitioner**: {{ page.petitioner }}
-
-  **Petitioner relationship to deceased**: {{ page.relationship }} 
-
- <img src="{{ site.baseurl }}/assets/images/gazette/{{ page.image_file }}" alt="{{ page.image_file }}">
-
- **Transcript** 
 
 In the District Court of Colombo. 
 

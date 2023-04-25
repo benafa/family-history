@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: testamentary
 title: Testementary of Ana Maria Agnes Saverimuttu (nee Anandappa)
 name: Ana Maria Agnes Saverimuttu (nee Anandappa)
 year: 1909
@@ -9,20 +9,6 @@ petitioner: Juliana Saverimuttu Pulle (nee Anandappa)
 relationship: Administers estate of husband
 categories: newspaper gazette
 ---
-
-
-
-  **Source**: {{ page.source }}
-
-  **Year**: {{ page.year }}
-
-  **Petitioner**: {{ page.petitioner }}
-
-  **Petitioner relationship to deceased**: {{ page.relationship }} 
-
- <img src="{{ site.baseurl }}/assets/images/gazette/{{ page.image_file }}" alt="{{ page.image_file }}">
-
- **Transcript** 
 
 District Court of Colombo
 

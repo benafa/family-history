@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: testamentary
 title: Testementary of Philippa Annandappa (nee Masillamani)
 name: Philippa Annandappa (nee Masillamani)
 year: 1902
@@ -9,20 +9,6 @@ petitioner: Maria Salome Anandappa
 relationship: Unclear
 categories: newspaper gazette
 ---
-
-
-
-  **Source**: {{ page.source }}
-
-  **Year**: {{ page.year }}
-
-  **Petitioner**: {{ page.petitioner }}
-
-  **Petitioner relationship to deceased**: {{ page.relationship }} 
-
- <img src="{{ site.baseurl }}/assets/images/gazette/{{ page.image_file }}" alt="{{ page.image_file }}">
-
- **Transcript** 
 
 In the District Court of Colombo.
 

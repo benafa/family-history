@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: testamentary
 title: Testementary of Maria Salome Sangaramurthiapillai (nee Anandappa)
 name: Maria Salome Sangaramurthiapillai (nee Anandappa)
 year: 1905
@@ -9,20 +9,6 @@ petitioner: Joseph Bernard Sangaramurthiapillai
 relationship: Unclear
 categories: newspaper gazette
 ---
-
-
-
-  **Source**: {{ page.source }}
-
-  **Year**: {{ page.year }}
-
-  **Petitioner**: {{ page.petitioner }}
-
-  **Petitioner relationship to deceased**: {{ page.relationship }} 
-
- <img src="{{ site.baseurl }}/assets/images/gazette/{{ page.image_file }}" alt="{{ page.image_file }}">
-
- **Transcript** 
 
 In the District Court of Colombo.
 

@@ -1,0 +1,16 @@
+---
+layout: single
+---
+
+<div> 
+  <p><b> Source</b>: {{ page.source }} </p>
+
+  <p><b> Year</b>: {{ page.year }} </p>
+
+  <p><b> Petitioner</b>: {{ page.petitioner }} </p>
+
+  <p><b> Petitioner relationship to deceased</b>: {{ page.relationship }} </p>
+</div>
+ <img src="{{ site.baseurl }}/assets/images/gazette/{{ page.image_file }}" alt="{{ page.image_file }}">
+
+ {{ content }}
