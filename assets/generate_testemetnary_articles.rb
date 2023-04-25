@@ -22,7 +22,7 @@ csv_data.each do |row|
   # Create the Jekyll post file and populate it with the data
   File.open("/Users/benanandappa/Documents/git_repos/family-history/docs/_newspaper/#{post_name}", "w") do |file|
     file.write("---\n")
-    file.write("layout: single\n")
+    file.write("layout: testamentary\n")
     file.write("title: #{title}\n")
     file.write("name: #{deceased}\n")
     file.write("year: #{year}\n")
@@ -32,13 +32,6 @@ csv_data.each do |row|
     file.write("relationship: #{relationship}\n")
     file.write("categories: newspaper gazette\n")
     file.write("---\n\n")
-    file.write("\n\n  **Source**: {{ page.source }}")
-    file.write("\n\n  **Year**: {{ page.year }}")
-    file.write("\n\n  **Petitioner**: {{ page.petitioner }}")
-    file.write("\n\n  **Petitioner relationship to deceased**: {{ page.relationship }} \n\n ")
-
-    file.write('<img src="{{ site.baseurl }}/assets/images/gazette/{{ page.image_file }}" alt="{{ page.image_file }}">')
-    file.write("\n\n **Transcript** \n\n")
     file.write("#{content}")
     file.write()
   end
