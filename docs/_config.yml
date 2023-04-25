@@ -22,9 +22,8 @@ title: Colombo Chetty Genealogy
 email: ben.anandappa@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This website contains genealogical research of the Colombo Chetty people conducted by Ben Anandappa. 
-  Currently, it focuses on the Anandappa and Casie Chetty families.  
 baseurl: "/family-history/" # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://benafa.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minimal-mistakes-jekyll
@@ -61,11 +60,29 @@ collections:
     output: true
   newspaper:
     output: true
+    share: true
   vital:
     output: true 
   tree:
     output: true 
 
+defaults:
+  # _portfolio
+  - scope:
+      path: ""
+      type: posts
+    values:
+      share: true
+  - scope:
+      path: ""
+      type: newspaper
+    values:
+      share: true
+  - scope:
+      path: ""
+      type: tree
+    values:
+      share: true
 
 footer:
   links:
@@ -81,4 +98,7 @@ permalink: /:year/:month/:day/:title.html
 
 logo: "/assets/images/emmanuel.jpg"
 
+repository: "benafa/family-history"
+
+og_image: "assets/images/ax_for_logo.jpg"
 
