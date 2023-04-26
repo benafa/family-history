@@ -50,7 +50,7 @@ csv_data.each do |row|
   title = "Profile of " + person_full_name
   
   # Define the Jekyll post file name based on the date and title
-  post_name = "#{person_id.downcase.gsub(' ', '-')}.md"
+  post_name = "#{person_id}.md"
   
   # Create the Jekyll post file and populate it with the data
   File.open("/Users/benanandappa/Documents/git_repos/family-history/docs/_person/#{post_name}", "w") do |file|
@@ -88,8 +88,6 @@ csv_data.each do |row|
     end
 
     file.write("sex: #{sex}\n")
-    file.write("categories: #{person_id} \n")
-    file.write("permalink: /person/:categories \n")
     file.write("---\n\n")
     file.write()
   end
