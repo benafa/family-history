@@ -63,6 +63,15 @@ window.addEventListener("DOMContentLoaded", function () {
       .join(" "); // Join the array back into a space-separated string
   }
 
+  // Function to extract relevant keywords from a string
+  function extractKeywordsList(text) {
+    return text
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, " ") // Replace non-alphanumeric characters with spaces
+      .trim() // Remove leading and trailing spaces
+      .split(" ") // Split into an array of words
+  }
+
   // Cache the relevant keywords in the data-keywords attribute
   rows.forEach((row) => {
     row.dataset.keywords = extractKeywords(row.textContent);
@@ -71,12 +80,20 @@ window.addEventListener("DOMContentLoaded", function () {
   searchInput.addEventListener(
     "keyup",
     debounce(function () {
-      const searchString = extractKeywords(searchInput.value);
+      const searchStringList = extractKeywordsList(searchInput.value);
 
       for (const row of rows) {
         const rowKeywords = row.dataset.keywords;
 
-        if (rowKeywords.includes(searchString)) {
+        const newArray = searchStringList.map((element) => {
+          return rowKeywords.includes(element);
+        });
+
+        const areAllTrue = newArray.every((element) => {
+          return element === true;
+        });
+
+        if (areAllTrue) {
           row.style.display = "";
         } else {
           row.style.display = "none";
