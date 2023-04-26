@@ -65,6 +65,8 @@ collections:
     output: true 
   tree:
     output: true 
+  person:
+    output: true
 
 defaults:
   # _portfolio
