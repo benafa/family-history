@@ -11,7 +11,7 @@ Discover family trees of various  Colombo Chetty families below! Please note: wh
 
 Here is a quick guide to the tree visualizations with an example screenshot: 
 
-<img src="{{ 'assets/images/tree_example.png' | prepend:site.baseurl  }}" alt="tree_example.png" style="border: 2px solid #555">
+<img src="{{ '/assets/images/tree_example.png' | prepend:site.baseurl  }}" alt="tree_example.png" style="border: 2px solid #555">
 
 - &#128141; represents a marriage  
 - Each graph is a descendent tree. In this example, we have **Casper Casie Chetty** who married **Maria Theresa** (maidan name unknown) and *everyone* in this tree are descendeded from this couple. 
