@@ -2,7 +2,7 @@ require 'csv'
 
 # run this file in the terminal using the "ruby" command
 
-csv_file = File.read('/Users/benanandappa/Documents/git_repos/family-history/docs/_data/testementary_summaries.csv')
+csv_file = File.read('/Users/benanandappa/Documents/git_repos/family-history/orchestration/data/testementary_summaries.csv')
 csv_data = CSV.parse(csv_file, headers: true)
 
 csv_data.each do |row|
