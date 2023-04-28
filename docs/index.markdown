@@ -39,12 +39,12 @@ header:
 Welcome to Colombo Chetty Genealogy! Explore <a href="{{ site.baseurl }}/trees" class="link">family trees</a>, <a href="{{ site.baseurl }}/photos" class="link">photos</a>, and <a href="{{ site.baseurl }}/newspapers" class="link">other historical documents</a> related to the Colombo Chetty people. To get added to our mailing list or contribute to the project, please <a href="{{ site.baseurl }}/contribute" class="link">submit this form</a> or send an email to <a href = "mailto: ben@colombochetty.com" class="link">ben@colombochetty.com</a>. 
 
 
-<p style="text-align: center;"> <b>Higlighted Profile</b>  <br /> Anthony Xavier Anandappa <br /> <i> First President of the Colombo Chetty Association </i> </p> 
+<p style="text-align: center;"> <b>Higlighted Profile</b>  <br /> Anthony Xavier Anandappa <br /> <i> 150th Birth Anniversary in 2023 </i> <br /> <i> First President of the Colombo Chetty Association </i> </p> 
 
 Anthony Xavier Anandappa was born on **January 24th, 1873** to Anthony Anandappa and Anthonia Wijeratnam. 
 
 In the 1890s, he married Anna Pieris Tavarayan, daughter of <a href="{{ site.baseurl }}/newspaper/saviel-pieris-tavarayen.html" class="link">Saviel Pieris Tavarayan</a> and Cecilia Rodrigo. Anthony Xavier and Anna had 6 children together: 
-- 3 daughters: Mary Louise, Cecilia Johanna Josephine, and Mary Rose (*pictured below*)
+- 3 daughters: Mary Louise, Cecilia Johanna Josephine, and Mary Rose (*pictured below*).
 - 3 sons: Anthony Joseph Nicholas "Joe", Ignatius Boniface "Bonnie", and Aloysius Gonzaga. 
 
 <figure>
@@ -52,7 +52,7 @@ In the 1890s, he married Anna Pieris Tavarayan, daughter of <a href="{{ site.bas
   <figcaption style="text-align: center;">Anthony Xavier Anandappa and Anna Pieris Tavarayan with their three daughters Mary, Rose and Josephine</figcaption>
 </figure>
 
-Like many Colombo Chetties, Anthony Xavier was educated at **St. Benedicts College**. Having a talent for math, he won 2nd prize for arithmetic when studying in the the VII Standard in 1888. After his schooling, he went on to work as a broker at **Messrs. Carson & Co**. 
+Like many Colombo Chetties, Anthony Xavier was educated at **St. Benedict's College**. Having a talent for math, he won 2nd prize for arithmetic when studying in the the VII Standard in 1888. After his schooling, he went on to work as a broker at **Messrs. Carson & Co**. 
 
 <figure>
   <img src="assets/images/ax_anandappa_seventh_standard.png" alt="ax_anandappa_seventh_standard.png">
@@ -77,7 +77,7 @@ Anthony Xaiver passed away at age 78 on **Jan 2, 1952**. While he was the eldest
 
 <figure>
   <img src="assets/images/anthony_xavier_around_1940.jpg" alt="anthony_xavier_around_1940.jpg">
-  <figcaption style="text-align: center;">Anthony Xavier Anandappa with his eldest daughter Mary Louise Anandappa, her husband Philip Raphael Anandappa, and their children Mary Anna Philomena, Regis Peter Joseph, Anthony Eubaldus, Anthony Xavier Benedict annd Ronald Millanius</figcaption>
+  <figcaption style="text-align: center;">Anthony Xavier Anandappa with his eldest daughter Mary Louise Anandappa, her husband Philip Raphael Anandappa, and their children Mary Anna Philomena, Regis Peter Joseph, Anthony Eubaldus "Tony", Anthony Xavier Benedict "Benson", annd Ronald Millanius "Ronson"</figcaption>
 </figure>
 
 
