@@ -21,6 +21,16 @@ if [ "$DEV_PATH" = "$PROD_PATH" ]; then
   exit 1
 fi
 
+# Check if commit message is provided as argument
+if [ -z "$1" ]; then
+  echo "Error: Commit message not provided."
+  echo "Please provide a commit message as an argument."
+  exit 1
+fi
+
+# Assign commit message to variable
+COMMIT_MSG="$1"
+
 # Path to project-dev repository
 PROJECT_DEV_PATH=$DEV_PATH
 
@@ -67,5 +77,5 @@ rm $PROJECT_DEV_PATH/docs/_config_dev.yml
 # Commit and push changes to project-prod repository
 cd $PROJECT_PROD_PATH
 git add .
-git commit -m "Update production site"
+git commit -m "$COMMIT_MSG"
 git push
