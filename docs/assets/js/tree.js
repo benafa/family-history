@@ -1,4 +1,3 @@
-console.log(1)
 function recruseiveDeactivate(element) {
 	var childUls = element.getElementsByClassName("nested");
   for (var i = 0; i < childUls.length; i++) {
@@ -57,8 +56,6 @@ function changeActiveClass(element) {
 		recruseiveDeactivate(parent_ul)
 	}
 }
-
-console.log(2)
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -130,9 +127,6 @@ function activateAll() {
   isExpanded = !isExpanded
 }
 
-console.log(3)
-
-
 
 // Code to get sticky bar to show or hide 
 // it will show once the person scrolls more than half the page
@@ -157,5 +151,3 @@ window.onload = function() {
   adjustHeight(root, level_0, false)
 };
 */ 
-
-console.log(4)
