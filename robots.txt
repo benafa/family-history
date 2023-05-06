@@ -1,1 +1,1 @@
-Sitemap: https://benafa.github.io//family-history/sitemap.xml
+Sitemap: http://localhost:4000/family-history/sitemap.xml
