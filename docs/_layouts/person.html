@@ -1,11 +1,24 @@
 ---
 layout: single
-permalink: /person/hello/{{ page.person_id }}
 ---
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pagination.css" type="text/css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pagination-hidden.css" type="text/css">
+<style>
 
+	p.children {
+		margin-bottom: 0px
+	}
+
+	ul.children {
+		margin-top: 5px;
+	}
+
+	div.back {
+		margin-top: 30px;
+	}
+
+</style>
 
 <div> 
   <p><b> Given Names</b>: {{ page.first_name }} </p>
@@ -14,28 +27,23 @@ permalink: /person/hello/{{ page.person_id }}
 
   	
   	{% if page.mother or page.father %}
-		<p><b> Parents </b></p>
-		<ul>
+		<h1><b> Family </b></h1>
+		
 		{% if page.mother %}
-			<li> 
 			{% if page.mother_id %}
 				<p><b> Mother</b>: <a href="{{ site.baseurl }}/person/{{ page.mother_id }}" class="link"> {{ page.mother }} </a> </p>
 			{% else %}
 				<p><b> Mother</b>: {{ page.mother }} </p>
 			{% endif %}
-			</li> 
 		{% endif %}
 
 		{% if page.father %}
-			<li> 
 			{% if page.father_id %}
 				<p><b> Father</b>: <a href="{{ site.baseurl }}/person/{{ page.father_id }}" class="link"> {{ page.father }} </a> </p>
 			{% else %}
 				<p><b> Father</b>: {{ page.father }} </p>
 			{% endif %}
-			</li> 
 		{% endif %}
-		</ul>
 	{% endif %}
 		
 	{% if page.partners %}
@@ -54,8 +62,8 @@ permalink: /person/hello/{{ page.person_id }}
 	{% endif %}
 
 	{% if page.children %}
-  		<p><b> Children</b></p>
-  		<ul>
+  		<p class="children"><b> Children</b></p>
+  		<ul class="children">
   			{% for child in page.children %}
   				<li> 
   					<a href="{{ site.baseurl }}/person/{{ page.children_ids[forloop.index0] }}" class="link"> {{ child }} </a> 
@@ -64,4 +72,16 @@ permalink: /person/hello/{{ page.person_id }}
   		</ul>
 
 	{% endif %}
+
+	{% if page.relevant_trees_names %}
+  		<h1><b> Relevant Trees</b></h1>
+			{% for tree in page.relevant_trees_names %}
+					<a href="{{ site.baseurl }}/tree/{{ page.relevant_trees_ids[forloop.index0] }}" class="link"> Descendents of {{ tree }} </a> </br>
+			{% endfor %}
+
+	{% endif %}
+</div>
+
+<div class="back">
+ <a href="{{ site.baseurl }}/people" class="btn btn--primary"> Back to all people </a>
 </div>
