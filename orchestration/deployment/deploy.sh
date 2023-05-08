@@ -5,19 +5,19 @@ source deployment-env-variables
 
 # Check if DEV_PATH environment variable is set
 if [ -z "$DEV_PATH" ]; then
-  echo "DEV_PATH environment variable is not set. Please set DEV_PATH to the path of your project-dev repository."
+  echo "Error: DEV_PATH environment variable is not set. Please set DEV_PATH to the path of your project-dev repository."
   exit 1
 fi
 
 # Check if PROD_PATH environment variable is set
 if [ -z "$PROD_PATH" ]; then
-  echo "PROD_PATH environment variable is not set. Please set PROD_PATH to the path of your project-prod repository."
+  echo "Error: PROD_PATH environment variable is not set. Please set PROD_PATH to the path of your project-prod repository."
   exit 1
 fi
 
 # Check if DEV_PATH and PROD_PATH are different paths
 if [ "$DEV_PATH" = "$PROD_PATH" ]; then
-  echo "DEV_PATH and PROD_PATH must be different paths. Please set them to different paths."
+  echo "Error: DEV_PATH and PROD_PATH must be different paths. Please set them to different paths."
   exit 1
 fi
 
@@ -48,7 +48,7 @@ cd docs
 # Create copy of the dev config
 cp $PROJECT_DEV_PATH/docs/_config.yml $PROJECT_DEV_PATH/docs/_config_dev.yml
 
-if python3 $PROJECT_DEV_PATH/orchestration/deployment/update_baseurl.py $PROJECT_DEV_PATH/docs/_config.yml "/family-history-prod"; then
+if python3 $PROJECT_DEV_PATH/orchestration/deployment/update_baseurl.py $PROJECT_DEV_PATH/docs/_config.yml "" "https://colombochetty.com/"; then
   echo "Updated baseurl in _config.yml."
 else
   echo "Error: Failed to update baseurl in _config.yml."
@@ -69,6 +69,8 @@ find . -type d -empty -delete
 
 # Copy new contents from project-dev to project-prod
 cp -r $PROJECT_DEV_PATH/docs/_site/* $PROJECT_PROD_PATH
+
+cp $PROJECT_DEV_PATH/orchestration/deployment/CNAME $PROJECT_PROD_PATH
 
 # Copy back the dev config 
 cp $PROJECT_DEV_PATH/docs/_config_dev.yml $PROJECT_DEV_PATH/docs/_config.yml
