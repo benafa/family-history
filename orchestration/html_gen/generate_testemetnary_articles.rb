@@ -14,7 +14,7 @@ csv_data.each do |row|
   image_file = row['File']
   relationship = row["petitioner_relationship"]
 
-  title = "Testementary of " + deceased
+  title = "Testamentary of " + deceased
   
   # Define the Jekyll post file name based on the date and title
   post_name = "#{deceased.downcase.gsub(' ', '-')}.md"

@@ -44,6 +44,17 @@ csv_data.each do |row|
     partner_names = []
   end
 
+  if row["relevant_trees"]
+    relevant_trees_ids = row["relevant_trees"].split(list_delimiter).map(&:strip)
+  else
+    relevant_trees_ids = []
+  end
+
+  if row["relevant_trees_names"]
+    relevant_trees_names = row["relevant_trees_names"].split(list_delimiter).map(&:strip)
+  else
+    relevant_trees_names = []
+  end
 
   sex = row["sex"]
 
@@ -85,6 +96,15 @@ csv_data.each do |row|
     file.write("partner_ids:\n")
     partner_ids.each_with_index do |partner, index|
       file.write(" - #{partner}\n")
+    end
+
+    file.write("relevant_trees_names:\n")
+    relevant_trees_names.each_with_index do |tree, index|
+      file.write(" - #{tree}\n")
+    end
+    file.write("relevant_trees_ids:\n")
+    relevant_trees_ids.each_with_index do |tree, index|
+      file.write(" - #{tree}\n")
     end
 
     file.write("sex: #{sex}\n")
