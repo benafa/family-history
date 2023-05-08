@@ -1,6 +1,6 @@
 ---
-layout: single
-title: List of all people 
+layout: splash
+title: List of all people (wide)
 ---
 <head>
   <script src="{{ site.baseurl }}/assets/js/table.js"></script>
@@ -19,13 +19,6 @@ title: List of all people
       content: " ▲▼";
       color: grey;
     }
-
-    .top-buttons {
-      display: flex; /* Use Flexbox layout */
-      align-items: center; /* Vertically align the button and the <a> element */
-      justify-content: center; /* Horizontally align the button and the <a> element, if needed */
-      gap: 10px; /* Add spacing between the button and the <a> element */
-    }
   </style>
 
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
@@ -33,10 +26,8 @@ title: List of all people
 </head>
 
 <br>
-
 <div class="top-buttons">
-  <a href="#" onclick="sortTable(1)" class="btn btn--primary">Sort by last name</a>  <br />
-  <a href="{{ site.baseurl }}/people_wide" class="btn btn--primary"> Wide View </a>
+  <a href="{{ site.baseurl }}/people" class="btn btn--primary"> Narrow View </a>
 </div>
 
 <br>
@@ -45,15 +36,24 @@ title: List of all people
 <br>
 <table id="myTable">
   <th onclick="sortTable(0)">Person</th>
-  <th onclick="sortTable(1)" style="display: none;">Last Name </th>
-  <th onclick="sortTable(2)">Mother</th>
-  <th onclick="sortTable(3)">Father</th>
+  <th onclick="sortTable(1)">Last Name </th>
+  <th onclick="sortTable(2)">Partner/s </th>
+  <th onclick="sortTable(3)">Mother</th>
+  <th onclick="sortTable(4)">Father</th>
+  <th onclick="sortTable(5)">ID</th>
 {% for person in site.person %}
   <tr>
-    <td> <a href="{{ site.baseurl }}/person/{{ person.person_id }}" class="link">{{ person.first_name }} {{ person.last_name }} </a></td>
-    <td style="display: none;"> {{ person.last_name }}</td>
+    <td> <a href="{{ site.baseurl }}/person/{{ person.person_id }}" class="link">{{ person.first_name }}</a></td>
+    <td> {{ person.last_name }}</td>
+    <td>
+      {% for partner in person.partner_ids %}
+        <a href="{{ site.baseurl }}/person/{{ partner }}" class="link"> {{ person.partners[forloop.index0] }} </a> </br>
+      {% endfor %}
+    </td>
+
     <td><a href="{{ site.baseurl }}/person/{{ person.mother_id }}" class="link"> {{ person.mother }} </a></td>
     <td><a href="{{ site.baseurl }}/person/{{ person.father_id }}" class="link"> {{ person.father }} </a></td>
+    <td> {{ person.person_id }}</td>
   </tr>
 {% endfor %}
 </table>
@@ -66,6 +66,7 @@ title: List of all people
         headers[i].classList.add("sorted-none");
       }
     });
+    sortTable(1)
     sortTable(0)
 </script>
 
