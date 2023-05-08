@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Francis Xavier Adaman
+title: Testamentary of Francis Xavier Adaman
 name: Francis Xavier Adaman
 year: 1900
 source: Ceylon Government Gazette

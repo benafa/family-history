@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Ana Maria Agnes Saverimuttu (nee Anandappa)
+title: Testamentary of Ana Maria Agnes Saverimuttu (nee Anandappa)
 name: Ana Maria Agnes Saverimuttu (nee Anandappa)
 year: 1909
 source: Ceylon Government Gazette

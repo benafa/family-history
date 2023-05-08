@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of John Caitan Anthony Casie Chetty
+title: Testamentary of John Caitan Anthony Casie Chetty
 name: John Caitan Anthony Casie Chetty
 year: 1911
 source: Ceylon Government Gazette

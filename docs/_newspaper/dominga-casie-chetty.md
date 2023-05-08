@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Dominga Casie Chetty
+title: Testamentary of Dominga Casie Chetty
 name: Dominga Casie Chetty
 year: 1906
 source: Ceylon Government Gazette

@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Maria Pieris Tevarayan
+title: Testamentary of Maria Pieris Tevarayan
 name: Maria Pieris Tevarayan
 year: 1924
 source: Ceylon Government Gazette

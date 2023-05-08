@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Mary Teresa Casie Chitty
+title: Testamentary of Mary Teresa Casie Chitty
 name: Mary Teresa Casie Chitty
 year: 1920
 source: Ceylon Government Gazette

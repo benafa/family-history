@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Dominic Philip Anandappa
+title: Testamentary of Dominic Philip Anandappa
 name: Dominic Philip Anandappa
 year: 1931
 source: Ceylon Government Gazette

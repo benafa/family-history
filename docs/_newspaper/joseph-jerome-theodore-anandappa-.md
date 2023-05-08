@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Joseph Jerome Theodore Anandappa 
+title: Testamentary of Joseph Jerome Theodore Anandappa 
 name: Joseph Jerome Theodore Anandappa 
 year: 1935
 source: Ceylon Government Gazette

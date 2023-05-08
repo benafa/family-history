@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Saviel Pieris Tavarayen
+title: Testamentary of Saviel Pieris Tavarayen
 name: Saviel Pieris Tavarayen
 year: 1897
 source: Ceylon Government Gazette

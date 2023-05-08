@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Abraham Peter Casie Chitty 
+title: Testamentary of Abraham Peter Casie Chitty 
 name: Abraham Peter Casie Chitty 
 year: 1953
 source: Ceylon Government Gazette

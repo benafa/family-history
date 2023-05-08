@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Emmanuel Peiris Tavarayan
+title: Testamentary of Emmanuel Peiris Tavarayan
 name: Emmanuel Peiris Tavarayan
 year: 1946
 source: Ceylon Government Gazette

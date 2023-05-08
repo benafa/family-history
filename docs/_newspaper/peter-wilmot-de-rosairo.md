@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Peter Wilmot de Rosairo
+title: Testamentary of Peter Wilmot de Rosairo
 name: Peter Wilmot de Rosairo
 year: 1919
 source: Ceylon Government Gazette

@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Mariano Leity Ramanaden 
+title: Testamentary of Mariano Leity Ramanaden 
 name: Mariano Leity Ramanaden 
 year: 1927
 source: Ceylon Government Gazette

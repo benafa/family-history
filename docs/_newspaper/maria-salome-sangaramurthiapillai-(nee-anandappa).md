@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Maria Salome Sangaramurthiapillai (nee Anandappa)
+title: Testamentary of Maria Salome Sangaramurthiapillai (nee Anandappa)
 name: Maria Salome Sangaramurthiapillai (nee Anandappa)
 year: 1905
 source: Ceylon Government Gazette

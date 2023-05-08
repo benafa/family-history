@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Anthony Anandappa 
+title: Testamentary of Anthony Anandappa 
 name: Anthony Anandappa 
 year: 1906
 source: Ceylon Government Gazette

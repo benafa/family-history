@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Pasqual Fernandopulle
+title: Testamentary of Pasqual Fernandopulle
 name: Pasqual Fernandopulle
 year: 1920
 source: Ceylon Government Gazette

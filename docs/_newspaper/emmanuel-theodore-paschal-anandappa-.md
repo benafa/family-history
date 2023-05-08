@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Emmanuel Theodore Paschal Anandappa 
+title: Testamentary of Emmanuel Theodore Paschal Anandappa 
 name: Emmanuel Theodore Paschal Anandappa 
 year: 1927
 source: Ceylon Government Gazette

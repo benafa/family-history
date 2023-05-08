@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Emmanuel Anandappa
+title: Testamentary of Emmanuel Anandappa
 name: Emmanuel Anandappa
 year: 1915
 source: Ceylon Government Gazette

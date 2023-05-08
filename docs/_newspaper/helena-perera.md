@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Helena Perera
+title: Testamentary of Helena Perera
 name: Helena Perera
 year: 1923
 source: Ceylon Government Gazette

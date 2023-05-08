@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Philippa Annandappa (nee Masillamani)
+title: Testamentary of Philippa Annandappa (nee Masillamani)
 name: Philippa Annandappa (nee Masillamani)
 year: 1902
 source: Ceylon Government Gazette

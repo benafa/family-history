@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Peter Benedict Anandappa
+title: Testamentary of Peter Benedict Anandappa
 name: Peter Benedict Anandappa
 year: 1916
 source: Ceylon Government Gazette

@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Lucy Mary Casie Chetty
+title: Testamentary of Lucy Mary Casie Chetty
 name: Lucy Mary Casie Chetty
 year: 1955
 source: Ceylon Government Gazette

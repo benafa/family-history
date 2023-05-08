@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Juliana Saverimuttu Pulle 
+title: Testamentary of Juliana Saverimuttu Pulle 
 name: Juliana Saverimuttu Pulle 
 year: 1912
 source: Ceylon Government Gazette

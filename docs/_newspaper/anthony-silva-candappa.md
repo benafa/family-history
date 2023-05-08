@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Anthony Silva Candappa
+title: Testamentary of Anthony Silva Candappa
 name: Anthony Silva Candappa
 year: 1906
 source: Ceylon Government Gazette

@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Maria Nathalia Anandappa 
+title: Testamentary of Maria Nathalia Anandappa 
 name: Maria Nathalia Anandappa 
 year: 1925
 source: Ceylon Government Gazette

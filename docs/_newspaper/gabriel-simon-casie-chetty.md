@@ -1,6 +1,6 @@
 ---
 layout: testamentary
-title: Testementary of Gabriel Simon Casie Chetty
+title: Testamentary of Gabriel Simon Casie Chetty
 name: Gabriel Simon Casie Chetty
 year: 1923
 source: Ceylon Government Gazette
