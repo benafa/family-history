@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Testementary Announcements
+title: Marriage Records
 ---
 <head>
   <script src="{{ site.baseurl }}/assets/js/table.js"></script>
@@ -27,14 +27,14 @@ title: Testementary Announcements
 
 <br>
 <table id="myTable">
-  <th onclick="sortTable(0)">Deceased</th>
-  <th onclick="sortTable(1)">Petitioner</th>
-  <th onclick="sortTable(2)">Year</th>
-{% for article in site.newspaper %}
+  <th onclick="sortTable(0)">Partner 1</th>
+  <th onclick="sortTable(1)">Partner 2</th>
+  <th onclick="sortTable(2)">date</th>
+{% for marr in site.marriage %}
   <tr>
-    <td> <a href="{{ article.url | prepend:site.baseurl }}">{{ article.name }}</a></td>
-    <td>{{ article.petitioner }}</td>
-    <td>{{ article.year }}</td>
+    <td> <a href="{{ marr.url | prepend:site.baseurl }}">{{ marr.partner_1_first }} {{ marr.partner_1_last }}</a></td>
+    <td> <a href="{{ marr.url | prepend:site.baseurl }}">{{ marr.partner_2_first }} {{ marr.partner_2_last }}</a></td>
+    <td>{{ marr.date | date: "%Y %B %-d" }}</td>
   </tr>
 {% endfor %}
 </table>

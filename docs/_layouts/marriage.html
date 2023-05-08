@@ -1,0 +1,26 @@
+---
+layout: single
+---
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pagination.css" type="text/css">
+
+<style>
+
+  div.back {
+    margin-top: 30px;
+  }
+
+</style>
+
+<div> 
+  <p><b> Partner 1</b>: {{ page.partner_1_first }}  {{ page.partner_1_last }} </p>
+
+  <p><b> Partner 2</b>: {{ page.partner_2_first }}  {{ page.partner_2_last }} </p>
+
+  <p><b> Date</b>:  {{ page.date | date: "%-d %B %Y" }} </p>
+
+</div>
+ <img src="{{ site.baseurl }}/assets/images/cert/{{ page.image_file }}.jpeg" alt="{{ page.image_file }}">
+
+<div class="back">
+ <a href="{{ site.baseurl }}/marriage" class="btn btn--primary"> Back to all marriage records </a>
+</div>

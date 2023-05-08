@@ -67,6 +67,10 @@ collections:
     output: true 
   person:
     output: true
+  marriage:
+    output: true
+
+
 
 defaults:
   # _portfolio
