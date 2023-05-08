@@ -22,7 +22,8 @@ Here is a quick guide to the tree visualizations with an example screenshot:
 	- **Expand/Collapse All**: button will allow you to view all descendents. Clicking it again will hide all descendents
 
 <h2> Guide: Search all people </h2>
-You can search a person's name here which will show some bio information along with trees they are included in. If you would like to add stories or photos for individuals, please contact <a href = "mailto: ben@colombochetty.com"  class="link">ben@colombochetty.com</a>. 
+You can <a href="{{ site.baseurl }}/people" class="link"> search a person's name here </a>
+  which will show some bio information along with trees they are included in. If you would like to add stories or photos for individuals, please contact <a href = "mailto: ben@colombochetty.com"  class="link">ben@colombochetty.com</a>. 
 
 <h2> Adaman Families </h2>
 <ul>
@@ -54,16 +55,17 @@ You can search a person's name here which will show some bio information along w
 <h2> Babapulle Families </h2>
 <ul>
 {% for tree in site.tree %}
-  {% if tree.tags contains 'babapulle' %}
+  {% assign all_tags = tree.tags | join: ' ' %}
+  {% if all_tags contains 'babapulle' %}
   	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
 
-<h2> Canjemenaden Families </h2>
+<h2> Canjemanaden Families </h2>
 <ul>
 {% for tree in site.tree %}
-  {% if tree.tags contains 'canjemenaden' %}
+  {% if tree.tags contains 'canjemanaden' %}
   	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
   {% endif %}
 {% endfor %}
@@ -72,7 +74,8 @@ You can search a person's name here which will show some bio information along w
 <h2> Candappa Families </h2>
 <ul>
 {% for tree in site.tree %}
-  {% if tree.tags contains 'candappa' %}
+  {% assign all_tags = tree.tags | join: ' ' %}
+  {% if all_tags contains 'candappa' %}
   	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
   {% endif %}
 {% endfor %}
@@ -99,16 +102,38 @@ You can search a person's name here which will show some bio information along w
 <h2> Laity Ramenaden Families </h2>
 <ul>
 {% for tree in site.tree %}
-  {% if tree.tags contains 'l_ramenaden' %}
+  {% if tree.tags contains 'laity_ramenaden' %}
   	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
 
+
+<h2> Massillamany Families </h2>
+<ul>
+{% for tree in site.tree %}
+  {% if tree.tags contains 'massillamany' %}
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+
+<h2> Muttukisna Families </h2>
+<ul>
+{% for tree in site.tree %}
+  {% if tree.tags contains 'muttukisna' %}
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+
 <h2> Perumal Families </h2>
 <ul>
 {% for tree in site.tree %}
-  {% if tree.tags contains 'perumal' %}
+  {% assign all_tags = tree.tags | join: ' ' %}
+  {% if all_tags contains 'perumal' %}
   	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
   {% endif %}
 {% endfor %}
@@ -123,10 +148,20 @@ You can search a person's name here which will show some bio information along w
 {% endfor %}
 </ul>
 
+<h2> Sathianathan Families </h2>
+<ul>
+{% for tree in site.tree %}
+  {% if tree.tags contains 'rodrigo_sathianathan' %}
+  	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+
 <h2> Tavarayan Families </h2>
 <ul>
 {% for tree in site.tree %}
-  {% if tree.tags contains 'tavarayan' %}
+  {% if tree.tags contains 'pieris_tavarayan' %}
   	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
   {% endif %}
 {% endfor %}
