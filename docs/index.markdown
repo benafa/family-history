@@ -36,7 +36,7 @@ header:
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
 
 
-Welcome to Colombo Chetty Genealogy! Explore <a href="{{ site.baseurl }}/trees" class="link">family trees</a>, <a href="{{ site.baseurl }}/photos" class="link">photos</a>, and <a href="{{ site.baseurl }}/newspapers" class="link">other historical documents</a> related to the Colombo Chetty people. To get added to our mailing list or contribute to the project, please <a href="{{ site.baseurl }}/contribute" class="link">submit this form</a> or send an email to <a href = "mailto: ben@colombochetty.com" class="link">ben@colombochetty.com</a>. 
+Welcome to Colombo Chetty Genealogy! Explore <a href="{{ site.baseurl }}/photos" class="link">photos</a>,  <a href="{{ site.baseurl }}/records" class="link"> historical documents</a>, and <a href="{{ site.baseurl }}/trees" class="link">family trees</a> of families such as Adaman, Anandappa, Candappa, Casie Chetty, Laity Ramenaden, Tavarayan, Wigeratnam and more! To get added to our mailing list or contribute to the project, please <a href="{{ site.baseurl }}/contribute" class="link">submit this form</a> or send an email to <a href = "mailto: ben@colombochetty.com" class="link">ben@colombochetty.com</a>. 
 
 
 <p style="text-align: center;"> <b>Higlighted Profile</b>  <br /> Anthony Xavier Anandappa <br /> <i> 150th Birth Anniversary in 2023 </i> <br /> <i> First President of the Colombo Chetty Association </i> </p> 
@@ -77,7 +77,7 @@ Anthony Xaiver passed away at age 78 on **Jan 2, 1952**. While he was the eldest
 
 <figure>
   <img src="assets/images/anthony_xavier_around_1940.jpg" alt="anthony_xavier_around_1940.jpg">
-  <figcaption style="text-align: center;">Anthony Xavier Anandappa with his eldest daughter Mary Louise Anandappa, her husband Philip Raphael Anandappa, and their children Mary Anna Philomena, Regis Peter Joseph, Anthony Eubaldus "Tony", Anthony Xavier Benedict "Benson", annd Ronald Millanius "Ronson"</figcaption>
+  <figcaption style="text-align: center;">Anthony Xavier Anandappa with his eldest daughter Mary Louise Anandappa, her husband Philip Raphael Anandappa, and their children Mary Anna Philomena, Regis Peter Joseph, Anthony Eubaldus "Tony", Anthony Xavier Benedict "Benson", and Ronald Millanius "Ronson"</figcaption>
 </figure>
 
 
