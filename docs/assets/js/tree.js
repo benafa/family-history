@@ -132,6 +132,35 @@ function onScroll() {
 
 window.addEventListener('scroll', onScroll);
 
+
+function debounce(func, wait) {
+  let timeout;
+  return function () {
+    const context = this;
+    const args = arguments;
+    const later = function () {
+      timeout = null;
+      func.apply(context, args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
+function onWindowResize() {
+  console.log('Window resized:', window.innerWidth, window.innerHeight);
+  // Get all nested lists in the document
+  var nestedLists = document.querySelectorAll('.nested.active'); 
+  // Loop through each nested list
+  for (var i = 0; i < nestedLists.length; i++) {
+    var nestedList = nestedLists[i];
+	adjustHeight(nestedList.previousElementSibling, nestedList, false)
+  }
+}
+
+const debouncedResizeHandler = debounce(onWindowResize, 10);
+window.addEventListener('resize', debouncedResizeHandler);
+
 /* move this to inline 
 window.onload = function() {
   console.log("hello");
