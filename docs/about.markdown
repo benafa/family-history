@@ -41,7 +41,7 @@ After a few trips to Sri Lanka as a kid in the 2000s, I was inspired to learn mo
 
 For the next decade or so, the project was all but forgotten, until a chance encounter led to my sister discovering we had extended family in Chicago - the descendants of Ernest and Estelle Anandappa. I later  met Gerard Saverimuttu as well, who explained that he was the son of my great-grandmother's sister! Given I was now connected with more relatives (and I was older!), I was inspired to expand the family tree I made as a kid. 
 
-In Februrary 2023, I visited Sri Lanka after 13 years. I was on a mission to meet more of my extended family, and I was fortuante enough to meet three of my oldest living relatives - Anthony Eubaldus "Tony" Anandappa (age 97, my grandfather's brother), Helen Juliana Rodrigo-Muniarem-Perumal (age 99, my grandmother's first-cousin), and Bede Leonard Anandappa (age 102, my great-grandmother's first-cousin). 
+In Februrary 2023, I visited Sri Lanka after 13 years. I was on a mission to meet more of my extended family, and I was fortuante enough to meet three of my oldest living relatives - Anthony Eubaldus "Tony" Anandappa (age 97, my grandfather's brother), Helen Juliana Rodrigo-Muniarem-Perumal (age 98, my grandmother's first-cousin), and Bede Leonard Anandappa (age 102, my great-grandmother's first-cousin). 
 
 {% include gallery id="gallery2" %} 
 This is an on-going project with many more avenues for research. It could not be possible without the suppoprt and positive reception of everyone, so I wanted to say... 
