@@ -169,3 +169,159 @@ window.onload = function() {
   adjustHeight(root, level_0, false)
 };
 */ 
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const stickyItemsByLevel = new Map();
+      const max_level = 7
+
+      function getLevel(element) {
+        let level = 0;
+        if (element.classList.contains("root")) {
+        	level = -1
+        } else if (element.classList.contains("level-0")) {
+        	level = 0
+        } else if (element.classList.contains("level-1")) {
+        	level = 1
+        } else if (element.classList.contains("level-2")) {
+        	level = 2
+        } else if (element.classList.contains("level-3")) {
+        	level = 3
+        } else if (element.classList.contains("level-4")) {
+        	level = 4
+        } else if (element.classList.contains("level-5")) {
+        	level = 5
+        } else if (element.classList.contains("level-6")) {
+        	level = 6
+        } else if (element.classList.contains("level-7")) {
+        	level = 7
+        } 
+        return level;
+      }
+
+      function checkIntersectingElements() {
+        var listItems = document.querySelectorAll("li.tree");
+        const listRoot = document.querySelectorAll("li.root");
+        listItems = [...listItems, ...listRoot];
+
+        for (let i = 0; i < listItems.length; i++) {
+          const item = listItems[i];
+          const itemRect = item.getBoundingClientRect();
+          const itemTop = itemRect.top;
+          const itemBottom = itemRect.bottom;
+          const parentUl = item.closest("ul");
+          const level = getLevel(parentUl);
+          const levelOffset = 30 + (level+1) * 60;
+
+          const currentItemSticky = stickyItemsByLevel.get(level);
+	      if (currentItemSticky === item) {
+	        continue;
+	      }           
+	      var currentItemStickyRectBottom = null;
+
+	      if (currentItemSticky) {
+		      const currentItemStickyRect = currentItemSticky.getBoundingClientRect();
+		      currentItemStickyRectBottom = currentItemStickyRect.bottom
+	  	  } else {
+	  	  	if (itemTop <= 0 && itemBottom > 0) {
+	  	  		console.log("initial sticky")
+	  	  		console.log("level " + level)
+	            stickyItemsByLevel.set(level, item);
+	            console.log("stick")
+	            console.log(item)
+	            item.classList.add("sticky");
+	            item.classList.remove("tree");
+				item.style.top =`${levelOffset}px`; // Set the top position to 50px
+			}
+	  	  }
+
+
+          if (itemTop < currentItemStickyRectBottom & itemBottom > 0) {
+            console.log("level " + level)
+            
+            if (currentItemSticky) {
+            	console.log("unstick")
+            	console.log(currentItemSticky)
+            	currentItemSticky.classList.remove("sticky");
+            	currentItemSticky.classList.add("tree");
+            	currentItemSticky.style.top = "";
+            }
+            stickyItemsByLevel.set(level, item);
+            console.log("stick")
+            console.log(item)
+            item.classList.add("sticky");
+            item.classList.remove("tree");
+			item.style.top =`${levelOffset}px`; // Set the top position to 50px
+			for (let j = level+1; j < max_level + 1; j++) {
+				var itemSticky =  stickyItemsByLevel.get(j);
+				if (itemSticky) {
+					console.log("unset prev levels " + level)
+	            	console.log(itemSticky)
+	            	itemSticky.classList.remove("sticky");
+	            	itemSticky.classList.add("tree");
+	            	itemSticky.style.top = ""
+					stickyItemsByLevel.set(j, null);
+				}
+			}
+          } else {
+            //const currentItemSticky = stickyItemsByLevel.get(level);
+            //if (currentItemSticky === item) {
+             // item.classList.remove("sticky");
+            //}
+          }
+        }
+      }
+      window.addEventListener("scroll", checkIntersectingElements);
+    });
+
+
+/*
+    document.addEventListener("DOMContentLoaded", function () {
+      const observerOptions = {
+        rootMargin: "0px",
+        threshold: [0, 1],
+      };
+
+      const stickyObserver = new IntersectionObserver(
+        function (entries) {
+          entries.forEach((entry) => {
+            if (entry.intersectionRatio === 1) {
+              console.log("helllo")
+              console.log(entry)
+              entry.target.classList.remove("sticky");
+            } else if (entry.boundingClientRect.top < 30) {
+              console.log("goodbye")
+              console.log(entry)
+              entry.target.classList.add("sticky");
+            }
+          });
+        },
+        observerOptions
+      );
+
+      const disableStickyObserver = new IntersectionObserver(
+        function (entries) {
+          entries.forEach((entry) => {
+            if (entry.intersectionRatio === 1) {
+              const prevSibling = entry.target.previousElementSibling;
+              if (prevSibling) {
+                prevSibling.classList.remove("sticky");
+              }
+            }
+          });
+        },
+        observerOptions
+      );
+
+      function applyObserverToListItems() {
+        const listItems = document.getElementsByClassName("nested");
+        console.log("init observers")
+
+        for (var i = 0; i < listItems.length; i++) {
+          stickyObserver.observe(listItems[i].previousElementSibling);
+          //disableStickyObserver.observe(listItems[i].previousElementSibling);
+        }
+      }
+      applyObserverToListItems();
+    });
+
+    */

@@ -277,4 +277,11 @@
 		margin-bottom:5px;
 	}
 
+	li.sticky {
+      position: sticky;
+      top: 40px;
+      background-color: #ccc;
+      font-size: 14px;
+    }
+
 
