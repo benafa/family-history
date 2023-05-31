@@ -2,7 +2,7 @@ require 'csv'
 
 # run this file in the terminal using the "ruby" command
 
-csv_file = File.read('/Users/benanandappa/Documents/git_repos/family-history/orchestration/data/testementary_summaries.csv')
+csv_file = File.read('/Users/benanandappa/family_tree_repos/family-history/orchestration/data/testementary_summaries.csv')
 csv_data = CSV.parse(csv_file, headers: true)
 
 csv_data.each do |row|
@@ -20,7 +20,7 @@ csv_data.each do |row|
   post_name = "#{deceased.downcase.gsub(' ', '-')}.md"
   
   # Create the Jekyll post file and populate it with the data
-  File.open("/Users/benanandappa/Documents/git_repos/family-history/docs/_newspaper/#{post_name}", "w") do |file|
+  File.open("/Users/benanandappa/family_tree_repos/family-history/docs/_newspaper/#{post_name}", "w") do |file|
     file.write("---\n")
     file.write("layout: testamentary\n")
     file.write("title: #{title}\n")
