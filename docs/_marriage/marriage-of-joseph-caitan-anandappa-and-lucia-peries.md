@@ -10,7 +10,8 @@ partner_2_last: Peries
 partner_2_father_first: Gregory Peries
 partner_2_father_last: Juan Pulle
 image_file: peries_lucia_anandappa_joseph_caitan_page_1319_year_1914
-date: October 14, 1914
+rel_trees:
+date: 14-Oct-14
 categories: marriage
 ---
 

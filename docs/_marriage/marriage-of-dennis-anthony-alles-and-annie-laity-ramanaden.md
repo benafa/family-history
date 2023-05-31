@@ -10,7 +10,10 @@ partner_2_last: Laity Ramanaden
 partner_2_father_first: Gabriel
 partner_2_father_last: Laity Ramanaden
 image_file: ramenaden_annie_alles_dennis_page_1149_year_1930
-date: July 1, 1929
+rel_trees:
+ - I0785
+ - I0744
+date: 1-Jul-29
 categories: marriage
 ---
 

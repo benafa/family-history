@@ -10,7 +10,10 @@ partner_2_last: Anandappa
 partner_2_father_first: Peter Benedict
 partner_2_father_last: Anandappa
 image_file: anandappa_joseph_jerome_theodore_anandappa_mary_magdeline_page_1159
-date: October 6, 1926
+rel_trees:
+ - I500031
+ - I500096
+date: 6-Oct-26
 categories: marriage
 ---
 

@@ -10,7 +10,8 @@ partner_2_last: Jurgen Ondatjie
 partner_2_father_first: Philip Michael
 partner_2_father_last: Jurgen Ondatjie
 image_file: casie_chetty_edward_geoffrey_page_1232_year_1910
-date: July 6, 1910
+rel_trees:
+date: 6-Jul-10
 categories: marriage
 ---
 

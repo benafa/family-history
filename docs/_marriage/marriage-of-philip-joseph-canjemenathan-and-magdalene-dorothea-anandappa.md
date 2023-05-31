@@ -10,7 +10,9 @@ partner_2_last: Anandappa
 partner_2_father_first: Philip Caitan
 partner_2_father_last: Anandappa
 image_file: canjemenadan_philip_anandappa_magdelene_page_961_year_1916
-date: September 18, 1916
+rel_trees:
+ - I0749
+date: 18-Sep-16
 categories: marriage
 ---
 

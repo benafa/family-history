@@ -10,7 +10,8 @@ partner_2_last: Silva Candappa
 partner_2_father_first: Francis
 partner_2_father_last: Silva Candappa
 image_file: candappa_angelina_silva_page_1185_year_1917
-date: June 25, 1917
+rel_trees:
+date: 25-Jun-17
 categories: marriage
 ---
 

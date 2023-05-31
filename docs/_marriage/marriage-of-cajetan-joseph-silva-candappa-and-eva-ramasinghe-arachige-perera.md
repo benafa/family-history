@@ -10,7 +10,8 @@ partner_2_last: Perera
 partner_2_father_first: Martu Ramasinghe Arachige
 partner_2_father_last: Perera
 image_file: candappa_cajetan_silva_page_5_year_1909
-date: February 3, 1910
+rel_trees:
+date: 3-Feb-10
 categories: marriage
 ---
 

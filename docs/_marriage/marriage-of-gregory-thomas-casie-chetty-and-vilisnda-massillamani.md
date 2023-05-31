@@ -10,7 +10,8 @@ partner_2_last: Massillamani
 partner_2_father_first: Marshal
 partner_2_father_last: Massilamany
 image_file: casie_chetty_gregory_page_479_year_1920
-date: October 25, 1920
+rel_trees:
+date: 25-Oct-20
 categories: marriage
 ---
 

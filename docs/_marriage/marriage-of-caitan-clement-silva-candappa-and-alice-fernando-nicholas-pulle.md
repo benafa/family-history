@@ -10,7 +10,8 @@ partner_2_last: Fernando Nicholas Pulle
 partner_2_father_first: Nicholas
 partner_2_father_last: Fernandopulle
 image_file: candappa_caitan_silva_page_1281
-date: October 26, 1926
+rel_trees:
+date: 26-Oct-26
 categories: marriage
 ---
 

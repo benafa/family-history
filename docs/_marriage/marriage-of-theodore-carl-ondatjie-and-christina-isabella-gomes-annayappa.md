@@ -10,7 +10,8 @@ partner_2_last: Gomes Annayappa
 partner_2_father_first: Masel
 partner_2_father_last: Gomes Annayappa
 image_file: ondatjie_theodore_page_643
-date: April 16, 1903
+rel_trees:
+date: 16-Apr-03
 categories: marriage
 ---
 

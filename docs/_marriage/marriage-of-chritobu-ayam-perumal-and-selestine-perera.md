@@ -10,7 +10,8 @@ partner_2_last: Perera
 partner_2_father_first: Hamick
 partner_2_father_last: Perera
 image_file: perumal_chris_ayam_page_181_year_1910
-date: March 27, 1911
+rel_trees:
+date: 27-Mar-11
 categories: marriage
 ---
 

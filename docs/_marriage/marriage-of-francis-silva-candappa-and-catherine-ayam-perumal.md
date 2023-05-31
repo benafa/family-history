@@ -10,7 +10,8 @@ partner_2_last: Ayam Perumal
 partner_2_father_first: Emmanuel
 partner_2_father_last: Ayam Perumal
 image_file: candappa_francis_silva_perumal_page_994_year_1913
-date: June 11, 1913
+rel_trees:
+date: 11-Jun-13
 categories: marriage
 ---
 

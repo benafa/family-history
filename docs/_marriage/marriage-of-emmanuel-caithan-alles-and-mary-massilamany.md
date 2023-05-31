@@ -10,7 +10,10 @@ partner_2_last: Massilamany
 partner_2_father_first: Anthony Francis Sales
 partner_2_father_last: Massilamany
 image_file: alles_ec_massilamany_mary_page_1258_year_1928
-date: October 25, 1927
+rel_trees:
+ - I0748
+ - I0736
+date: 25-Oct-27
 categories: marriage
 ---
 

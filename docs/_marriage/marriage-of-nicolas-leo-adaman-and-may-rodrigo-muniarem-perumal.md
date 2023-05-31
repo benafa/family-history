@@ -10,7 +10,9 @@ partner_2_last: Rodrigo Muniarem Perumal
 partner_2_father_first: Xavier
 partner_2_father_last: Rodrigo Muniarem Perumal
 image_file: adaman_nicholas_leo_RM_perumal_mary_page_280_year_1916
-date: November 22, 1916
+rel_trees:
+ - I0727
+date: 22-Nov-16
 categories: marriage
 ---
 

@@ -10,7 +10,10 @@ partner_2_last: Adaman
 partner_2_father_first: Andrew
 partner_2_father_last: Adaman
 image_file: ramenadan_mariano_adaman_philippa_page_357
-date: January 25, 1911
+rel_trees:
+ - I0727
+ - I0735
+date: 25-Jan-11
 categories: marriage
 ---
 

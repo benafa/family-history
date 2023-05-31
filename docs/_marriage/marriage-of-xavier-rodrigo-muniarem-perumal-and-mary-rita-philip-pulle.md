@@ -10,7 +10,8 @@ partner_2_last: Philip Pulle
 partner_2_father_first: Abraham Fernando
 partner_2_father_last: Philip Pulle
 image_file: perumal_xavier_rm_page_582_year_1905
-date: January 16, 1905
+rel_trees:
+date: 16-Jan-05
 categories: marriage
 ---
 

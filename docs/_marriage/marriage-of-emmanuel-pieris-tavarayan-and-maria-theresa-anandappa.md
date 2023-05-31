@@ -10,7 +10,10 @@ partner_2_last: Anandappa
 partner_2_father_first: Emmanuel
 partner_2_father_last: Anandappa
 image_file: tavarayan_emmanuel_anandapap_mary_theresa_page_430_year_1916
-date: November 27, 1916
+rel_trees:
+ - I0406
+ - I0407
+date: 27-Nov-16
 categories: marriage
 ---
 

@@ -10,7 +10,9 @@ partner_2_last: Candappa
 partner_2_father_first: Philip Bastian
 partner_2_father_last: Candappa
 image_file: muttukisna_granville_oliver_page_975
-date: October 19, 1925
+rel_trees:
+ - I0773
+date: 19-Oct-25
 categories: marriage
 ---
 

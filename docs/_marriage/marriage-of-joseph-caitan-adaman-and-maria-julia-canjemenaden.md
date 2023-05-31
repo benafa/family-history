@@ -10,7 +10,10 @@ partner_2_last: Canjemenaden
 partner_2_father_first: Andrew Benedict
 partner_2_father_last: Canjemenaden
 image_file: adaman_joseph_canjemenaden_maria_page_402_year_1914
-date: June 24, 1914
+rel_trees:
+ - I0719
+ - I0712
+date: 24-Jun-14
 categories: marriage
 ---
 

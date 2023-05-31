@@ -10,7 +10,10 @@ partner_2_last: Mutukisna
 partner_2_father_first: Harry Theobold
 partner_2_father_last: Mutukisna
 image_file: mutukisna_florence_anandappa_basil_page_928_year_1928
-date: October 31, 1928
+rel_trees:
+ - I0841
+ - I0756
+date: 31-Oct-28
 categories: marriage
 ---
 

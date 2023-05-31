@@ -10,7 +10,9 @@ partner_2_last: Canjemenaden
 partner_2_father_first: Andrew Benedict
 partner_2_father_last: Canjemenaden
 image_file: Canjemenaden_maria_fernandopulle_francis_page_911_year_1919
-date: May 15, 1919
+rel_trees:
+ - I0719
+date: 15-May-19
 categories: marriage
 ---
 

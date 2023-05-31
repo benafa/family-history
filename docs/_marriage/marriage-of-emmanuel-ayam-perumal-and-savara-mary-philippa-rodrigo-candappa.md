@@ -10,7 +10,9 @@ partner_2_last: Rodrigo Candappa
 partner_2_father_first: Dominic Nicholas
 partner_2_father_last: Rodrigo Candappa
 image_file: perumal_emmanuel_ayam_candappa_sabina_page_1207_year_1912
-date: June 19, 1912
+rel_trees:
+ - I0634
+date: 19-Jun-12
 categories: marriage
 ---
 

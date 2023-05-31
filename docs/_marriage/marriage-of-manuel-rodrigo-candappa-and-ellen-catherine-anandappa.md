@@ -10,7 +10,9 @@ partner_2_last: Anandappa
 partner_2_father_first: Philip Caitan
 partner_2_father_last: Anandappa
 image_file: anandappa_ellen_candappa_manuel_page_863_year_1909
-date: September 22, 1909
+rel_trees:
+ - I0749
+date: 22-Sep-09
 categories: marriage
 ---
 

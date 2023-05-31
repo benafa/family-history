@@ -10,7 +10,9 @@ partner_2_last: Canjemenaden
 partner_2_father_first: Michel
 partner_2_father_last: Canjemenaden
 image_file: candappa_francis_canjemenadan_rosa_page_529
-date: January 22, 1902
+rel_trees:
+ - I0816
+date: 22-Jan-02
 categories: marriage
 ---
 

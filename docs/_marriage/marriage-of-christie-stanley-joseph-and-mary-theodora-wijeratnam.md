@@ -10,7 +10,8 @@ partner_2_last: Wijeratnam
 partner_2_father_first: Joseph Kaitan
 partner_2_father_last: Wijeratnam
 image_file: wijeratnam_mary_joseph_christie_page_1413_year_1917
-date: May 28, 1917
+rel_trees:
+date: 28-May-17
 categories: marriage
 ---
 

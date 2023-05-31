@@ -10,7 +10,10 @@ partner_2_last: Alles
 partner_2_father_first: Francis Dionysius
 partner_2_father_last: Alles
 image_file: anandappa_cecil_joseph_alles_gertrude_page_50_year_1919
-date: March 3, 1919
+rel_trees:
+ - I0736
+ - I500087
+date: 3-Mar-19
 categories: marriage
 ---
 

@@ -10,7 +10,10 @@ partner_2_last: Rodrigo
 partner_2_father_first: John
 partner_2_father_last: Rodrigo
 image_file: rodrigo_helena_candappa_xaiver_silva_page_297_year_1905
-date: February 22, 1905
+rel_trees:
+ - I0894
+ - I0382
+date: 22-Feb-05
 categories: marriage
 ---
 

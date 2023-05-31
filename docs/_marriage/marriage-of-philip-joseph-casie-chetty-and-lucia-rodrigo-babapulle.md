@@ -10,7 +10,9 @@ partner_2_last: Rodrigo Babapulle
 partner_2_father_first: Domingo
 partner_2_father_last: Rodrigo Babapulle
 image_file: casiechetty_philip_joseph_babapulle_lucia_page_1325_year_1901
-date: August 28, 1901
+rel_trees:
+ - I0243
+date: 28-Aug-01
 categories: marriage
 ---
 

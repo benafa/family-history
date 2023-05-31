@@ -10,7 +10,9 @@ partner_2_last: Laity Ramanaden
 partner_2_father_first: Emmanuel
 partner_2_father_last: Laity Ramanaden
 image_file: ramenadan_anthony_page_893
-date: December 28, 1925
+rel_trees:
+ - I0865
+date: 28-Dec-25
 categories: marriage
 ---
 

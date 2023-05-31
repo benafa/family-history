@@ -10,7 +10,10 @@ partner_2_last: Anandappa
 partner_2_father_first: Peter
 partner_2_father_last: Anandappa
 image_file: anandappa_andrew_gabriel_anandappa_mary_madelena_page_1166_year_1920
-date: May 19, 1920
+rel_trees:
+ - I500086
+ - I500031
+date: 19-May-20
 categories: marriage
 ---
 

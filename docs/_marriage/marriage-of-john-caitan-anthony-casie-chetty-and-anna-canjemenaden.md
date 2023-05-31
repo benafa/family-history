@@ -10,7 +10,9 @@ partner_2_last: Canjemenaden
 partner_2_father_first: Francis Sales
 partner_2_father_last: Canjemenaden
 image_file: casie_chetty_john_caian_anthony_canjemenadan_anna_page_985_year_1909
-date: October 27, 1909
+rel_trees:
+ - I0812
+date: 27-Oct-09
 categories: marriage
 ---
 

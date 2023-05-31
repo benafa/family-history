@@ -10,7 +10,8 @@ partner_2_last: Fernandopulle
 partner_2_father_first: Manuel
 partner_2_father_last: Fernandopulle
 image_file: candappa_caitan_page614_year_1927
-date: May 24, 1928
+rel_trees:
+date: 24-May-28
 categories: marriage
 ---
 

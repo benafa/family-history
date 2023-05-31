@@ -10,7 +10,9 @@ partner_2_last: Rodrigo Babapulle
 partner_2_father_first: Domingo
 partner_2_father_last: Rodrigo Babapulle
 image_file: casie_chetty_walter_babapulle_jane_page_206_year_1911
-date: January 20, 1913
+rel_trees:
+ - I0243
+date: 20-Jan-13
 categories: marriage
 ---
 

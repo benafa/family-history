@@ -10,7 +10,9 @@ partner_2_last: Nonis Candappa
 partner_2_father_first: Francis
 partner_2_father_last: Nonis Candappa
 image_file: perumal_joseph_rm_page_468
-date: May 18, 1927
+rel_trees:
+ - I0848
+date: 18-May-27
 categories: marriage
 ---
 

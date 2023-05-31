@@ -10,7 +10,9 @@ partner_2_last: Silva
 partner_2_father_first: Philip
 partner_2_father_last: Silva Christopher Pulle
 image_file: rodrigo_xavier_silvapulle_lucia_page_1407_year_1920
-date: January 21, 1920
+rel_trees:
+ - I0308
+date: 21-Jan-20
 categories: marriage
 ---
 

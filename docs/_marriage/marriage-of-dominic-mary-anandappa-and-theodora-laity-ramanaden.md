@@ -10,7 +10,10 @@ partner_2_last: Laity Ramanaden
 partner_2_father_first: Caitan
 partner_2_father_last: Laity Ramenadan
 image_file: anandappa_dominic_ramenadan_theodora_page_400
-date: October 30, 1912
+rel_trees:
+ - I0453
+ - I500013
+date: 30-Oct-12
 categories: marriage
 ---
 

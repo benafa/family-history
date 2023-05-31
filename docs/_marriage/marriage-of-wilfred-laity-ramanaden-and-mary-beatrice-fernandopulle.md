@@ -10,7 +10,8 @@ partner_2_last: Fernandopulle
 partner_2_father_first: Joseph Anthony
 partner_2_father_last: Fernandopulle
 image_file: ramenaden_wilfred_fernandopulle_mary_page_941_year_1930
-date: January 6, 1930
+rel_trees:
+date: 6-Jan-30
 categories: marriage
 ---
 

@@ -10,7 +10,8 @@ partner_2_last: Jurie
 partner_2_father_first: William Anthony
 partner_2_father_last: Jurie
 image_file: alles_edward_page_973
-date: October 28, 1925
+rel_trees:
+date: 28-Oct-25
 categories: marriage
 ---
 

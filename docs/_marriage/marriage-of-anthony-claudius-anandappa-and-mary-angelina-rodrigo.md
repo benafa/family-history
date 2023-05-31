@@ -10,7 +10,10 @@ partner_2_last: Rodrigo
 partner_2_father_first: Anthony
 partner_2_father_last: Rodrigo
 image_file: anandappa_anthony_claudius_rodrigo_mary_angelina_page_436_year_1917
-date: November 28, 1917
+rel_trees:
+ - I500101
+ - I500031
+date: 28-Nov-17
 categories: marriage
 ---
 

@@ -10,7 +10,9 @@ partner_2_last: Anandappa
 partner_2_father_first: Anthony Francis
 partner_2_father_last: Anandappa
 image_file: anandappa_catherine_fernandoulle_christopher_page_1116_year_1916
-date: May 10, 1916
+rel_trees:
+ - I500087
+date: 10-May-16
 categories: marriage
 ---
 

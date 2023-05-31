@@ -10,7 +10,8 @@ partner_2_last: Casie Chetty
 partner_2_father_first: Simon Mount Carmel
 partner_2_father_last: Casie Chetty
 image_file: perumal_aloyisus_casie_chetty_milicent_page_1206_year_1922
-date: February 15, 1922
+rel_trees:
+date: 15-Feb-22
 categories: marriage
 ---
 

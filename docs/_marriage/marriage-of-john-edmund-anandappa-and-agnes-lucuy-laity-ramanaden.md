@@ -10,7 +10,10 @@ partner_2_last: Laity Ramanaden
 partner_2_father_first: Paul
 partner_2_father_last: Laity Ramenadan
 image_file: anandappa_john_ramenadan_agnes_page_973_year_1916
-date: September 21, 1916
+rel_trees:
+ - I0754
+ - I0749
+date: 21-Sep-16
 categories: marriage
 ---
 

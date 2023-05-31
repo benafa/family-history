@@ -10,7 +10,9 @@ partner_2_last: Pieris Tavarayan
 partner_2_father_first: Christopher
 partner_2_father_last: Pieris Tavarayan
 image_file: canjemenadan_gabriel_tavarayan_nathalia_page_515_year_1916
-date: September 27, 1916
+rel_trees:
+ - I0761
+date: 27-Sep-16
 categories: marriage
 ---
 

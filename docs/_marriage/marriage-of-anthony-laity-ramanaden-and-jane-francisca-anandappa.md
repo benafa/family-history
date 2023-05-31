@@ -10,7 +10,9 @@ partner_2_last: Anandappa
 partner_2_father_first: Anthony Francis Sales
 partner_2_father_last: Anandappa
 image_file: ramenaden_anthony_anandappa_jane_page_1118_year_1907
-date: August 20, 1907
+rel_trees:
+ - I500087
+date: 20-Aug-07
 categories: marriage
 ---
 

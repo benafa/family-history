@@ -10,7 +10,9 @@ partner_2_last: Anandappa
 partner_2_father_first: Peter Brasze
 partner_2_father_last: Anandappa
 image_file: anandappa_salome_peruaml_anthony_page_536_year_1913
-date: September 3, 1913
+rel_trees:
+ - I500086
+date: 3-Sep-13
 categories: marriage
 ---
 

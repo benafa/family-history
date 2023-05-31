@@ -10,7 +10,8 @@ partner_2_last: Jurie
 partner_2_father_first: Anthony
 partner_2_father_last: Jurie
 image_file: canjemenadan_caitan_page_856_year_1917
-date: July 26, 1917
+rel_trees:
+date: 26-Jul-17
 categories: marriage
 ---
 

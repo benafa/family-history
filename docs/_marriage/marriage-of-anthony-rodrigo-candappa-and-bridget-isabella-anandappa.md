@@ -10,7 +10,9 @@ partner_2_last: Anandappa
 partner_2_father_first: Anthony Francis Solis
 partner_2_father_last: Anandappa
 image_file: anandappa_bridget_elizabeth_candappa_anthony_page_870_year_1903
-date: November 23, 1903
+rel_trees:
+ - I500087
+date: 23-Nov-03
 categories: marriage
 ---
 

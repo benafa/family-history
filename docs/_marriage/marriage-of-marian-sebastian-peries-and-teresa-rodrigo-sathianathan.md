@@ -10,7 +10,8 @@ partner_2_last: Rodrigo Sathianathan
 partner_2_father_first: Anthony
 partner_2_father_last: Rodrigo Sathianathan
 image_file: sathianathan_teresa_page_539_year_1922
-date: June 4, 1923
+rel_trees:
+date: 4-Jun-23
 categories: marriage
 ---
 

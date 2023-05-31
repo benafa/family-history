@@ -10,7 +10,9 @@ partner_2_last: Canjemenaden
 partner_2_father_first: Anthony
 partner_2_father_last: Canjemenaden
 image_file: canjemenaden_louisa_page_867_year_1922
-date: February 28, 1922
+rel_trees:
+ - I0752
+date: 28-Feb-22
 categories: marriage
 ---
 

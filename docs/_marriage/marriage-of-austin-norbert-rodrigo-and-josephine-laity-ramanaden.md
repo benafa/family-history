@@ -10,7 +10,9 @@ partner_2_last: Laity Ramanaden
 partner_2_father_first: Marian
 partner_2_father_last: Laity Ramanaden
 image_file: ramenadan_josephine_laity_rodrigo_austin_page_76_year_1929
-date: May 18, 1929
+rel_trees:
+ - I0735
+date: 18-May-29
 categories: marriage
 ---
 

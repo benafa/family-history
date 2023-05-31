@@ -10,7 +10,9 @@ partner_2_last: Canjemenaden
 partner_2_father_first: Andrew Benedict
 partner_2_father_last: Canjemenaden
 image_file: canjemenaden_mary_candappa_fredrick_page_587_year_1922
-date: June 21, 1922
+rel_trees:
+ - I0719
+date: 21-Jun-22
 categories: marriage
 ---
 

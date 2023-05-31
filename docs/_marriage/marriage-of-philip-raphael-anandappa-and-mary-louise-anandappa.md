@@ -10,7 +10,11 @@ partner_2_last: Anandappa
 partner_2_father_first: Anthony Xavier
 partner_2_father_last: Anandappa
 image_file: anandappa_philip_raphael_anandappa_mary_louise_page_298_year_1917
-date: October 18, 1917
+rel_trees:
+ - I500013
+ - I500100
+ - I500031
+date: 18-Oct-17
 categories: marriage
 ---
 

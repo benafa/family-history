@@ -10,7 +10,9 @@ partner_2_last: Anandappa
 partner_2_father_first: Louis Gonzaga
 partner_2_father_last: Anandappa
 image_file: candappa_sebastian_nonis_anandappa_josephine_page_639_year_1912
-date: November 23, 1914
+rel_trees:
+ - I0756
+date: 23-Nov-14
 categories: marriage
 ---
 

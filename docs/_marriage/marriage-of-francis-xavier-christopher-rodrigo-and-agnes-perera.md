@@ -10,7 +10,8 @@ partner_2_last: Perera
 partner_2_father_first: John
 partner_2_father_last: Perera
 image_file: rodrigo_francis_xavier_page_684_year_1923
-date: February 20, 1924
+rel_trees:
+date: 20-Feb-24
 categories: marriage
 ---
 

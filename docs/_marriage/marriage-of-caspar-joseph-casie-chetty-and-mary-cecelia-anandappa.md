@@ -10,7 +10,9 @@ partner_2_last: Anandappa
 partner_2_father_first: Dominic Philip
 partner_2_father_last: Anandappa
 image_file: casiechitty_caspar_josep_anandappa_mary_cecilia_page802
-date: February 16, 1927
+rel_trees:
+ - I500096
+date: 16-Feb-27
 categories: marriage
 ---
 

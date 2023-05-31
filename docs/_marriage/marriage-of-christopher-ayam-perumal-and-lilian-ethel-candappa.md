@@ -10,7 +10,9 @@ partner_2_last: Candappa
 partner_2_father_first: Philip Bastian
 partner_2_father_last: Candappa
 image_file: candappa_lilian_perumal_christopher_page_1351_year_1917
-date: May 16, 1917
+rel_trees:
+ - I0773
+date: 16-May-17
 categories: marriage
 ---
 

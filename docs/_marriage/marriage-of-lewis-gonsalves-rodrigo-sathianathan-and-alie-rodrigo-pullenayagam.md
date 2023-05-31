@@ -10,7 +10,9 @@ partner_2_last: Rodrigo Pullenayagam
 partner_2_father_first: Daniel
 partner_2_father_last: Rodrigo Pullanayagam
 image_file: sathianathan_lewis_page_1147_year_1922
-date: February 6, 1912
+rel_trees:
+ - I0898
+date: 6-Feb-12
 categories: marriage
 ---
 

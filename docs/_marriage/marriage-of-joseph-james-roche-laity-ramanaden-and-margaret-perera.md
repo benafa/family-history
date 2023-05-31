@@ -10,7 +10,8 @@ partner_2_last: Perera
 partner_2_father_first: Sinnatamby Joachim
 partner_2_father_last: Perera
 image_file: ramenadan_joseph_james_roche_page_536
-date: February 15, 1926
+rel_trees:
+date: 15-Feb-26
 categories: marriage
 ---
 

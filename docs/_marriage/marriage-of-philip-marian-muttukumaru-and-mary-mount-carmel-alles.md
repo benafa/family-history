@@ -10,7 +10,9 @@ partner_2_last: Alles
 partner_2_father_first: Francis Dionysius
 partner_2_father_last: Alles
 image_file: ales_mary_page_833_year_1903
-date: January 14, 1903
+rel_trees:
+ - I0736
+date: 14-Jan-03
 categories: marriage
 ---
 

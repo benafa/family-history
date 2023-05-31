@@ -10,7 +10,8 @@ partner_2_last: Anandappa
 partner_2_father_first: Saviel
 partner_2_father_last: Anandappa
 image_file: anandappa_maria _salome_page_930_year_1903
-date: November 28, 1903
+rel_trees:
+date: 28-Nov-03
 categories: marriage
 ---
 

@@ -10,7 +10,10 @@ partner_2_last: Rodrigo Candappa
 partner_2_father_first: Simon
 partner_2_father_last: Rodrigo Candappa
 image_file: anandappa_francis_xaiver_candappa_juliana_page_419_year_1920
-date: October 1, 1919
+rel_trees:
+ - I0795
+ - I500086
+date: 1-Oct-19
 categories: marriage
 ---
 

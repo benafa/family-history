@@ -10,7 +10,8 @@ partner_2_last: Fernando
 partner_2_father_first: Christio
 partner_2_father_last: Fernando Savery Pillai
 image_file: massilamany_page467_year_1904
-date: June 9, 1904
+rel_trees:
+date: 9-Jun-04
 categories: marriage
 ---
 

@@ -10,7 +10,8 @@ partner_2_last: Perera
 partner_2_father_first: Hendrick
 partner_2_father_last: Perera
 image_file: casie_chetty_paul_year_1908
-date: August 27, 1908
+rel_trees:
+date: 27-Aug-08
 categories: marriage
 ---
 

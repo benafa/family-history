@@ -10,7 +10,8 @@ partner_2_last: Silva
 partner_2_father_first: Domingo
 partner_2_father_last: Silva
 image_file: anandappa_xavier_silvapulle_cecilia_page_100
-date: June 3, 1902
+rel_trees:
+date: 3-Jun-02
 categories: marriage
 ---
 

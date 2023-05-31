@@ -10,7 +10,9 @@ partner_2_last: Casie Chetty
 partner_2_father_first: Gasper
 partner_2_father_last: Casie Chetty
 image_file: muttukisna_henry_casiechetty_juliana_page_1291
-date: August 21, 1901
+rel_trees:
+ - I500097
+date: 21-Aug-01
 categories: marriage
 ---
 

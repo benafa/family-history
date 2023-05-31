@@ -10,7 +10,9 @@ partner_2_last: de Rosairo
 partner_2_father_first: Anthony
 partner_2_father_last: de Rosairo
 image_file: casie_chetty_john_godwin_rosairo_jane_page_1063_year_1907
-date: August 7, 1907
+rel_trees:
+ - I0828
+date: 7-Aug-07
 categories: marriage
 ---
 

@@ -9,6 +9,14 @@ layout: single
     margin-top: 30px;
   }
 
+  p.children {
+    margin-bottom: 0px
+  }
+
+  ul.children {
+    margin-top: 5px;
+  }
+
 </style>
 
 <div> 
@@ -17,6 +25,22 @@ layout: single
   <p><b> Partner 2</b>: {{ page.partner_2_first }}  {{ page.partner_2_last }} </p>
 
   <p><b> Date</b>:  {{ page.date | date: "%-d %B %Y" }} </p>
+
+  {% if page.rel_trees %}
+      <p class="children"><b> Relevant Trees </b></p>
+      <ul class="children">
+        {% for tree in site.tree %}
+          {% assign id_parts = tree.id | split: "/" %}
+          {% assign id = id_parts | last %}
+          {% if page.rel_trees contains id %}
+            <li> 
+              <a href="{{ site.baseurl }}/tree/{{ id }}" class="link"> {{ tree.title }} </a> 
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+  {% endif %}
+
 
 </div>
  <img src="{{ site.baseurl }}/assets/images/cert/{{ page.image_file }}.jpeg" alt="{{ page.image_file }}">

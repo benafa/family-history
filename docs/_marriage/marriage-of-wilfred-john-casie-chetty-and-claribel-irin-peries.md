@@ -10,7 +10,8 @@ partner_2_last: Peries
 partner_2_father_first: Lazarus Dowey
 partner_2_father_last: Peries
 image_file: casie_chetty_wilfred_page_271_year_1909
-date: December 20, 1909
+rel_trees:
+date: 20-Dec-09
 categories: marriage
 ---
 

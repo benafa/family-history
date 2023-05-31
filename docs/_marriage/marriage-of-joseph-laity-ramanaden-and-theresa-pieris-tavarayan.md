@@ -10,7 +10,9 @@ partner_2_last: Pieris Tavarayan
 partner_2_father_first: Saviel
 partner_2_father_last: Pieris Tavarayan
 image_file: ramenadan_joseph_tavarayan_theresa_page_678
-date: February 4, 1901
+rel_trees:
+ - I500017
+date: 4-Feb-01
 categories: marriage
 ---
 

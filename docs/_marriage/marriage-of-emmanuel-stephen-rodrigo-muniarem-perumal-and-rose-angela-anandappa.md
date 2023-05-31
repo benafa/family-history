@@ -10,7 +10,11 @@ partner_2_last: Anandappa
 partner_2_father_first: Emmanuel
 partner_2_father_last: Anandappa
 image_file: anandappa_rose_angela_perumal_emmanuel_rm_page_1353_year_1920
-date: February 9, 1920
+rel_trees:
+ - I500013
+ - I500100
+ - I0112
+date: 9-Feb-20
 categories: marriage
 ---
 

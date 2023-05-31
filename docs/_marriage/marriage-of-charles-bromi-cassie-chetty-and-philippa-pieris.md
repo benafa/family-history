@@ -10,7 +10,8 @@ partner_2_last: Pieris
 partner_2_father_first: Saviel
 partner_2_father_last: Pieris Juan Pilliai
 image_file: casie_chetty_charles_bromie_pieris_philippa_page_1189_year_1917
-date: July 9, 1917
+rel_trees:
+date: 9-Jul-17
 categories: marriage
 ---
 

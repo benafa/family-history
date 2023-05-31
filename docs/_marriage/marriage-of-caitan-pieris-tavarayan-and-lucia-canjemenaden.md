@@ -10,7 +10,9 @@ partner_2_last: Canjemenaden
 partner_2_father_first: Michael
 partner_2_father_last: Canjemenaden
 image_file: tavarayen_caitan_canjemenaden_page_53_year_1911
-date: May 22, 1912
+rel_trees:
+ - I0816
+date: 22-May-12
 categories: marriage
 ---
 

@@ -10,7 +10,8 @@ partner_2_last: Rodrigo
 partner_2_father_first: Mathes
 partner_2_father_last: Rodrigo Savial Pulle
 image_file: candappa_caitan_rodrigo_maria_page_897_year_1907
-date: November 6, 1907
+rel_trees:
+date: 6-Nov-07
 categories: marriage
 ---
 

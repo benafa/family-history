@@ -10,7 +10,9 @@ partner_2_last: Gnanamuttu Pulle
 partner_2_father_first: Joseph Lewis
 partner_2_father_last: Gnamattu Pulle
 image_file: alles_joseph_page_991_year_1923
-date: January 28, 1924
+rel_trees:
+ - I0744
+date: 28-Jan-24
 categories: marriage
 ---
 

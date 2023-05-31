@@ -10,7 +10,9 @@ partner_2_last: Alles
 partner_2_father_first: Francis Joseph
 partner_2_father_last: Alles
 image_file: perumal_john_philip_rm_alles_florence_page_1031_year_1915
-date: June 7, 1915
+rel_trees:
+ - I0744
+date: 7-Jun-15
 categories: marriage
 ---
 

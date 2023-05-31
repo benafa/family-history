@@ -10,7 +10,9 @@ partner_2_last: Fernandopulle
 partner_2_father_first: Anthony Michael
 partner_2_father_last: Fernandopulle
 image_file: vindurampulle_christopher_fernandopulle_mary_page_637_year_1915
-date: October 18, 1916
+rel_trees:
+ - I0794
+date: 18-Oct-16
 categories: marriage
 ---
 

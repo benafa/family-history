@@ -10,7 +10,10 @@ partner_2_last: Laity Ramanaden
 partner_2_father_first: Paul
 partner_2_father_last: Laity Ramanaden
 image_file: anandappa_nicholas_ramenaden_sabina_page_1068_year_1910
-date: June 8, 1910
+rel_trees:
+ - I0754
+ - I0792
+date: 8-Jun-10
 categories: marriage
 ---
 

@@ -10,7 +10,10 @@ partner_2_last: Casie Chetty
 partner_2_father_first: Francis Xavier
 partner_2_father_last: Casie Chetty
 image_file: casie_chetty_alice_dominga_fernandopulle_page_1138_year_1920
-date: May 10, 1920
+rel_trees:
+ - I500097
+ - I0200
+date: 10-May-20
 categories: marriage
 ---
 

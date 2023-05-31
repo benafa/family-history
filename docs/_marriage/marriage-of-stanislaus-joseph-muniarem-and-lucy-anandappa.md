@@ -10,7 +10,10 @@ partner_2_last: Anandappa
 partner_2_father_first: Emmanuel
 partner_2_father_last: Anandappa
 image_file: muniarem_stanislaus_anandappa_lucy_page_259_year_1916
-date: November 16, 1916
+rel_trees:
+ - I0406
+ - I0407
+date: 16-Nov-16
 categories: marriage
 ---
 

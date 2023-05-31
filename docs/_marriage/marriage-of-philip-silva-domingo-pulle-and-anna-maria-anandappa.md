@@ -10,7 +10,9 @@ partner_2_last: Anandappa
 partner_2_father_first: Peter
 partner_2_father_last: Anandappa
 image_file: anandappa_anna_maria_silvapulle_philip_page_859
-date: November 24, 1901
+rel_trees:
+ - I0769
+date: 24-Nov-01
 categories: marriage
 ---
 

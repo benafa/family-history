@@ -10,7 +10,8 @@ partner_2_last: Fernando
 partner_2_father_first: Chrisogu
 partner_2_father_last: Fernando Juan Pulle
 image_file: perumal_joseph_page_842_year_1916
-date: August 16, 1916
+rel_trees:
+date: 16-Aug-16
 categories: marriage
 ---
 

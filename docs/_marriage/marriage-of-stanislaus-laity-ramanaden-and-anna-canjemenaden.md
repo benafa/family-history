@@ -10,7 +10,9 @@ partner_2_last: Canjemenaden
 partner_2_father_first: Michael
 partner_2_father_last: Canjemenaden
 image_file: ramenadan_staislaus_laity_canjemenadan_ana_page_822_year_1915
-date: September 8, 1915
+rel_trees:
+ - I0816
+date: 8-Sep-15
 categories: marriage
 ---
 

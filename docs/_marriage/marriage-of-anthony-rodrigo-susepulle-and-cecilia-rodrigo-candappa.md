@@ -10,7 +10,8 @@ partner_2_last: Rodrigo Candappa
 partner_2_father_first: Martinu
 partner_2_father_last: Rodrigo Candappa
 image_file: candappa_cecelia_page_1086_year_1908
-date: September 24, 1908
+rel_trees:
+date: 24-Sep-08
 categories: marriage
 ---
 

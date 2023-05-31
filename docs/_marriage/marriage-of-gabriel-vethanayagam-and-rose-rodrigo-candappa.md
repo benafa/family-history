@@ -10,7 +10,9 @@ partner_2_last: Rodrigo Candappa
 partner_2_father_first: Dominic Nicholas
 partner_2_father_last: Rodrigo Candappa
 image_file: candappa_rose_page_vethanayagam_gabriel_562_year_1919
-date: June 23, 1919
+rel_trees:
+ - I0634
+date: 23-Jun-19
 categories: marriage
 ---
 

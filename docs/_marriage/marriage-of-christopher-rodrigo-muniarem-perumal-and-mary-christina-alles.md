@@ -10,7 +10,9 @@ partner_2_last: Alles
 partner_2_father_first: Francis Joseph
 partner_2_father_last: Alles
 image_file: perumal_chistopher_rm_alles_christina_page_1034_year_1915
-date: June 14, 1915
+rel_trees:
+ - I0744
+date: 14-Jun-15
 categories: marriage
 ---
 

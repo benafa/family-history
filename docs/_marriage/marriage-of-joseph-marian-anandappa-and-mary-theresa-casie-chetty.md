@@ -10,7 +10,11 @@ partner_2_last: Casie Chetty
 partner_2_father_first: John Caitan Anthony
 partner_2_father_last: Casie Chetty
 image_file: anandappa_joseph_marian_casie_chetty_maria_theresa_page_500_year_1915
-date: January 31, 1916
+rel_trees:
+ - I500097
+ - I0812
+ - I500086
+date: 31-Jan-16
 categories: marriage
 ---
 

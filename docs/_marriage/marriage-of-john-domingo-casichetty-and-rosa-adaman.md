@@ -10,7 +10,10 @@ partner_2_last: Adaman
 partner_2_father_first: Andrew
 partner_2_father_last: Adaman
 image_file: casie_chetty_john_domingo_adaman_rose_page_265_year_1916
-date: November 20, 1916
+rel_trees:
+ - I0727
+ - I0734
+date: 20-Nov-16
 categories: marriage
 ---
 

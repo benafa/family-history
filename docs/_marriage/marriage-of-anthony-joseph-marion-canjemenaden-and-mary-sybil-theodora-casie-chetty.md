@@ -10,7 +10,9 @@ partner_2_last: Casie Chetty
 partner_2_father_first: William Pantallon
 partner_2_father_last: Casie Chetty
 image_file: canjemenaden_anthony_casie_chetty_thedorosa_page_600_year_1922
-date: June 18, 1923
+rel_trees:
+ - I0734
+date: 18-Jun-23
 categories: marriage
 ---
 
