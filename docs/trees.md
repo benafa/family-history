@@ -5,7 +5,7 @@ layout: single
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
 
-Discover family trees of various  Colombo Chetty families below! Please note: while the website is designed to be veiwed on any device, we recommend a laptop/tablet for the best viewing experience due to the large amount of information. We hope you enjoy exploring! 
+Discover family trees of various  Colombo Chetty families below! <a href="{{ site.baseurl }}/account" class="link">Login </a> is required if you have not already.  Please note: while the website is designed to be veiwed on any device, we recommend a laptop/tablet for the best viewing experience due to the large amount of information. We hope you enjoy exploring! 
 
 <h2> Guide: Viewing trees </h2>
 
@@ -179,4 +179,4 @@ You can <a href="{{ site.baseurl }}/people" class="link"> search a person's name
 </ul>
 
 <h1> Would you like to contribute? </h1>
-If you have family tree information you would like to share with the community, please <a href="{{ site.baseurl }}/contribute" class="link">submit this form</a>  or email <a href = "mailto: ben@colombochetty.com"  class="link">ben@colombochetty.com</a>. 
+If you have family tree information you would like to share with the community, please email <a href = "mailto: ben@colombochetty.com"  class="link">ben@colombochetty.com</a>. 

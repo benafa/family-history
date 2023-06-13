@@ -94,8 +94,8 @@ footer:
   links:
     - label: "About"
       url: "about"
-    - label: "Contribute"
-      url: "contribute"
+    - label: "Account"
+      url: "account"
     - label: "Disclaimers"
       url: "disclaimers"
 

@@ -31,7 +31,7 @@ gallery2:
 
 My name is Ben Anandappa, and I am researching and compiling the genealogy of the Colombo Chetty people. My hope is that this website will help others learn about their heritage and remind us of how connected we all are! 
 
-Please <a href="{{ site.baseurl }}/contribute" class="link">submit this form</a> or send an email to <a href = "mailto: ben@colombochetty.com"  class="link">ben@colombochetty.com</a> for any questions or contributions. I'm happy to add additional photos, documents or other information to the website. 
+Please <a href="{{ site.baseurl }}/account" class="link">sign up or login</a> to access all website content, and feel free t o send an email to <a href = "mailto: ben@colombochetty.com"  class="link">ben@colombochetty.com</a> for any questions or contributions. I'm happy to add additional photos, documents or other information to the website. 
 
 **Some background on my interest**  <br />
 My father, Romello Anandappa, is of Colombo Chetty ancestry - his parents were Benedict "Benson" Anandappa and Annabelle "Rajie" Casie Chetty. My sister, Annabelle, and I were named after his parents! 

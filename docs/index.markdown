@@ -36,7 +36,7 @@ header:
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
 
 
-Welcome to Colombo Chetty Genealogy! Explore <a href="{{ site.baseurl }}/photos" class="link">photos</a>,  <a href="{{ site.baseurl }}/records" class="link"> historical documents</a>, and <a href="{{ site.baseurl }}/trees" class="link">family trees</a> of families such as Adaman, Anandappa, Candappa, Casie Chetty, Laity Ramenaden, Tavarayan, Wigeratnam and more! To get added to our mailing list or contribute to the project, please <a href="{{ site.baseurl }}/contribute" class="link">submit this form</a> or send an email to <a href = "mailto: ben@colombochetty.com" class="link">ben@colombochetty.com</a>. 
+Welcome to Colombo Chetty Genealogy! Explore <a href="{{ site.baseurl }}/photos" class="link">photos</a>,  <a href="{{ site.baseurl }}/records" class="link"> historical documents</a>, and <a href="{{ site.baseurl }}/trees" class="link">family trees</a> of families such as Adaman, Anandappa, Candappa, Casie Chetty, Laity Ramenaden, Tavarayan, Wigeratnam and more! To get access to all content and stay up to date, please <a href="{{ site.baseurl }}/account" class="link">sign up (or login)</a>. You are welcome to send any questions or content contributions to <a href = "mailto: ben@colombochetty.com" class="link">ben@colombochetty.com</a>. 
 
 
 <p style="text-align: center;"> <b>Higlighted Profile</b>  <br /> Anthony Xavier Anandappa <br /> <i> 150th Birth Anniversary in 2023 </i> <br /> <i> First President of the Colombo Chetty Association </i> </p> 
