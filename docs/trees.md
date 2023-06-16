@@ -5,20 +5,23 @@ layout: single
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
 
-Discover family trees of various  Colombo Chetty families below! <a href="{{ site.baseurl }}/account" class="link">Login </a> is required if you have not already.  Please note: while the website is designed to be veiwed on any device, we recommend a laptop/tablet for the best viewing experience due to the large amount of information. We hope you enjoy exploring! 
+Discover family trees of various  Colombo Chetty families below! If you have not already <a href="{{ site.baseurl }}/account" class="link">logged in </a>, please do as it is necessary to view trees.  
+
+While the website is designed to be veiwed on any device, we recommend a laptop/tablet for the best viewing experience due to the large amount of information. We hope you enjoy exploring! 
 
 <h2> Guide: Viewing trees </h2>
 
-Here is a quick guide to the tree visualizations with an example screenshot: 
+Here is a quick guide to the tree visualizations with an example gif: 
 
-<img src="{{ '/assets/images/tree_example.png' | prepend:site.baseurl  }}" alt="tree_example.png" style="border: 2px solid #555">
+<img src="{{ '/assets/images/tree_example.gif' | prepend:site.baseurl  }}" alt="tree_example.gif" style="border: 2px solid #555">
 
 - &#128141; represents a marriage  
-- Each graph is a descendent tree. In this example, we have **Casper Casie Chetty** who married **Maria Theresa** (maidan name unknown) and *everyone* in this tree are descendeded from this couple. 
-- The names underneath are their children, and we can see who each child married. For example, we see that one child of Casper was **Abraham Peter Casie Chetty** and he married **Mary Clara Anandappa** (who is the daughter of Emmanuel Anandappa and Mary Nathalia Canjemenaden). 
+- Each graph is a descendent tree. In this example, we have **Anthony Anandappa** who married **Anthonia Wijeratnam** and *everyone* in this tree are descendeded from this couple. 
+- The names underneath are their children, and we can see who each child married. For example, we see that one child of Anthony was **Anthony Xavier Anandappa** and he married **Anna Pieris Tavarayan** (who is the daughter of Saviel Pieris Tavarayan and Cecilia Rodrigo). 
+- As you scroll down, a color-coated guide will show up to remind you which generation each color represents 
 - Button functionalities
-	- **+**: Click the **+** sign next to each name to see their children. For example, if we click the **+** button next to Abraham Peter Casie Chetty, we will see all of his children. This can be repeated for any names with a **+** sign 
-	- **-**: To hide children after clicking the **+** sign, click the **-**. For example, we could lick the **-** near John Caitan Anthony which would then hide his children 
+	- **+**: Click the **+** sign next to each name to see their children. For example, if we click the **+** button next to Anthony Xavier Anandappa, we will see all of his children. This can be repeated for any names with a **+** sign 
+	- **-**: To hide children after clicking the **+** sign, click the **-**. 
 	- **Expand/Collapse All**: button will allow you to view all descendents. Clicking it again will hide all descendents
 
 <h2> Guide: Search all people </h2>
