@@ -110,3 +110,8 @@ og_image: "assets/images/ax_for_logo.jpg"
 
 # for orchestration
 environment: "dev"
+
+# for comments
+comment-read: https://docs.google.com/spreadsheets/d/1C_2H4sYcH_D0UJNL_K7JXlLC8mzaT8lR9-a_OOGHFxY
+comment-post: https://docs.google.com/forms/d/e/1FAIpQLScJBOhKrRYnXFlNH5VJ0iOxWALEV4BQxwpufT6Vqm6RfGOvhw
+comment-post-fields: [ entry.1752653560, entry.1655801826, entry.2109089964, entry.1517318323]
