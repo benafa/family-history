@@ -1,6 +1,4 @@
 main:
-  - title: "Account"
-    url: /account
   - title: "About"
     url: /about
   - title: "Trees"
@@ -11,4 +9,6 @@ main:
     url: /records
   - title: "Photos"
     url: /photos
+  - title: "Account"
+    url: /account
  
