@@ -12,7 +12,7 @@ partner_2_father_last: Casie Chetty
 image_file: casie_chetty_arthur_casie_chetty_rosa_page_582_year_1916
 rel_trees:
  - I0734
-date: 9-Oct-16
+date: 1916-10-09
 categories: marriage
 ---
 

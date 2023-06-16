@@ -13,7 +13,7 @@ image_file: rodrigo_helena_candappa_xaiver_silva_page_297_year_1905
 rel_trees:
  - I0894
  - I0382
-date: 22-Feb-05
+date: 1905-02-22
 categories: marriage
 ---
 

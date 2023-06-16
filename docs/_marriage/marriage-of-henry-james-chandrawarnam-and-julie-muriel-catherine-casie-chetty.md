@@ -11,7 +11,7 @@ partner_2_father_first: Paul
 partner_2_father_last: Casie Chetty
 image_file: casie_chetty_julie_page_962_year_1922
 rel_trees:
-date: 19-Apr-22
+date: 1922-04-19
 categories: marriage
 ---
 

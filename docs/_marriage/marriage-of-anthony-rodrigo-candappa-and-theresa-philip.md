@@ -11,7 +11,7 @@ partner_2_father_first: Anthony
 partner_2_father_last: Philip
 image_file: candappa_anthony_page_721_year_1903
 rel_trees:
-date: 20-May-03
+date: 1903-05-20
 categories: marriage
 ---
 

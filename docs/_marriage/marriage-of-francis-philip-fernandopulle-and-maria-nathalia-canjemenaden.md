@@ -12,7 +12,7 @@ partner_2_father_last: Canjemenaden
 image_file: Canjemenaden_maria_fernandopulle_francis_page_911_year_1919
 rel_trees:
  - I0719
-date: 15-May-19
+date: 1919-05-15
 categories: marriage
 ---
 

@@ -1,4 +1,5 @@
 require 'csv'
+require 'date'
 
 # run this file in the terminal using the "ruby" command
 
@@ -42,7 +43,7 @@ csv_data.each do |row|
   partner_2_father_first = row['partner_2_father_first']
   partner_2_father_last = row['partner_2_father_last']
   
-  date = row['date']
+  date = Date.strptime(row['date'], '%m/%d/%Y').strftime('%Y-%m-%d')
   image_file = row['file']
 
   title = "Marriage of " + partner_1_full + " and " + partner_2_full

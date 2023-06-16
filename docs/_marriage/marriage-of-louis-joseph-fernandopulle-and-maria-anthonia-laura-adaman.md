@@ -12,7 +12,7 @@ partner_2_father_last: Adaman
 image_file: adaman_maria_fernandopulle_joseph_page_801
 rel_trees:
  - I0712
-date: 20-Nov-01
+date: 1901-11-20
 categories: marriage
 ---
 

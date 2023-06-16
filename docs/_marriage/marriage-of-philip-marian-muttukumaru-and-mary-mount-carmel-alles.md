@@ -12,7 +12,7 @@ partner_2_father_last: Alles
 image_file: ales_mary_page_833_year_1903
 rel_trees:
  - I0736
-date: 14-Jan-03
+date: 1903-01-14
 categories: marriage
 ---
 

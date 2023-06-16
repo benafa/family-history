@@ -12,7 +12,7 @@ partner_2_father_last: Vinduram Pulle
 image_file: vinduram_maria_page_1229_year_1909
 rel_trees:
  - I0854
-date: 23-Aug-09
+date: 1909-08-23
 categories: marriage
 ---
 

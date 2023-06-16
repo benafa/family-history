@@ -12,7 +12,7 @@ partner_2_father_last: Laity Ramanaden
 image_file: ramenaden_maria_page_288_year_1908
 rel_trees:
  - I0453
-date: 12-May-09
+date: 1909-05-12
 categories: marriage
 ---
 

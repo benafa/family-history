@@ -12,7 +12,7 @@ partner_2_father_last: Nonis Candappa
 image_file: ramenaden_emmanuel_page_917_year_1921
 rel_trees:
  - I0848
-date: 27-Jun-21
+date: 1921-06-27
 categories: marriage
 ---
 

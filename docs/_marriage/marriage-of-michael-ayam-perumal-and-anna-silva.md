@@ -12,7 +12,7 @@ partner_2_father_last: Silva Juan Pulle
 image_file: perumal_michael_ayam_page_499_year_1904
 rel_trees:
  - I0804
-date: 15-Jun-04
+date: 1904-06-15
 categories: marriage
 ---
 

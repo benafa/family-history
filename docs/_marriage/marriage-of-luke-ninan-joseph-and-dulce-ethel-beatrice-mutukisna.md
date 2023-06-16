@@ -11,7 +11,7 @@ partner_2_father_first: Philip Cockburn
 partner_2_father_last: Muttukisna
 image_file: mutukisna_dulce_ethel_page_11_year_1926
 rel_trees:
-date: 23-May-25
+date: 1925-05-23
 categories: marriage
 ---
 

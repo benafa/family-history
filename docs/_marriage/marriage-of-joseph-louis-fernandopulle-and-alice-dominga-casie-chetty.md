@@ -13,7 +13,7 @@ image_file: casie_chetty_alice_dominga_fernandopulle_page_1138_year_1920
 rel_trees:
  - I500097
  - I0200
-date: 10-May-20
+date: 1920-05-10
 categories: marriage
 ---
 

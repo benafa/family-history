@@ -11,7 +11,7 @@ partner_2_father_first: Anthony
 partner_2_father_last: Silva Juan Pulle
 image_file: babapulle_marshall_page_38_year_1912
 rel_trees:
-date: 15-May-12
+date: 1912-05-15
 categories: marriage
 ---
 

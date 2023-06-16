@@ -13,7 +13,7 @@ image_file: alles_dennis_perumal_rm_mary_page_1279_year_1920
 rel_trees:
  - I0740
  - I0744
-date: 2-Feb-20
+date: 1920-02-02
 categories: marriage
 ---
 

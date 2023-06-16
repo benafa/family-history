@@ -13,7 +13,7 @@ image_file: anandappa_joseph_caitan_tavarayan_magdelene_page_568_year_1909
 rel_trees:
  - I500017
  - I500013
-date: 10-Nov-09
+date: 1909-11-10
 categories: marriage
 ---
 

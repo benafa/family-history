@@ -12,7 +12,7 @@ partner_2_father_last: Anandappa
 image_file: canjemenadan_philip_anandappa_magdelene_page_961_year_1916
 rel_trees:
  - I0749
-date: 18-Sep-16
+date: 1916-09-18
 categories: marriage
 ---
 

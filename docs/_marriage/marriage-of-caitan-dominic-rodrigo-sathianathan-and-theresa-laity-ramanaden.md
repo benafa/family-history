@@ -12,7 +12,7 @@ partner_2_father_last: Laity Ramanaden
 image_file: ramenaden_theresa_caitan_sathianathan_page_314_year_1908
 rel_trees:
  - I0754
-date: 24-May-07
+date: 1907-05-24
 categories: marriage
 ---
 

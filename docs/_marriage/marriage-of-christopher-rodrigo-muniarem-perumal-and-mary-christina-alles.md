@@ -12,7 +12,7 @@ partner_2_father_last: Alles
 image_file: perumal_chistopher_rm_alles_christina_page_1034_year_1915
 rel_trees:
  - I0744
-date: 14-Jun-15
+date: 1915-06-14
 categories: marriage
 ---
 

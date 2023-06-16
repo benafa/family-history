@@ -11,7 +11,7 @@ partner_2_father_first: Joseph
 partner_2_father_last: Fernandopulle
 image_file: perumal_gabriel_page_1036_year_1914
 rel_trees:
-date: 22-Oct-13
+date: 1913-10-22
 categories: marriage
 ---
 

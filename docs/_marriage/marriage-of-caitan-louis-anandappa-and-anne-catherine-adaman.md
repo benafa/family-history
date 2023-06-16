@@ -13,7 +13,7 @@ image_file: anandappa_caitan_louis_adaman_catherine_page_405_year_1911
 rel_trees:
  - I0712
  - I500031
-date: 20-Nov-11
+date: 1911-11-20
 categories: marriage
 ---
 

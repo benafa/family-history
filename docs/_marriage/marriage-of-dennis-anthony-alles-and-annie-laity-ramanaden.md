@@ -13,7 +13,7 @@ image_file: ramenaden_annie_alles_dennis_page_1149_year_1930
 rel_trees:
  - I0785
  - I0744
-date: 1-Jul-29
+date: 1929-07-01
 categories: marriage
 ---
 

@@ -12,7 +12,7 @@ partner_2_father_last: Casie Chetty
 image_file: casie_chetty_gladys_page_394_year_1922
 rel_trees:
  - I0828
-date: 8-Aug-23
+date: 1923-08-08
 categories: marriage
 ---
 

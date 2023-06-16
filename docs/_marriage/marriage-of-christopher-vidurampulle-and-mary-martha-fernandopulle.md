@@ -12,7 +12,7 @@ partner_2_father_last: Fernandopulle
 image_file: vindurampulle_christopher_fernandopulle_mary_page_637_year_1915
 rel_trees:
  - I0794
-date: 18-Oct-16
+date: 1916-10-18
 categories: marriage
 ---
 

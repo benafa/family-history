@@ -12,7 +12,7 @@ partner_2_father_last: Rodrigo Candappa
 image_file: candappa_rose_page_vethanayagam_gabriel_562_year_1919
 rel_trees:
  - I0634
-date: 23-Jun-19
+date: 1919-06-23
 categories: marriage
 ---
 

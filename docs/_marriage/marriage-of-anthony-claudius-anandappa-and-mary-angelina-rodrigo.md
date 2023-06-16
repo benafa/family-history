@@ -13,7 +13,7 @@ image_file: anandappa_anthony_claudius_rodrigo_mary_angelina_page_436_year_1917
 rel_trees:
  - I500101
  - I500031
-date: 28-Nov-17
+date: 1917-11-28
 categories: marriage
 ---
 

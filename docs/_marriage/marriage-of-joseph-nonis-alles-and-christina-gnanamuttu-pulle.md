@@ -12,7 +12,7 @@ partner_2_father_last: Gnamattu Pulle
 image_file: alles_joseph_page_991_year_1923
 rel_trees:
  - I0744
-date: 28-Jan-24
+date: 1924-01-28
 categories: marriage
 ---
 

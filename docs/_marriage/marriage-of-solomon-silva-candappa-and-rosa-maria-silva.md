@@ -11,7 +11,7 @@ partner_2_father_first: Anthony
 partner_2_father_last: Silva Juan Pulle
 image_file: candappa_solomo_silva_page_19_year_1907
 rel_trees:
-date: 12-Jun-07
+date: 1907-06-12
 categories: marriage
 ---
 

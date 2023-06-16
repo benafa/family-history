@@ -12,7 +12,7 @@ partner_2_father_last: Rodrigo Muttupulle
 image_file: muttukisna_henry_muttupulle_sabina_page_426_year_1912
 rel_trees:
  - I0879
-date: 14-Nov-12
+date: 1912-11-14
 categories: marriage
 ---
 

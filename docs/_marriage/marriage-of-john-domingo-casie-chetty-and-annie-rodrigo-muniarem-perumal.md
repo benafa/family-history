@@ -12,7 +12,7 @@ partner_2_father_last: Rodrigo Muniarem Perumal
 image_file: casie_chitty_john_dominic_rm_perumal_anna_page_677
 rel_trees:
  - I0740
-date: 4-Feb-01
+date: 1901-02-04
 categories: marriage
 ---
 

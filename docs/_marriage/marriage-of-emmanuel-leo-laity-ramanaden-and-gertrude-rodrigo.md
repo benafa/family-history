@@ -11,7 +11,7 @@ partner_2_father_first: Michael
 partner_2_father_last: Rodrigo
 image_file: ramenaden_emmanuel_leo_rodrigo_gertrude_page_874_year_1928
 rel_trees:
-date: 24-Oct-28
+date: 1928-10-24
 categories: marriage
 ---
 

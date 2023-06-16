@@ -14,7 +14,7 @@ rel_trees:
  - I500013
  - I500100
  - I0112
-date: 9-Feb-20
+date: 1920-02-09
 categories: marriage
 ---
 

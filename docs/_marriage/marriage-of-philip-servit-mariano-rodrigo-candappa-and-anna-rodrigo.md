@@ -12,7 +12,7 @@ partner_2_father_last: Rodrigo
 image_file: candappa_philip_rodrigo_anna_page_794_year_1918
 rel_trees:
  - I0308
-date: 4-Sep-18
+date: 1918-09-04
 categories: marriage
 ---
 

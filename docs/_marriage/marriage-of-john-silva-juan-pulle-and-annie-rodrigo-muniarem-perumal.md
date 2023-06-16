@@ -11,7 +11,7 @@ partner_2_father_first: Xavier
 partner_2_father_last: Rodrigo Muniarem Perumal
 image_file: perumal_annie_pulle_john_page_1118_year_1916
 rel_trees:
-date: 15-May-16
+date: 1916-05-15
 categories: marriage
 ---
 

@@ -11,7 +11,7 @@ partner_2_father_first: Unknown
 partner_2_father_last: Unknown
 image_file: casie_chetty_gabriel_page_29_year_1916
 rel_trees:
-date: 18-Jan-17
+date: 1917-01-18
 categories: marriage
 ---
 

@@ -11,7 +11,7 @@ partner_2_father_first: Simon Sperling
 partner_2_father_last: Mutukisna
 image_file: casie_chetty_emil_ernest_mutukisna_milred_page_590_year_1924
 rel_trees:
-date: 29-Oct-24
+date: 1924-10-29
 categories: marriage
 ---
 

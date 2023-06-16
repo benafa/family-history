@@ -12,7 +12,7 @@ partner_2_father_last: Pieris Tavarayan
 image_file: ramenadan_joseph_tavarayan_theresa_page_678
 rel_trees:
  - I500017
-date: 4-Feb-01
+date: 1901-02-04
 categories: marriage
 ---
 

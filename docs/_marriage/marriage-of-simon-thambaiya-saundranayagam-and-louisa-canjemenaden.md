@@ -12,7 +12,7 @@ partner_2_father_last: Canjemenaden
 image_file: canjemenaden_louisa_page_867_year_1922
 rel_trees:
  - I0752
-date: 28-Feb-22
+date: 1922-02-28
 categories: marriage
 ---
 

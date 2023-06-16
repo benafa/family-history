@@ -13,7 +13,7 @@ image_file: anandappa_dominic_ramenadan_theodora_page_400
 rel_trees:
  - I0453
  - I500013
-date: 30-Oct-12
+date: 1912-10-30
 categories: marriage
 ---
 

@@ -11,7 +11,7 @@ partner_2_father_first: Emmanuel
 partner_2_father_last: Ramenaden
 image_file: fernandopulle_emmanual_ramenaden_regina_page_917_year_1925
 rel_trees:
-date: 13-Sep-25
+date: 1925-09-13
 categories: marriage
 ---
 

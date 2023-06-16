@@ -13,7 +13,7 @@ image_file: saverimuttu_william_anandappa_laura_marriage_certificate_page_1128e
 rel_trees:
  - I500013
  - I500100
-date: 23-Oct-01
+date: 1901-10-23
 categories: marriage
 ---
 

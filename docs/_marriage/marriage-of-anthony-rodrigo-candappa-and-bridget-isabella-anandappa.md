@@ -12,7 +12,7 @@ partner_2_father_last: Anandappa
 image_file: anandappa_bridget_elizabeth_candappa_anthony_page_870_year_1903
 rel_trees:
  - I500087
-date: 23-Nov-03
+date: 1903-11-23
 categories: marriage
 ---
 

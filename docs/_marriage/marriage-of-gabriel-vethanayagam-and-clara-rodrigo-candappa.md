@@ -12,7 +12,7 @@ partner_2_father_last: Rodrigo Candappa
 image_file: candappa_rodrigo_clara_vethanayagam_gabriel_page_346_year_1923
 rel_trees:
  - I0634
-date: 30-Jun-24
+date: 1924-06-30
 categories: marriage
 ---
 

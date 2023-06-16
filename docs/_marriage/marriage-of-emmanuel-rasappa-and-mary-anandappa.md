@@ -12,7 +12,7 @@ partner_2_father_last: Anandappa
 image_file: anandappa_mary_rasappa_emmanuel_page_1064_year_1907
 rel_trees:
  - I0749
-date: 7-Aug-07
+date: 1907-08-07
 categories: marriage
 ---
 

@@ -11,7 +11,7 @@ partner_2_father_first: Nicholas
 partner_2_father_last: Fernandopulle
 image_file: fernandopulle_maria_salome_page_869_year_1903
 rel_trees:
-date: 23-Nov-03
+date: 1903-11-23
 categories: marriage
 ---
 

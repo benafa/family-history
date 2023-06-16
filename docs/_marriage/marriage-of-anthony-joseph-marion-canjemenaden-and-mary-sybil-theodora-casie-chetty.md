@@ -12,7 +12,7 @@ partner_2_father_last: Casie Chetty
 image_file: canjemenaden_anthony_casie_chetty_thedorosa_page_600_year_1922
 rel_trees:
  - I0734
-date: 18-Jun-23
+date: 1923-06-18
 categories: marriage
 ---
 

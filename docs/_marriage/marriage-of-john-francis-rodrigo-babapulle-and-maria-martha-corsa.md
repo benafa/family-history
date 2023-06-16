@@ -11,7 +11,7 @@ partner_2_father_first: Emmanuel
 partner_2_father_last: Corsa
 image_file: babapulle_john_page_303
 rel_trees:
-date: 8-Jun-03
+date: 1903-06-08
 categories: marriage
 ---
 

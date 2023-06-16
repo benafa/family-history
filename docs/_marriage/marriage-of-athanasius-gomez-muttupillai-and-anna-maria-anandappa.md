@@ -11,7 +11,7 @@ partner_2_father_first: Austin
 partner_2_father_last: Anandappa
 image_file: anandappa_anna_maria_muttupulle_athanasias_page_499
 rel_trees:
-date: 9-Jul-03
+date: 1903-07-09
 categories: marriage
 ---
 

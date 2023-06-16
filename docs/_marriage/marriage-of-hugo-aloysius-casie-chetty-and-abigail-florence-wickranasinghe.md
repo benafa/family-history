@@ -11,7 +11,7 @@ partner_2_father_first: Wickranasinghe Wilson
 partner_2_father_last: Perera
 image_file: casiie_chety_hugo_page_1204_year_1914
 rel_trees:
-date: 3-Sep-14
+date: 1914-09-03
 categories: marriage
 ---
 

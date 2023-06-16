@@ -11,7 +11,7 @@ partner_2_father_first: Mathes
 partner_2_father_last: Silva Kandappa
 image_file: candappa_anna_silva_page_1060_year_1908
 rel_trees:
-date: 19-Oct-08
+date: 1908-10-19
 categories: marriage
 ---
 

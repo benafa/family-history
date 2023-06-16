@@ -13,7 +13,7 @@ image_file: muniarem_stanislaus_anandappa_lucy_page_259_year_1916
 rel_trees:
  - I0406
  - I0407
-date: 16-Nov-16
+date: 1916-11-16
 categories: marriage
 ---
 

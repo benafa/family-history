@@ -11,7 +11,7 @@ partner_2_father_first: Solomon
 partner_2_father_last: Adaman
 image_file: candappa_joseph_adaman_clara_page_638_year_1916
 rel_trees:
-date: 8-Nov-15
+date: 1915-11-08
 categories: marriage
 ---
 

@@ -12,7 +12,7 @@ partner_2_father_last: Laity Ramanaden
 image_file: casie_chetty_william_lourdes_latity_rameadan_page_710_year_1903
 rel_trees:
  - I0933
-date: 18-May-03
+date: 1903-05-18
 categories: marriage
 ---
 

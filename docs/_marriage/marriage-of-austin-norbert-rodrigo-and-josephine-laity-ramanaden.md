@@ -12,7 +12,7 @@ partner_2_father_last: Laity Ramanaden
 image_file: ramenadan_josephine_laity_rodrigo_austin_page_76_year_1929
 rel_trees:
  - I0735
-date: 18-May-29
+date: 1929-05-18
 categories: marriage
 ---
 

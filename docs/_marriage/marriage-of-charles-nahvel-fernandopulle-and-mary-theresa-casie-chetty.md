@@ -13,7 +13,7 @@ image_file: casie_chetty_maria_fernandopulle_charles_page_1144_year_1922
 rel_trees:
  - I500097
  - I0243
-date: 2-Feb-22
+date: 1922-02-02
 categories: marriage
 ---
 

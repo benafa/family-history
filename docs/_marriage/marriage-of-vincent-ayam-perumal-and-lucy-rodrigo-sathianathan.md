@@ -11,7 +11,7 @@ partner_2_father_first: Anthony
 partner_2_father_last: Rodrigo Sathianathan
 image_file: perumal_victor_iyam_sathianathan_lucy_page_355_year_1910
 rel_trees:
-date: 1-Feb-11
+date: 1911-02-01
 categories: marriage
 ---
 

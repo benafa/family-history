@@ -13,7 +13,7 @@ image_file: massillamany_julie_alles_emmanuel_page_247_year_1914
 rel_trees:
  - I0748
  - I0736
-date: 2-Sep-13
+date: 1913-09-02
 categories: marriage
 ---
 

@@ -14,7 +14,7 @@ rel_trees:
  - I500013
  - I500100
  - I500031
-date: 18-Oct-17
+date: 1917-10-18
 categories: marriage
 ---
 

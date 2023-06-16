@@ -12,7 +12,7 @@ partner_2_father_last: Candappa
 image_file: muttukisna_granville_oliver_page_975
 rel_trees:
  - I0773
-date: 19-Oct-25
+date: 1925-10-19
 categories: marriage
 ---
 

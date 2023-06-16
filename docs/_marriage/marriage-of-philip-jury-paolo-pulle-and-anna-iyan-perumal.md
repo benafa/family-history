@@ -11,7 +11,7 @@ partner_2_father_first: Chriistogu
 partner_2_father_last: Iyam Perumal
 image_file: peruma_anna_ayam_page_1240_year_1905
 rel_trees:
-date: 17-Aug-04
+date: 1904-08-17
 categories: marriage
 ---
 

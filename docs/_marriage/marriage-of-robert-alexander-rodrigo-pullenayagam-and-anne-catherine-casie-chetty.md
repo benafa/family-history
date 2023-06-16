@@ -12,7 +12,7 @@ partner_2_father_last: Casie Chetty
 image_file: casie_chetty_anne_catherine_page_45
 rel_trees:
  - I0734
-date: 25-Sep-01
+date: 1901-09-25
 categories: marriage
 ---
 

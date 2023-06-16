@@ -12,7 +12,7 @@ partner_2_father_last: Adaman
 image_file: adaman_rosaline_fernandopulle_christopher_page_1187_year_1907
 rel_trees:
  - I0712
-date: 2-Oct-07
+date: 1907-10-02
 categories: marriage
 ---
 

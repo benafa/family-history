@@ -13,7 +13,7 @@ image_file: anandappa_nicholas_ramenaden_sabina_page_1068_year_1910
 rel_trees:
  - I0754
  - I0792
-date: 8-Jun-10
+date: 1910-06-08
 categories: marriage
 ---
 

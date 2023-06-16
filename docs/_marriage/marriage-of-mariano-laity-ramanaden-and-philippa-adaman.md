@@ -13,7 +13,7 @@ image_file: ramenadan_mariano_adaman_philippa_page_357
 rel_trees:
  - I0727
  - I0735
-date: 25-Jan-11
+date: 1911-01-25
 categories: marriage
 ---
 

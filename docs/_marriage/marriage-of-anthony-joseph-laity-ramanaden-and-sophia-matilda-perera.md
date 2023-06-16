@@ -11,7 +11,7 @@ partner_2_father_first: Unknown
 partner_2_father_last: Perera
 image_file: ramenaden_anthony_joseph_page_742_year_1908
 rel_trees:
-date: 25-Nov-08
+date: 1908-11-25
 categories: marriage
 ---
 

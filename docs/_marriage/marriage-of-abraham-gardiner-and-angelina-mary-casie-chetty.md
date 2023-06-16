@@ -11,7 +11,7 @@ partner_2_father_first: Aloysius Mt. Carmel
 partner_2_father_last: Casie Chetty
 image_file: casie_chetty_angelina_page_389_year_1922
 rel_trees:
-date: 8-Aug-23
+date: 1923-08-08
 categories: marriage
 ---
 

@@ -12,7 +12,7 @@ partner_2_father_last: Alles
 image_file: perumal_john_philip_rm_alles_florence_page_1031_year_1915
 rel_trees:
  - I0744
-date: 7-Jun-15
+date: 1915-06-07
 categories: marriage
 ---
 

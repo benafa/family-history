@@ -11,7 +11,7 @@ partner_2_father_first: Christopher
 partner_2_father_last: Rodrigo Babapulle
 image_file: babapulle_maise_page_173_year_1923
 rel_trees:
-date: 27-Aug-24
+date: 1924-08-27
 categories: marriage
 ---
 

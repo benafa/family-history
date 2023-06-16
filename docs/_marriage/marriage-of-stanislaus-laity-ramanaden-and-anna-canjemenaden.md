@@ -12,7 +12,7 @@ partner_2_father_last: Canjemenaden
 image_file: ramenadan_staislaus_laity_canjemenadan_ana_page_822_year_1915
 rel_trees:
  - I0816
-date: 8-Sep-15
+date: 1915-09-08
 categories: marriage
 ---
 

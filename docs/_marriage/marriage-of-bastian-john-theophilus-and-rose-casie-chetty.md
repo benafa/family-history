@@ -11,7 +11,7 @@ partner_2_father_first: Daniel Mathew
 partner_2_father_last: Casie Chetty
 image_file: casie_chetty_rose_page_80_year_1916
 rel_trees:
-date: 23-Jan-18
+date: 1918-01-23
 categories: marriage
 ---
 

@@ -13,7 +13,7 @@ image_file: mutukisna_florence_anandappa_basil_page_928_year_1928
 rel_trees:
  - I0841
  - I0756
-date: 31-Oct-28
+date: 1928-10-31
 categories: marriage
 ---
 

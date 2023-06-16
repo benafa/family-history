@@ -12,7 +12,7 @@ partner_2_father_last: Rodrigo Candappa
 image_file: perumal_emmanuel_ayam_candappa_sabina_page_1207_year_1912
 rel_trees:
  - I0634
-date: 19-Jun-12
+date: 1912-06-19
 categories: marriage
 ---
 

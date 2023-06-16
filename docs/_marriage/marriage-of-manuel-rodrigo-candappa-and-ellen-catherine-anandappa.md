@@ -12,7 +12,7 @@ partner_2_father_last: Anandappa
 image_file: anandappa_ellen_candappa_manuel_page_863_year_1909
 rel_trees:
  - I0749
-date: 22-Sep-09
+date: 1909-09-22
 categories: marriage
 ---
 

@@ -12,7 +12,7 @@ partner_2_father_last: Casie Chetty
 image_file: perumal_micahel_ayam_casie_chetty_maria_page_598_year_1911
 rel_trees:
  - I0734
-date: 20-Sep-11
+date: 1911-09-20
 categories: marriage
 ---
 

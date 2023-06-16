@@ -13,7 +13,7 @@ image_file: anandappa_andrew_gabriel_anandappa_mary_madelena_page_1166_year_1920
 rel_trees:
  - I500086
  - I500031
-date: 19-May-20
+date: 1920-05-19
 categories: marriage
 ---
 

@@ -12,7 +12,7 @@ partner_2_father_last: Candappa
 image_file: candappa_matilda_page_17_year_1922
 rel_trees:
  - I0634
-date: 5-Sep-23
+date: 1923-09-05
 categories: marriage
 ---
 

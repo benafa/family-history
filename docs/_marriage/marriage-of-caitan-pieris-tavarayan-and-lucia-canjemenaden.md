@@ -12,7 +12,7 @@ partner_2_father_last: Canjemenaden
 image_file: tavarayen_caitan_canjemenaden_page_53_year_1911
 rel_trees:
  - I0816
-date: 22-May-12
+date: 1912-05-22
 categories: marriage
 ---
 

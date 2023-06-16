@@ -14,7 +14,7 @@ rel_trees:
  - I500067
  - I0828
  - I500013
-date: 28-May-28
+date: 1928-05-28
 categories: marriage
 ---
 

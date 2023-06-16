@@ -12,7 +12,7 @@ partner_2_father_last: Rodrigo Babapulle
 image_file: casie_chetty_walter_babapulle_jane_page_206_year_1911
 rel_trees:
  - I0243
-date: 20-Jan-13
+date: 1913-01-20
 categories: marriage
 ---
 

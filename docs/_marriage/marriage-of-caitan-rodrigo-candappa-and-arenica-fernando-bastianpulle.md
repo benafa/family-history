@@ -11,7 +11,7 @@ partner_2_father_first: Bastian
 partner_2_father_last: Fernando Thormupulle
 image_file: candappa_caitan_page_758_year_1914
 rel_trees:
-date: 12-Feb-14
+date: 1914-02-12
 categories: marriage
 ---
 

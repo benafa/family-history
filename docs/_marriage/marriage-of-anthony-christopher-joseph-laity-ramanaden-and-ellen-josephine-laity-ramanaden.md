@@ -12,7 +12,7 @@ partner_2_father_last: Laity Ramanaden
 image_file: ramenadan_anthony_page_893
 rel_trees:
  - I0865
-date: 28-Dec-25
+date: 1925-12-28
 categories: marriage
 ---
 

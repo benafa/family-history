@@ -12,7 +12,7 @@ partner_2_father_last: Anandappa
 image_file: candappa_sebastian_nonis_anandappa_josephine_page_639_year_1912
 rel_trees:
  - I0756
-date: 23-Nov-14
+date: 1914-11-23
 categories: marriage
 ---
 

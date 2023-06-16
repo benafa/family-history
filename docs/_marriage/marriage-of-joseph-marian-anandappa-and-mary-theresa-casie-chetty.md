@@ -14,7 +14,7 @@ rel_trees:
  - I500097
  - I0812
  - I500086
-date: 31-Jan-16
+date: 1916-01-31
 categories: marriage
 ---
 

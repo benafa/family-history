@@ -11,7 +11,7 @@ partner_2_father_first: Juan
 partner_2_father_last: Peiris Saviel Pulle
 image_file: cadaramenpulle_josep_page_1062_year_1902
 rel_trees:
-date: 29-Oct-02
+date: 1902-10-29
 categories: marriage
 ---
 

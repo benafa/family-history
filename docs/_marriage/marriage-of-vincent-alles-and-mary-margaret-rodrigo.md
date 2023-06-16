@@ -11,7 +11,7 @@ partner_2_father_first: John
 partner_2_father_last: Rodrigo
 image_file: alles_vincent_rodrigo_mary_page_754_year_1920
 rel_trees:
-date: 20-Aug-19
+date: 1919-08-20
 categories: marriage
 ---
 

@@ -11,7 +11,7 @@ partner_2_father_first: Gaetan
 partner_2_father_last: Casie Chetty
 image_file: casie_chetty_adline_page_797_year_1907
 rel_trees:
-date: 9-Oct-07
+date: 1907-10-09
 categories: marriage
 ---
 

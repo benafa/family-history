@@ -13,7 +13,7 @@ image_file: anandappa_john_ramenadan_agnes_page_973_year_1916
 rel_trees:
  - I0754
  - I0749
-date: 21-Sep-16
+date: 1916-09-21
 categories: marriage
 ---
 

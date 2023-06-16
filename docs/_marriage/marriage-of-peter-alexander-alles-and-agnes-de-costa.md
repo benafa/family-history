@@ -11,7 +11,7 @@ partner_2_father_first: Francis Bernard
 partner_2_father_last: de Costa
 image_file: alles_peter_page_615
 rel_trees:
-date: 2-Feb-24
+date: 1924-02-02
 categories: marriage
 ---
 

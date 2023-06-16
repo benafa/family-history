@@ -12,7 +12,7 @@ partner_2_father_last: Anandappa
 image_file: casiechitty_caspar_josep_anandappa_mary_cecilia_page802
 rel_trees:
  - I500096
-date: 16-Feb-27
+date: 1927-02-16
 categories: marriage
 ---
 

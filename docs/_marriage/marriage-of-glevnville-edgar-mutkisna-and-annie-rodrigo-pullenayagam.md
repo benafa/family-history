@@ -12,7 +12,7 @@ partner_2_father_last: Rodrigo Pullanayagam
 image_file: mutukisna_glenvile_edgar_page_896
 rel_trees:
  - I0898
-date: 28-Dec-25
+date: 1925-12-28
 categories: marriage
 ---
 

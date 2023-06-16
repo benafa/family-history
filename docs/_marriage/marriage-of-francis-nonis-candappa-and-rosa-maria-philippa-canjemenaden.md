@@ -12,7 +12,7 @@ partner_2_father_last: Canjemenaden
 image_file: candappa_francis_canjemenadan_rosa_page_529
 rel_trees:
  - I0816
-date: 22-Jan-02
+date: 1902-01-22
 categories: marriage
 ---
 

@@ -11,7 +11,7 @@ partner_2_father_first: Emmanuel
 partner_2_father_last: Ayam Perumal
 image_file: perumal_agnes_ayam_page_793_year_1921
 rel_trees:
-date: 3-Jun-20
+date: 1920-06-03
 categories: marriage
 ---
 

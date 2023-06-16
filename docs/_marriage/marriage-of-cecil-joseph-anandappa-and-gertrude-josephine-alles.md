@@ -13,7 +13,7 @@ image_file: anandappa_cecil_joseph_alles_gertrude_page_50_year_1919
 rel_trees:
  - I0736
  - I500087
-date: 3-Mar-19
+date: 1919-03-03
 categories: marriage
 ---
 

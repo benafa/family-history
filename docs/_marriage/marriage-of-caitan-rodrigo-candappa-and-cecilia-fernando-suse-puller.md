@@ -11,7 +11,7 @@ partner_2_father_first: Suse
 partner_2_father_last: Fernando Simon Pulle
 image_file: candappa_caitan_page_313
 rel_trees:
-date: 20-Jun-27
+date: 1927-06-20
 categories: marriage
 ---
 

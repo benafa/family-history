@@ -12,7 +12,7 @@ partner_2_father_last: Anandappa
 image_file: anandappa_salome_peruaml_anthony_page_536_year_1913
 rel_trees:
  - I500086
-date: 3-Sep-13
+date: 1913-09-03
 categories: marriage
 ---
 

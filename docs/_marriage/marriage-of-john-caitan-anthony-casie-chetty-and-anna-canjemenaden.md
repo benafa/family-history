@@ -12,7 +12,7 @@ partner_2_father_last: Canjemenaden
 image_file: casie_chetty_john_caian_anthony_canjemenadan_anna_page_985_year_1909
 rel_trees:
  - I0812
-date: 27-Oct-09
+date: 1909-10-27
 categories: marriage
 ---
 

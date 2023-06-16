@@ -11,7 +11,7 @@ partner_2_father_first: Edward Alexander
 partner_2_father_last: Casie Chetty
 image_file: casie_chetty_helen_grace_page_864_year_1925
 rel_trees:
-date: 24-Nov-24
+date: 1924-11-24
 categories: marriage
 ---
 

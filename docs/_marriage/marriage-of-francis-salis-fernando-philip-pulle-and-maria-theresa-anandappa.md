@@ -11,7 +11,7 @@ partner_2_father_first: Peter Benedict
 partner_2_father_last: Anandappa
 image_file: anandappa_maria_theresa_pulle_francis_page_574_year_1916
 rel_trees:
-date: 4-Oct-16
+date: 1916-10-04
 categories: marriage
 ---
 

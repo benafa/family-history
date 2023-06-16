@@ -11,7 +11,7 @@ partner_2_father_first: Peter
 partner_2_father_last: Rodrigo Babapulle
 image_file: babapulle_christina_muttupulle_gabriel_page_957_year_1907
 rel_trees:
-date: 18-Nov-07
+date: 1907-11-18
 categories: marriage
 ---
 

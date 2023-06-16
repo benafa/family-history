@@ -11,7 +11,7 @@ partner_2_father_first: Peter Benedict
 partner_2_father_last: Anandappa
 image_file: pulle_fernando_xavier_anandappa_rose_page_30_year_1907
 rel_trees:
-date: 19-Jun-07
+date: 1907-06-19
 categories: marriage
 ---
 

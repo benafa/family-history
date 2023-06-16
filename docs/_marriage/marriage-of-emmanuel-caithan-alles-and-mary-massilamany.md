@@ -13,7 +13,7 @@ image_file: alles_ec_massilamany_mary_page_1258_year_1928
 rel_trees:
  - I0748
  - I0736
-date: 25-Oct-27
+date: 1927-10-25
 categories: marriage
 ---
 

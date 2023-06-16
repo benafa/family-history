@@ -12,7 +12,7 @@ partner_2_father_last: Canjemenaden
 image_file: canjemenaden_mary_candappa_fredrick_page_587_year_1922
 rel_trees:
  - I0719
-date: 21-Jun-22
+date: 1922-06-21
 categories: marriage
 ---
 

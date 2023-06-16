@@ -14,7 +14,7 @@ rel_trees:
  - I500013
  - I500100
  - I0112
-date: 2-Jul-17
+date: 1917-07-02
 categories: marriage
 ---
 

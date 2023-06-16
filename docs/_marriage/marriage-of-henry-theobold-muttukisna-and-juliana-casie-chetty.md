@@ -12,7 +12,7 @@ partner_2_father_last: Casie Chetty
 image_file: muttukisna_henry_casiechetty_juliana_page_1291
 rel_trees:
  - I500097
-date: 21-Aug-01
+date: 1901-08-21
 categories: marriage
 ---
 

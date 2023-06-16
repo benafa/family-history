@@ -11,7 +11,7 @@ partner_2_father_first: S.
 partner_2_father_last: Ayam Perumal
 image_file: perumal_margaret_ayam_fernandopulle_sylvester_page_50_year_1907
 rel_trees:
-date: 24-Jun-07
+date: 1907-06-24
 categories: marriage
 ---
 

@@ -11,7 +11,7 @@ partner_2_father_first: Peter
 partner_2_father_last: Anandappa
 image_file: anandappa_joseph_anandappa_maria_page_1000_year_1908
 rel_trees:
-date: 30-Sep-08
+date: 1908-09-30
 categories: marriage
 ---
 

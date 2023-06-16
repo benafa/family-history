@@ -13,7 +13,7 @@ image_file: adaman_joseph_canjemenaden_maria_page_402_year_1914
 rel_trees:
  - I0719
  - I0712
-date: 24-Jun-14
+date: 1914-06-24
 categories: marriage
 ---
 

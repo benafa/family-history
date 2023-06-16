@@ -11,7 +11,7 @@ partner_2_father_first: Gabriel Anthoni
 partner_2_father_last: Iyam Perumal
 image_file: perumal_iyam_theresia_page_637
 rel_trees:
-date: 10-Feb-02
+date: 1902-02-10
 categories: marriage
 ---
 

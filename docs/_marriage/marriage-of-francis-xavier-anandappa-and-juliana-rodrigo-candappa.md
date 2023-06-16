@@ -13,7 +13,7 @@ image_file: anandappa_francis_xaiver_candappa_juliana_page_419_year_1920
 rel_trees:
  - I0795
  - I500086
-date: 1-Oct-19
+date: 1919-10-01
 categories: marriage
 ---
 

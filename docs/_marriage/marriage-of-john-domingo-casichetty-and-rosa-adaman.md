@@ -13,7 +13,7 @@ image_file: casie_chetty_john_domingo_adaman_rose_page_265_year_1916
 rel_trees:
  - I0727
  - I0734
-date: 20-Nov-16
+date: 1916-11-20
 categories: marriage
 ---
 

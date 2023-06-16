@@ -11,7 +11,7 @@ partner_2_father_first: Jestine William
 partner_2_father_last: Gomes
 image_file: candappa_a_page_538_year_1924
 rel_trees:
-date: 11-Sep-24
+date: 1924-09-11
 categories: marriage
 ---
 

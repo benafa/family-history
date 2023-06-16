@@ -13,7 +13,7 @@ image_file: anandappa_joseph_caetan_fernandopulle_page_1109_year_1920
 rel_trees:
  - I0794
  - I0406
-date: 5-May-20
+date: 1920-05-05
 categories: marriage
 ---
 

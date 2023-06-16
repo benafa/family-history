@@ -13,7 +13,7 @@ image_file: tavarayan_emmanuel_anandapap_mary_theresa_page_430_year_1916
 rel_trees:
  - I0406
  - I0407
-date: 27-Nov-16
+date: 1916-11-27
 categories: marriage
 ---
 
