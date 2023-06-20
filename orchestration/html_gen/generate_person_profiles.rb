@@ -67,6 +67,7 @@ csv_data.each do |row|
   File.open("/Users/benanandappa/family_tree_repos/family-history/docs/_person/#{post_name}", "w") do |file|
     file.write("---\n")
     file.write("layout: person\n")
+    file.write("search: false\n")
     file.write("title: #{title}\n")
 
     file.write("person_id: #{person_id}\n")
