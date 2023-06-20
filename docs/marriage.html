@@ -27,9 +27,9 @@ title: Marriage Records
 
 <br>
 <table id="myTable">
-  <th onclick="sortTable(0)">Partner 1</th>
-  <th onclick="sortTable(1)">Partner 2</th>
-  <th onclick="sortTable(2)">date</th>
+  <th onclick="sortTable(0)">Male</th>
+  <th onclick="sortTable(1)">Female</th>
+  <th onclick="sortTable(2)">Date</th>
 {% for marr in site.marriage %}
   <tr>
     <td> <a href="{{ marr.url | prepend:site.baseurl }}">{{ marr.partner_1_first }} {{ marr.partner_1_last }}</a></td>
