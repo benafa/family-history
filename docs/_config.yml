@@ -69,6 +69,7 @@ collections:
     output: true
   marriage:
     output: true
+    share: true
 
 
 
@@ -89,6 +90,11 @@ defaults:
       type: tree
     values:
       share: true
+  - scope:
+      path: ""
+      type: marriage
+    values:
+      share: true
 
 footer:
   links:
@@ -107,6 +113,8 @@ logo: "/assets/images/emmanuel.jpg"
 repository: "benafa/family-history"
 
 og_image: "assets/images/ax_for_logo.jpg"
+
+future: true
 
 # for orchestration
 environment: "dev"
