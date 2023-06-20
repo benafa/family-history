@@ -2,6 +2,11 @@
 layout: single
 title: List of all people 
 ---
+
+{% if site.environment != "dev" %}
+<meta name="robots" content="noindex, nofollow"><style>#__memberspace_modal_protected_page { position:fixed; top:0; left:0; width:100%; height:100%; background:#fff; z-index:2147483646; }</style><div id="__memberspace_modal_protected_page"></div>
+{% endif %}
+
 <head>
   <script src="{{ site.baseurl }}/assets/js/table.js"></script>
   <style type="text/css">
@@ -31,11 +36,6 @@ title: List of all people
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
 
 </head>
-
-{% if site.environment != "dev" %}
-<meta name="robots" content="noindex, nofollow"><style>#__memberspace_modal_protected_page { position:fixed; top:0; left:0; width:100%; height:100%; background:#fff; z-index:2147483646; }</style><div id="__memberspace_modal_protected_page"></div>
-{% endif %}
-
 
 <br>
 
