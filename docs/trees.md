@@ -5,7 +5,7 @@ layout: single
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
 
-Discover family trees of various  Colombo Chetty families below! If you have not already <a href="{{ site.baseurl }}/account" class="link">logged in </a>, please do as it is necessary to view trees.  
+Discover family trees of various  Colombo Chetty families below!
 
 While the website is designed to be veiwed on any device, we recommend a laptop/tablet for the best viewing experience due to the large amount of information. We hope you enjoy exploring! 
 
@@ -16,13 +16,13 @@ Here is a quick guide to the tree visualizations with an example gif:
 <img src="{{ '/assets/images/tree_example.gif' | prepend:site.baseurl  }}" alt="tree_example.gif" style="border: 2px solid #555">
 
 - &#128141; represents a marriage  
-- Each graph is a descendent tree. In this example, we have **Anthony Anandappa** who married **Anthonia Wijeratnam** and *everyone* in this tree are descendeded from this couple. 
+- Each graph is a descendant tree. In this example, we have **Anthony Anandappa** who married **Anthonia Wijeratnam** and *everyone* in this tree is descended from this couple. 
 - The names underneath are their children, and we can see who each child married. For example, we see that one child of Anthony was **Anthony Xavier Anandappa** and he married **Anna Pieris Tavarayan** (who is the daughter of Saviel Pieris Tavarayan and Cecilia Rodrigo). 
-- As you scroll down, a color-coated guide will show up to remind you which generation each color represents 
+- As you scroll down, a color-coded guide will show up to remind you which generation each color represents 
 - Button functionalities
 	- **+**: Click the **+** sign next to each name to see their children. For example, if we click the **+** button next to Anthony Xavier Anandappa, we will see all of his children. This can be repeated for any names with a **+** sign 
 	- **-**: To hide children after clicking the **+** sign, click the **-**. 
-	- **Expand/Collapse All**: button will allow you to view all descendents. Clicking it again will hide all descendents
+	- **Expand/Collapse All**: button will allow you to view all descendants. Clicking it again will hide all descendants
 
 <h2> Guide: Search all people </h2>
 You can <a href="{{ site.baseurl }}/people" class="link"> search a person's name here </a>
