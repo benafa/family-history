@@ -12,11 +12,17 @@ layout: membership
 
   <p><b> Petitioner relationship to deceased</b>: {{ page.relationship }} </p>
 </div>
+
+<div style="border-top-style: dotted;  padding-top: 25px">
  <img src="{{ site.baseurl }}/assets/images/gazette/{{ page.image_file }}" alt="{{ page.image_file }}">
+</div>
 
+<div style="border-top-style: dotted;  padding-top: 25px">
+ <p><b> Transcript </b>
  {{ content }}
+</div>
 
- {% include comment-section.html url=page.url %}
+{% include comment-section.html url=page.url %}
 
 <div class="back">
  <a href="{{ site.baseurl }}/newspapers" class="btn btn--primary"> View all testamentary articles </a>

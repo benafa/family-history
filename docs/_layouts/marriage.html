@@ -20,9 +20,9 @@ layout: membership
 </style>
 
 <div> 
-  <p><b> Partner 1</b>: {{ page.partner_1_first }}  {{ page.partner_1_last }} </p>
+  <p><b> Male</b>: {{ page.partner_1_first }}  {{ page.partner_1_last }} </p>
 
-  <p><b> Partner 2</b>: {{ page.partner_2_first }}  {{ page.partner_2_last }} </p>
+  <p><b> Female</b>: {{ page.partner_2_first }}  {{ page.partner_2_last }} </p>
 
   <p><b> Date</b>:  {{ page.date | date: "%-d %B %Y" }} </p>
 
@@ -43,7 +43,11 @@ layout: membership
 
 
 </div>
+
+<div style="border-top-style: dotted;  padding-top: 25px">
+
  <img src="{{ site.baseurl }}/assets/images/cert/{{ page.image_file }}.jpeg" alt="{{ page.image_file }}">
+</div>
 
  {% include comment-section.html url=page.url %}
 
