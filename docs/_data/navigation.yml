@@ -9,8 +9,8 @@ main:
     url: /trees
   - title: "Records"
     url: /records
-  - title: "Photos"
-    url: /photos
+  - title: "People"
+    url: /people
   - title: "Account"
     url: /account
  
