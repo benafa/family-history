@@ -112,9 +112,12 @@ logo: "/assets/images/emmanuel.jpg"
 
 repository: "benafa/family-history"
 
-og_image: "assets/images/ax_for_logo.jpg"
+og_image: "assets/images/emmanuel_header.png"
 
 future: true
+
+author:
+  name: "Ben Anandappa"
 
 # for orchestration
 environment: "dev"
