@@ -124,10 +124,10 @@ You can <a href="{{ site.baseurl }}/people" class="link"> search a person's name
 </ul>
 
 
-<h2> Muttukisna Families </h2>
+<h2> Mutukisna Families </h2>
 <ul>
 {% for tree in sorted_trees %}
-  {% if tree.tags contains 'muttukisna' %}
+  {% if tree.tags contains 'mutukisna' %}
   	<li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
   {% endif %}
 {% endfor %}

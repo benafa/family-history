@@ -49,6 +49,11 @@ This is an on-going project with many more avenues for research. It could not be
 **Thank you!** <br />
 I'm so grateful to everyone who has helped with this project, such as Gerard Saverimuttu, Anton Anandappa, Tony Anandappa, Bede Anandappa, Jacinta Wijeratnam, Sharma De Silva, Oswin Anandappa, Ephrem Mutukisna, Gina Rodrigopulle, Romany Perumal, Nadine Fernando, Sandra & Michael Ramenaden, Deidre Anandappa, Hillary Anandappa, Mannick Anandappa, Tamara Samarasinghe, Maureen Ramachandran, Helen Perumal,  Renee Doss, Angela Anandappa, Erma Pererapulle, Dawn Perumal, Esha Wijeyesekera, Brian Anandappa, Genny Silvapulle, Nihal Anandappa, Rozanne Perera, Mohan Fernandopulle, Doreen Anandappa, Mariette & Edgar Thevarayan, Andrea Casie Chetty, Rochelle & Delano Cadiramenpulle, Joe Saverymuthapulle, Carmen Adaman, Mahen Fernandopulle, Rachel Anandappa, Rodney Anandappa, Ruth Anandappa, Rohan Casie Chetty, Tania & Chari Perera, Jacinta Edussuriya, Berdie Fernandopulle, Indranee Sivasubramaniam, Xavier Anandappa, Nihal Anandappa, Eugene Anandappa and all of my extended family in Chicago! I apologize if I have missed you! 
 
-I appreciate everyone's support and your contributions means a lot; I'm so happy that these contributions can now be shared with more people through this website. Of course, a special thanks to my dad for your support - even though you think I'm a little crazy for going so far with this project!! 
+I appreciate everyone's support and your contributions mean a lot; I'm so happy that these contributions can now be shared with more people through this website. Of course, a special thanks to my dad for your support - even though you think I'm a little crazy for going so far with this project!! 
 
+  <h4>A note on Website Creation</h4>
+
+  <div class="disclaimer">
+  {{ site.data.ui-text[site.locale].powered_by | default: "Colombo Chetty Genealogy was created by Ben A.F. Anandappa with the help of" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>. Membership is set up through <a href="https://www.memberspace.com/"> MemberSpace</a>.
+  </div>
 

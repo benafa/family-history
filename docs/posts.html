@@ -10,7 +10,7 @@ title: Posts
 
 	p.date {
 		font-size: 13px;
-		margin-bottom: 0px;
+		margin-bottom: 10px;
 	}
 </style>
 
@@ -41,15 +41,31 @@ title: Posts
 
 
 <div class="login_prompt" style="display:none">
-	<p> <a href="{{ site.baseurl }}/account" class="link">Remember to create an account to subscribe to the latest updates</a> </p>
+	<p> <a href="{{ site.baseurl }}/account" class="link">Remember to create an account to get access to all content</a> </p>
 </div>
 
 <div>
+	
+	<b>Member-Exclusive Content</b>
 	{% for post in site.posts %}
 	<div> 
-		<a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a> 
-		<p class="date"> {{ post.date | date: "%-d %B %Y" }} </p>
-		<p class="excerpt"> {{ post.excerpt }} </p>
+		{% if post.member_only %}
+			<a href="{{ post.url | prepend:site.baseurl }}" class="link">{{ post.title }}</a> 
+			<p class="date"> {{ post.date | date: "%-d %B %Y" }} </p>
+		{% endif %}	
+	</div>
+	{% endfor %}
+	
+	<br>
+	
+	<b> General </b>
+	{% for post in site.posts %}
+	<div> 
+		{% if post.member_only %}
+		{% else %}
+			<a href="{{ post.url | prepend:site.baseurl }}" class="link">{{ post.title }}</a> 
+			<p class="date"> {{ post.date | date: "%-d %B %Y" }} </p>
+		{% endif %}	
 	</div>
 	{% endfor %}
 </div> 

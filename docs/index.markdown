@@ -36,11 +36,20 @@ header:
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
 
 
-Welcome to Colombo Chetty Genealogy! Explore <a href="{{ site.baseurl }}/records" class="link"> historical documents</a>, <a href="{{ site.baseurl }}/photos" class="link">photos</a>, and <a href="{{ site.baseurl }}/trees" class="link">family trees</a> of families such as Adaman, Anandappa, Candappa, Casie Chetty, Laity Ramenaden, Tavarayan, Wigeratnam and more! To get access to all content and stay up to date, please <a href="{{ site.baseurl }}/account" class="link">sign up (or login)</a>. You are welcome to send any questions or content contributions to <a href = "mailto: ben@colombochetty.com" class="link">ben@colombochetty.com</a>. 
+Welcome to Colombo Chetty Genealogy! The website explores the history of the Colombo Chetty Community of Sri Lanka, and it includes information of families such as Adaman, Alles, Anandappa, Candappa, Casie Chetty, Laity Ramenaden, Tavarayan, Wigeratnam and more! Explore: 
+
+- <a href="{{ site.baseurl }}/records" class="link"> Historical documents</a>: Marriage certificates and newspaper articles dating back to the early 1900s;
+
+- <a href="{{ site.baseurl }}/trees" class="link"> Family trees</a>: Tree visualizations of the eldest known ancestors within the Colombo Chetty Community;
+
+- <a href="{{ site.baseurl }}/posts" class="link"> Blog posts</a>: Posts such as Photo of the Week.
+
+To get access to all content and stay up to date, please <a href="{{ site.baseurl }}/account" class="link">sign up (or login)</a>. You are welcome to send any questions or content contributions to <a href = "mailto: ben@colombochetty.com" class="link">ben@colombochetty.com</a>. 
 
 
 <p style="text-align: center;"> <b>Higlighted Profile</b>  <br /> Anthony Xavier Anandappa <br /> <i> 150th Birth Anniversary in 2023 </i> <br /> <i> First President of the Colombo Chetty Association </i> </p> 
 
+<h2> Family Life </h2>
 Anthony Xavier Anandappa was born on **January 24th, 1873** to Anthony Anandappa and Anthonia Wijeratnam. 
 
 In the 1890s, he married Anna Pieris Tavarayan, daughter of <a href="{{ site.baseurl }}/newspaper/saviel-pieris-tavarayen.html" class="link">Saviel Pieris Tavarayan</a> and Cecilia Rodrigo. Anthony Xavier and Anna had 6 children together: 
@@ -52,12 +61,16 @@ In the 1890s, he married Anna Pieris Tavarayan, daughter of <a href="{{ site.bas
   <figcaption style="text-align: center;">Anthony Xavier Anandappa and Anna Pieris Tavarayan with their three daughters Mary, Rose and Josephine</figcaption>
 </figure>
 
+<h2> Education & Work </h2>
+
 Like many Colombo Chetties, Anthony Xavier was educated at **St. Benedict's College**. Having a talent for math, he won 2nd prize for arithmetic when studying in the the VII Standard in 1888. After his schooling, he went on to work as a broker at **Messrs. Carson & Co**. 
 
 <figure>
   <img src="assets/images/ax_anandappa_seventh_standard.png" alt="ax_anandappa_seventh_standard.png">
   <figcaption style="text-align: center;">Ceylon Observer 1888: A.X. Anandappa winning a prize while at St. Benedict's College (Note: modified from original, source: NewsBank)</figcaption>
 </figure>
+
+<h2> Role in the Church </h2>
 
 Anthony Xavier's father Anthony was **Muppu of Mater Dolorosa Church** on New Chetty Street, and Anthony Xavier took over this role on June 22, 1916.
  
@@ -71,7 +84,9 @@ Mater Dolorosa Church was built in 1820, and plaques on the church have the name
 
 {% include gallery %}
 
-Anthony Xavier was elected the first president of the **Colombo Chetty Association** in 1919, and held this role unitl 1932. Around 1930, his brother Joseph Caitan passed away, and Anthony Xavier took care of two of Joseph Caitan's children - Bede Leonard (still living) and Pius Anthony Xavier. 
+<h2> Later Life </h2>
+
+Anthony Xavier was elected the first president of the **Colombo Chetty Association** in 1919, and held this role unitl 1932. Around 1930, his brother Joseph Caitan passed away, and Anthony Xavier took care of Joseph Caitan's two youngest children - Bede Leonard (still living) and Pius Anthony Xavier. 
 
 Anthony Xaiver passed away at age 78 on **Jan 2, 1952**. While he was the eldest in his family, only one of his 8 siblings - Laura Angelina - is known to have outlived him. After his passing, his son Bonnie became Muppu of Mater Dolorsa Church.
 
