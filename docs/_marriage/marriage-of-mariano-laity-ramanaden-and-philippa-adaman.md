@@ -9,7 +9,7 @@ partner_2_first: Philippa
 partner_2_last: Adaman
 partner_2_father_first: Andrew
 partner_2_father_last: Adaman
-image_file: ramenadan_mariano_adaman_philippa_page_357
+image_file: ramenadan_mariano_adaman_philippa_page_357_year_1911
 rel_trees:
  - I0727
  - I0735

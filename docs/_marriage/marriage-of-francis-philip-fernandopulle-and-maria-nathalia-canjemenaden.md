@@ -9,7 +9,7 @@ partner_2_first: Maria Nathalia
 partner_2_last: Canjemenaden
 partner_2_father_first: Andrew Benedict
 partner_2_father_last: Canjemenaden
-image_file: Canjemenaden_maria_fernandopulle_francis_page_911_year_1919
+image_file: canjamanaden_maria_fernandopulle_francis_page_911_year_1919
 rel_trees:
  - I0719
 date: 1919-05-15

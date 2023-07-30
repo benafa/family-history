@@ -1,11 +1,11 @@
 ---
 layout: marriage
-title: Marriage of John Edmund Anandappa and Agnes Lucuy Laity Ramanaden
+title: Marriage of John Edmund Anandappa and Agnes Lucy Laity Ramanaden
 partner_1_first: John Edmund
 partner_1_last: Anandappa
 partner_1_father_first: Philip Caitan
 partner_1_father_last: Anandappa
-partner_2_first: Agnes Lucuy
+partner_2_first: Agnes Lucy
 partner_2_last: Laity Ramanaden
 partner_2_father_first: Paul
 partner_2_father_last: Laity Ramenadan
