@@ -67,6 +67,17 @@ You can <a href="{{ site.baseurl }}/people" class="link"> search a person's name
 {% endfor %}
 </ul>
 
+<h2> Caderamanpulle Families </h2>
+<ul>
+{% for tree in sorted_trees %}
+  {% assign all_tags = tree.tags | join: ' ' %}
+  {% if all_tags contains 'caderamanpulle' %}
+    <li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+
 <h2> Candappa Families </h2>
 <ul>
 {% for tree in sorted_trees %}
@@ -113,7 +124,6 @@ You can <a href="{{ site.baseurl }}/people" class="link"> search a person's name
 {% endfor %}
 </ul>
 
-
 <h2> Massillamany Families </h2>
 <ul>
 {% for tree in sorted_trees %}
@@ -123,6 +133,25 @@ You can <a href="{{ site.baseurl }}/people" class="link"> search a person's name
 {% endfor %}
 </ul>
 
+<h2> Muttupulle Families </h2>
+<ul>
+{% for tree in sorted_trees %}
+  {% assign all_tags = tree.tags | join: ' ' %}
+  {% if all_tags contains 'muttupulle' %}
+    <li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h2> Muniarem Families </h2>
+<ul>
+{% for tree in sorted_trees %}
+  {% assign all_tags = tree.tags | join: ' ' %}
+  {% if all_tags contains 'muniarem' %}
+    <li> <a href="{{ tree.url | prepend:site.baseurl }}" class="link">{{ tree.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
 
 <h2> Mutukisna Families </h2>
 <ul>
