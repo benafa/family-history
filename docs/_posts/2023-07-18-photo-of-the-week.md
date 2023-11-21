@@ -57,7 +57,7 @@ Ben and Anna married on June 14th, 1944. Let's look into who were in their weddi
 - &#x1F935;&#x1F3FE; <b>Ben Anandappa</b>. He is the son of Emmanuel Anandappa and Mary Nathalia Canjemenaden, and his full name was Lawrence Benedict Roche;
 - &#x1F468;&#x1F3FE; <b>Prosper Rodrigo Muniarem Perumal</b>. He is Ben's first cousin as his mother Maria Johanna Anandappa is Ben's father's sister. Prosper's father was J.C. Rodrigo Muniarem Perumal, and Prosper married Helen Juliana Fernandopulle;
 - &#x1F467;&#x1F3FE; <b>Marie Anandappa</b> She is Neil's brother and she married Joseph Candappa; 
-- &#x1F467;&#x1F3FE; <b>Doreen Rodrigo Muniarem Perumal</b> She is Anna's first cousin as her mother Josephine is Anna's mother's sister. Doreen's father was Anthony Dominic Rodrigo Muniarem Perumal, and Doreen married Philip Caitan Anthony Anandappa. 
+- &#x1F467;&#x1F3FE; <b>Doreen Rodrigo Muniarem Perumal</b> She is Anna's first cousin as her mother Josephine is Anna's mother's sister. Doreen's father was Anthony Dominic Rodrigo Muniarem Perumal, and Doreen married Philip Cajetan Anthony Anandappa. 
   - Fun fact: Doreen is also Prosper Perumal's niece as Prosper and Anthony Dominic were brothers.
 
 <p style="color:brown;"> <b> Share your thoughts on the photo and relationships below! </b> </p>

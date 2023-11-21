@@ -1,7 +1,7 @@
 ---
 layout: commentable
 title:  "Photo of the Week #4: Casie Chetty - Fernandopulle Wedding"
-date:   2023-07-31
+date:   2023-08-06
 member_only: true 
 permalink: members/:year/:month/:day/:title
 ---
@@ -47,43 +47,26 @@ Thanks to <b>Nirmalie Mirando</b> for providing this photo of the wedding of her
 
 <h2> <i> Who's Who? (Left to Right) </i> </h2>
 - &#x1F469;&#x1F3FE; <b>Amy Fernandopulle</b>. She is Poomani's younger sister;
-- &#x1F468;&#x1F3FE; <b>Mervyn Casie Chetty</b>. He is Joy's younger brother. Mervyn married Julie Alles, daughter of Emnmanuel Caetan Alles;
+- &#x1F468;&#x1F3FE; <b>Mervyn Casie Chetty</b>. He is Joy's younger brother. Mervyn married Julie Alles, daughter of Emmanuel  Caetan Alles;
 - &#x1F467;&#x1F3FE; <b>Flavia Casie Chetty</b>. She is the daughter of Joy's sister Beda and her husband Linus Casie Chetty;
-- &#x1F935;&#x1F3FE; <b>Joy Casie Chetty</b>. He is the son of Abraham Peter Casie Chetty and Mary Clara Anandappa. His full name is Emmanual Joseph Gasper, and he likely got his name Gasper from his paternal grandfather and Emmanuel from his maternal grandfather;
+- &#x1F935;&#x1F3FE; <b>Joy Casie Chetty</b>. He is the son of Abraham Peter Casie Chetty and Mary Clara Anandappa. His full name is Emmanuel Joseph Gasper, and he likely got his name Gasper from his paternal grandfather and Emmanuel from his maternal grandfather;
 - &#x1F470;&#x1F3FE; <b>Poomani Fernandopulle</b>. She is the daughter of Anthony Joseph Fernandopulle and Mary Chitty. Her full name is Daisy Margaret Poomani;
 - &#x1F466;&#x1F3FE; <b>Joseph</b>. He is the son of Poomani's sister Othelia;
 - &#x1F468;&#x1F3FE; <b>Zernie Serpachy</b>. He is the best man and friend of the groom;
 - &#x1F469;&#x1F3FE; <b>Rajie Casie Chetty</b>. She is Joy's sister.
    - Fun fact: Rajie's wedding was featured in the <a href="https://colombochetty.com/members/2023/07/01/photo-of-the-week" target="_blank"  style="color:#0077CC;text-decoration:none;font-weight:bold;"> first Photo of the Week </a>
 
-<p style="color:brown;"> <b> Share your thoughts on the photo and relationships below! </b> </p>
+<p style="color:brown;"> <b> Feel free to leave a comment below - share your thoughts on the photo or memories of the couple!</b> </p>
 
 
 <h2> Related Content </h2>
-Colombo Chetty Genealogy has found the testamentary articles of both Joy's father and Poomani's father - these appeared in the Ceylon Goverment Gazette and were discoverd in the archive of the <a href="https://diglib.natlib.lk/" class="link"> National Digitial Library of Sri Lanka</a>. These documents are excellent sources for validating relationships and finding the full names of ancestors. 
-
-<p style="text-align: center"> <b> Testamentary of Joy's father Abraham Peter Casie Chetty </b> </p>
-Joy (Emmanuel Joseph Gasper) is the first petitioner, followed by his brother, Mervyn, and brother-in-laws, Bede and Benson. The last petitioner is Joy's mother, Mary Clara. The four respondents are Joy's four sisters, Beda, Queenie, Rajie and Hyacinth. 
-
-<div style="border-top-style: dotted;  padding-top: 25px; border-bottom-style: dotted;">
- <img src="{{ site.baseurl }}/assets/images/gazette/ap_cc_death.png" alt="Abraham Peter Casie Chetty testamentary">
-</div>
-
-<br>
-<p style="text-align: center"> <b>  Testamentary of Poomani's father Anthony Joseph Fernandopulle </b> </p>
-Poomani (Daisy Margaret Poomani) is the fourth respondent, and her mother, Mary Anna Rasamma Juris Chitty, is the first respondent. Respondents two, three and five are Poomani's sisters Othelia, Ethel and Amy. 
-
-<div style="border-top-style: dotted;  padding-top: 25px; border-bottom-style: dotted;">
- <img src="{{ site.baseurl }}/assets/images/gazette/anthony_joseph_fernandopulle_testamentary.png" alt="Anthony Joseph Fernandopulle Testamentary">
-</div>
-<br>
-Check out more testamentary articles <a href="{{ site.baseurl }}/newspapers" class="link"> here.</a> 
-
-Explore a few other historical documents of their ancestors:
+Explore a few  historical documents of their ancestors:
 - <a href="{{ site.baseurl }}/marriage/marriage-of-abraham-peter-casiechetty-and-mary-clara-anandappa" class="link">&#x1F48D; Marriage of Joy's parents, Mary Clara Anandappa and Abraham Peter Casie Chetty </a>
+- <a href="{{ site.baseurl }}/newspaper/abraham-peter-casie-chitty-" class="link">&#x1FAA6; Testamentary of Joy's father, Abraham Peter Casie Chetty </a>
 - <a href="{{ site.baseurl }}/newspaper/mary-teresa-casie-chitty" class="link">&#x1FAA6; Testamentary of Joy's paternal grandmother, Maria Theresa (maiden name unknown) </a>
 - <a href="{{ site.baseurl }}/newspaper/maria-nathalia-anandappa-" class="link">&#x1FAA6; Testamentary of Joy's maternal grandmother, Maria Nathalia Canjemenaden
 - <a href="{{ site.baseurl }}/newspaper/emmanuel-anandappa" class="link">&#x1FAA6; Testamentary of Joy's maternal grandfather, Emmanuel Anandappa </a>
+- <a href="{{ site.baseurl }}/newspaper/anthony_joseph_ferandopulle" class="link">&#x1FAA6; Testamentary of Poomani's father, Anthony Joseph Fernandopulle </a>
 
 Here are some relevant family trees for Joy and Poomani: 
 - <a href="{{ site.baseurl }}/tree/I500097" class="link"> &#x1F333; Family Tree of Casper Casie Chetty </a>
@@ -92,7 +75,7 @@ Here are some relevant family trees for Joy and Poomani:
 
 <h2> Research Questions - <i> Can you help? </i> </h2>
 <ul>
-    <li> <i> Do you have any photos of Joy Casie Chetty, particulalry with his siblings? </i> </li>
+    <li> <i> Do you have any photos of Joy Casie Chetty, particularly with his siblings? </i> </li>
     <li> <i> Do you have any photos of Poomani Fernandopulle, particularly with her siblings? </i> </li>
     <li> <i> Who are the siblings of Poomani's father Anthony Joseph Fernandopulle?</i> </li>
     <li> <i> Who are the siblings of Joy's grandfather Casper Casie Chetty? </i> </li>
@@ -103,19 +86,23 @@ Here are some relevant family trees for Joy and Poomani:
 <h2> Tree updates </h2>
 A few new trees have been added... 
 - <a href="{{ site.baseurl }}/tree/I1087" class="link"> &#x1F333; Family Tree of Anthony Joseph Fernandopulle: </a> this is the family tree of the father of Poomani (from today's post!)
-- <a href="{{ site.baseurl }}/tree/I500097" class="link"> &#x1F333; Family Tree of Gabriel Ayam Perumal </a>
-- <a href="{{ site.baseurl }}/tree/I500097" class="link"> &#x1F333; Family Tree of Michael Caderamanpulle </a> 
+- <a href="{{ site.baseurl }}/tree/I1192" class="link"> &#x1F333; Family Tree of Gabriel Ayam Perumal </a>
+- <a href="{{ site.baseurl }}/tree/I1182" class="link"> &#x1F333; Family Tree of Michael Caderamanpulle </a> 
+- <a href="{{ site.baseurl }}/tree/I0753" class="link"> &#x1F333; Family Tree of Caitan Fernandopulle </a> 
+- <a href="{{ site.baseurl }}/tree/I1278" class="link"> &#x1F333; Family Tree of Xavier Rodrigo Muniarem </a> 
+
 
 There were also a few updates to existing trees:
-- Descendents of Francis Philip Fernandopulle and Maria Nathalia Canjemenaden have been added - they can be seen in the family trees of <a href="{{ site.baseurl }}/tree/I500097" class="link">Caitan Fernandopulle</a> and <a href="{{ site.baseurl }}/tree/I500097" class="link">Andrew Benedict Canjemenaden</a>
-- Descendents of Sabina Rodrigo Muttupulle and Henry Theobold Mutukisna have been added - they can be seen in the family trees of <a href="{{ site.baseurl }}/tree/I500097" class="link">Michael Rodrigo Muttupulle</a> and <a href="{{ site.baseurl }}/tree/I500097" class="link">Philip James Mutukisna </a>
-- Children of Maria Theresa Casie Chetty and Charles Nhavel Fernadopulle - they can be seen in the family trees of <a href="{{ site.baseurl }}/tree/I500097" class="link">Casper Casie Chetty</a> and <a href="{{ site.baseurl }}/tree/I500097" class="link">Caitan Nhavel Fernandopulle</a>
+- Descendants of Sabina Rodrigo Muttupulle and Henry Theobold Mutukisna have been added - they can be seen in the family trees of <a href="{{ site.baseurl }}/tree/I0879" class="link">Michael Rodrigo Muttupulle</a> and <a href="{{ site.baseurl }}/tree/I0841" class="link">Philip James Mutukisna</a>
+- Children of Maria Theresa Casie Chetty and Charles Nhavel Fernandopulle - they can be seen in the family trees of <a href="{{ site.baseurl }}/tree/I500097" class="link">Casper Casie Chetty</a> and <a href="{{ site.baseurl }}/tree/I0840" class="link">Caitan Nahvel Fernandopulle</a>
 
-Technical update: The family trees have been updated to show whether a person had more than one spouse. For example, in the <a href="{{ site.baseurl }}/tree/I500097" class="link"> family tree of Philip James Mutukisna</a>, we can now see that Henry Theobold Mutukisna married Juliana Casie Chetty and Sabina Rodrigo Muttupulle. 
+Feature update: The family trees have been adjusted to show whether a person had more than one spouse. For example, in the <a href="{{ site.baseurl }}/tree/I0841" class="link"> family tree of Philip James Mutukisna</a>, we can now see that Henry Theobold Mutukisna married Juliana Casie Chetty and Sabina Rodrigo Muttupulle. 
+
 <h2> Contributions </h2>
-Do you have family photos, wedding photos, portraits or other images of ancestors? We would love to include them, and the website would greatly benefit from your contributions. Please send them to <a href = "mailto: ben@colombochetty.com"  class="link">ben@colombochetty.com</a>.
 
-In addition, if you have any memories to share, know someone who might, or have relevant primary source material, definitely reach out or comment below! 
+If you have any memories to share, know someone who might, or have relevant primary source material, definitely reach out to me at  <a href = "mailto: ben@colombochetty.com" class="link">ben@colombochetty.com</a> or comment below! 
+
+For more ideas of ways to contribute, check out the new <a href="{{ site.baseurl }}/contribute" class="link">contributions page</a>.
 
 <p style="color:black;"> <b> I hope you're enjoying the website &#128516; Please continue to spread the word about Colombo Chetty Genealogy and help others connect with their heritage. Feel free to leave a comment below and click a share button! </b></p>
 
