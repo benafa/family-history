@@ -24,8 +24,22 @@ layout: single
     margin-top: 5px;
   }
 
+  #search-button {
+    background-color: #868F7B;
+  }
+
+  #dropdown div:hover {
+    background-color: #f1f1f1; /* Light grey background on hover */
+    cursor: pointer; /* Change cursor to indicate clickable */
+  }
+
 </style>
 
+<div id="search-box">
+    <input type="text" id="search-input" placeholder="Search...">
+    <input type="hidden" id="selected-id">
+    <div id="dropdown" class="dropdown-content"></div>
+</div>
 
 <div class="master">
 	<button onclick="activateAll()" class="btn btn--primary">Expand/Collapse All</button>  <br />
@@ -68,24 +82,7 @@ layout: single
 {{ content }}
 </div>
 
-  <p class="children"><b> Relevant Documents </b></p>
-  <ul class="children">
-    {% for marriage in site.marriage %}
-      {% assign id_parts = page.id | split: "/" %}
-      {% assign id = id_parts | last %}
-      {% assign marr_id_parts = marriage.id | split: "/" %}
-      {% assign marr_id = marr_id_parts | last %}
-      {% if marriage.rel_trees contains id %}
-        <li> 
-          <a href="{{ site.baseurl }}/marriage/{{ marr_id }}" class="link"> {{ marriage.title }} </a> 
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-
  {% include comment-section.html url=page.url %}
-
- <a href="{{ site.baseurl }}/trees" class="btn btn--primary"> View all trees </a>
 
 
 <script id="tree-script" src="{{ site.baseurl }}/assets/js/tree.js"></script>
