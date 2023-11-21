@@ -31,18 +31,39 @@ header:
 	h2.archive__item-title {
 		margin-top: 5px;
 	}
+  
+  #signup-button {
+    background-color: #868F7B;
+    margin-right: 20px; 
+  }
+
+  #tour-button {
+    background-color: #A86326;
+    margin-right: 20px; 
+  }
+
+  #contribute-button {
+    background-color: #593622;
+  }
 </style>
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
 
+<div style="text-align: center;">
+ <a href="{{ site.baseurl }}/account" class="dark-green btn btn--success" id="signup-button"> Login / Sign-Up</a>
+ <a href="{{ site.baseurl }}/video" class="btn btn--primary" id="tour-button"> Quick Tour </a>
+ <a href="{{ site.baseurl }}/contribute" class="btn btn--primary" id="contribute-button"> Contribute </a>
+</div>
+
 
 Welcome to Colombo Chetty Genealogy! The website explores the history of the Colombo Chetty Community of Sri Lanka, and it includes information of families such as Adaman, Alles, Anandappa, Candappa, Casie Chetty, Laity Ramenaden, Tavarayan, Wigeratnam and more! Explore: 
 
-- <a href="{{ site.baseurl }}/records" class="link"> Historical documents</a>: Marriage certificates and newspaper articles dating back to the early 1900s;
+- <a href="{{ site.baseurl }}/records" class="link"> Historical documents</a>: 150+ marriage certificates and newspaper articles dating back to the early 1900s;
 
-- <a href="{{ site.baseurl }}/trees" class="link"> Family trees</a>: Tree visualizations of the eldest known ancestors within the Colombo Chetty Community;
+- <a href="{{ site.baseurl }}/trees" class="link"> Family trees</a>: 50+ tree visualizations of the eldest known ancestors within the Colombo Chetty Community;
 
 - <a href="{{ site.baseurl }}/posts" class="link"> Blog posts</a>: Posts such as Photo of the Week.
+
 
 To get access to all content and stay up to date, please <a href="{{ site.baseurl }}/account" class="link">sign up (or login)</a>. You are welcome to send any questions or content contributions to <a href = "mailto: ben@colombochetty.com" class="link">ben@colombochetty.com</a>. 
 
