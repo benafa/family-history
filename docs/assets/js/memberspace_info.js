@@ -44,20 +44,21 @@ var getMsReadyPromise = () => new Promise((resolve, reject) => {
 });
 
 async function getMemberSpaceCredentials() {
+    //console.log("getMemberSpaceCredentials");
     var isLoggedIn = false;
     var credential_data = {
-        email: '',
-        user_id: ''
+        email: DEFAULT_EMAIL,
+        user_id: DEFAULT_ID
     };
 
     try {
         // Wait for MemberSpace to become available
         await waitForMemberSpace();
-        //console.log("MemberSpace is ready")
+        //console.log("MemberSpace is ready");
 
         const data = await getMsReadyPromise();
 
-        //console.log("MemberSpace data is ready")
+        //console.log("MemberSpace data is ready");
 
         isLoggedIn = data && data.isLoggedIn;
         if (isLoggedIn) {

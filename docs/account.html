@@ -5,6 +5,10 @@ layout: single
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
 
+<script id="fetch_data" src="{{ site.baseurl }}/assets/js/fetch_api_client.js"></script>
+<script id="fetch_data" src="{{ site.baseurl }}/assets/js/fetch_error_handling.js"></script>
+<script id="fetch_data" src="{{ site.baseurl }}/assets/js/fetch_data.js"></script>
+
 <script>
 	const handleReady = ({ detail }) => {
 	  var elements = document.getElementsByClassName('account_info');
@@ -15,7 +19,7 @@ layout: single
 	  const { memberInfo } = detail;
 
 	  if (memberInfo) {
-	    console.log(memberInfo.email)
+	    //console.log(memberInfo.email)
 	    var elements = document.getElementsByClassName('site_info');
 
         for (var i = 0; i < elements.length; i++) {
@@ -39,6 +43,13 @@ layout: single
 	}
 
 	document.addEventListener('MemberSpace.ready', handleReady);
+
+	const handleLogout = () => {
+	    console.log("Logout of flask app");
+	    apiClient.logout(logoutUrl);
+	}
+
+	document.addEventListener('MemberSpace.member.logout', handleLogout);
 </script>
 
 <div class="account_info" style="width:100%;text-align:center;display:none"><iframe src="https://colombochetty.com?msopen=/member/sign_in" width="100%" height="500" frameborder="0" seamless="true"></iframe></div>
