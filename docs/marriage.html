@@ -4,22 +4,7 @@ title: Marriage Records
 ---
 <head>
   <script src="{{ site.baseurl }}/assets/js/table.js"></script>
-  <style type="text/css">
-    .sorted-asc::after {
-      content: " ▲";
-      color: green;
-    }
-
-    .sorted-desc::after {
-      content: " ▼";
-      color: red;
-    }
-
-    .sorted-none::after {
-      content: " ▲▼";
-      color: grey;
-    }
-  </style>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/table.css" type="text/css">
 </head>
 
 <br>
@@ -40,16 +25,7 @@ title: Marriage Records
 </table>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-      // Add the 'sorted-none' class to all column headers
-      var headers = document.getElementsByTagName("th");
-      for (var i = 0; i < headers.length; i++) {
-        headers[i].classList.add("sorted-none");
-      }
-    });
-
   sortTable(2);
-
 </script>
 
 

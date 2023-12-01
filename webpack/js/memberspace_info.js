@@ -1,3 +1,6 @@
+var DEFAULT_EMAIL = ''
+var DEFAULT_ID =''
+
 // Function to wait until MemberSpace is defined
 function waitForMemberSpace() {
     return new Promise((resolve, reject) => {
@@ -43,7 +46,7 @@ var getMsReadyPromise = () => new Promise((resolve, reject) => {
     }
 });
 
-async function getMemberSpaceCredentials() {
+export async function getMemberSpaceCredentials() {
     //console.log("getMemberSpaceCredentials");
     var isLoggedIn = false;
     var credential_data = {

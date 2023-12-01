@@ -1,8 +1,10 @@
+import { getMemberSpaceCredentials } from './memberspace_info';
+
 const JWT_MISSING = "Missing cookie \"access_token_cookie\"";
 const JWT_EXPIRED = "Token has expired";
 const JWT_SIG_FAILURE = "Signature verification failed";
 
-class FetchErrorHandler {
+export class FetchErrorHandler {
     constructor(loginUrl, refreshUrl, logoutUrl, tokenName, redirectPage, apiClient) {
         this.loginUrl = loginUrl;
         this.logoutUrl = logoutUrl;

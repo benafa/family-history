@@ -1,4 +1,6 @@
-async function getPeopleList(loginUrl, refreshUrl, graphQLUrl) {
+import { getGraphQLDataWrapper } from './fetch_data';
+
+export async function getPeopleList() {
     const query = `
       {
       individuals {
@@ -10,7 +12,7 @@ async function getPeopleList(loginUrl, refreshUrl, graphQLUrl) {
     `;
 
     try {
-        const peopleData = await getGraphQLDataWrapper(graphQLUrl, query);
+        const peopleData = await getGraphQLDataWrapper(query);
         return peopleData;
     } catch (error) {
         // console.error('Error:', error);

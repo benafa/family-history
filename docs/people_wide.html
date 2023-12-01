@@ -8,25 +8,8 @@ title: List of all people (wide)
 {% endif %}
 
 <script src="{{ site.baseurl }}/assets/js/table.js"></script>
-<style type="text/css">
-  .sorted-asc::after {
-    content: " ▲";
-    color: green;
-  }
-
-  .sorted-desc::after {
-    content: " ▼";
-    color: red;
-  }
-
-  .sorted-none::after {
-    content: " ▲▼";
-    color: grey;
-  }
-</style>
-
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/table.css" type="text/css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
-
 
 <br>
 <div class="top-buttons">
@@ -62,13 +45,6 @@ title: List of all people (wide)
 </table>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-      // Add the 'sorted-none' class to all column headers
-      var headers = document.getElementsByTagName("th");
-      for (var i = 0; i < headers.length; i++) {
-        headers[i].classList.add("sorted-none");
-      }
-    });
     sortTable(1)
     sortTable(0)
 </script>

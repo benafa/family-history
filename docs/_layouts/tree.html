@@ -1,7 +1,6 @@
 ---
 layout: single
 ---
-
 {% if site.environment != "dev" %}
 <meta name="robots" content="noindex, nofollow"><style>#__memberspace_modal_protected_page { position:fixed; top:0; left:0; width:100%; height:100%; background:#fff; z-index:2147483646; }</style><div id="__memberspace_modal_protected_page"></div>
 {% endif %}
@@ -9,26 +8,10 @@ layout: single
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/tree.css" type="text/css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pagination-hidden.css" type="text/css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
-
-<style>
-
-  div.back {
-    margin-top: 30px;
-  }
-
-  p.children {
-    margin-bottom: 0px
-  }
-
-  ul.children {
-    margin-top: 5px;
-  }
-
-</style>
-
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/layout_common.css" type="text/css">
 
 <div class="master">
-	<button onclick="activateAll()" class="btn btn--primary">Expand/Collapse All</button>  <br />
+	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
 </div>
 
 <div class="sticky-bar bar-hidden">
@@ -65,23 +48,23 @@ layout: single
 </div>
 
 <div id="tree-content">
-{{ content }}
+	{{ content }}
 </div>
 
-  <p class="children"><b> Relevant Documents </b></p>
-  <ul class="children">
-    {% for marriage in site.marriage %}
-      {% assign id_parts = page.id | split: "/" %}
-      {% assign id = id_parts | last %}
-      {% assign marr_id_parts = marriage.id | split: "/" %}
-      {% assign marr_id = marr_id_parts | last %}
-      {% if marriage.rel_trees contains id %}
-        <li> 
-          <a href="{{ site.baseurl }}/marriage/{{ marr_id }}" class="link"> {{ marriage.title }} </a> 
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+<p class="children"><b> Relevant Documents </b></p>
+<ul class="children">
+  {% for marriage in site.marriage %}
+    {% assign id_parts = page.id | split: "/" %}
+    {% assign id = id_parts | last %}
+    {% assign marr_id_parts = marriage.id | split: "/" %}
+    {% assign marr_id = marr_id_parts | last %}
+    {% if marriage.rel_trees contains id %}
+      <li> 
+        <a href="{{ site.baseurl }}/marriage/{{ marr_id }}" class="link"> {{ marriage.title }} </a> 
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
 
  {% include comment-section.html url=page.url %}
 
