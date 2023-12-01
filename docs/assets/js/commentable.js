@@ -1,0 +1,2 @@
+document.addEventListener("MemberSpace.ready",(({detail:e})=>{const{memberInfo:l}=e;if(l){console.log(l.email);for(var t=document.getElementsByClassName("comment-allowed"),n=0;n<t.length;n++)t[n].style.display="block";for(t=document.getElementsByClassName("comment-denied"),n=0;n<t.length;n++)t[n].style.display="none"}else{for(t=document.getElementsByClassName("comment-allowed"),n=0;n<t.length;n++)t[n].style.display="none";for(t=document.getElementsByClassName("comment-denied"),n=0;n<t.length;n++)t[n].style.display="block"}}));
+//# sourceMappingURL=commentable.js.map

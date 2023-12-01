@@ -1,4 +1,4 @@
-class ApiClient {
+export class ApiClient {
     async login(loginUrl, credential_data) {
         const loginResponse = await fetch(loginUrl, {
             method: 'POST',

@@ -8,22 +8,9 @@ title: List of all people
 {% endif %}
 
 <script src="{{ site.baseurl }}/assets/js/table.js"></script>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/table.css" type="text/css">
+
 <style type="text/css">
-  .sorted-asc::after {
-    content: " ▲";
-    color: green;
-  }
-
-  .sorted-desc::after {
-    content: " ▼";
-    color: red;
-  }
-
-  .sorted-none::after {
-    content: " ▲▼";
-    color: grey;
-  }
-
   .top-buttons {
     display: flex; /* Use Flexbox layout */
     align-items: center; /* Vertically align the button and the <a> element */
@@ -33,7 +20,6 @@ title: List of all people
 </style>
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
-
 
 <br>
 
@@ -62,13 +48,6 @@ title: List of all people
 </table>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-      // Add the 'sorted-none' class to all column headers
-      var headers = document.getElementsByTagName("th");
-      for (var i = 0; i < headers.length; i++) {
-        headers[i].classList.add("sorted-none");
-      }
-    });
     sortTable(0)
 </script>
 

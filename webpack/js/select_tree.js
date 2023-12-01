@@ -1,3 +1,8 @@
+import { getPeopleList } from './list_of_people';
+import { setTreeData } from './set_tree';
+import { activateAll } from './tree';
+
+
 document.addEventListener('DOMContentLoaded', async function() {
     await initDynamicTree();
 });
@@ -8,20 +13,26 @@ async function initDynamicTree() {
     const searchInput = document.getElementById('search-input');
     const dropdown = document.getElementById('dropdown');
     const selectedIdInput = document.getElementById('selected-id');
+    document.getElementById('activate_all').addEventListener('click', function() {
+          activateAll();
+      });
+    console.log("Hi")
 
     try {
         // init view
-        await setTreeData(loginUrl, refreshUrl, restUrlBase, "I0001");
+        await setTreeData("I0001");
         const people = await loadAndSortPeople();
         searchInput.addEventListener('input', () => handleInput(searchInput, dropdown, selectedIdInput, people));
         searchInput.addEventListener('blur', () => handleBlur(dropdown));
     } catch(error) {
+        //console.log("initDynamicTree failed")
+        //console.log(error)
         //throw error
     } 
 }
 
 async function loadAndSortPeople() {
-    const people_res = await getPeopleList(loginUrl, refreshUrl, graphQLUrl);
+    const people_res = await getPeopleList();
     const people = people_res.data.individuals;
 
     return people.sort((a, b) => sortPeopleByName(a, b));
@@ -59,7 +70,7 @@ function updateDropdown(searchInput, dropdown, selectedIdInput, filteredPeople, 
         selectedIdInput.value = filteredPeople[0].id;
         searchInput.value = `${filteredPeople[0].GIVN} ${filteredPeople[0].SURN} (${filteredPeople[0].id})`;
         dropdown.style.display = 'none';
-        setTreeData(loginUrl, refreshUrl, restUrlBase, filteredPeople[0].id);
+        setTreeData(filteredPeople[0].id);
     } else if (inputValue.length > 1) {
         populateDropdown(dropdown, searchInput, selectedIdInput, filteredPeople);
     } else {
@@ -83,7 +94,7 @@ function selectPerson(person, searchInput, selectedIdInput, dropdown) {
     selectedIdInput.value = person.id; // Store the selected ID
     dropdown.innerHTML = '';
     dropdown.style.display = 'none';
-    setTreeData(loginUrl, refreshUrl, restUrlBase, person.id);
+    setTreeData(person.id);
 }
 
 function handleBlur(dropdown) {

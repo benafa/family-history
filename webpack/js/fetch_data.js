@@ -1,5 +1,9 @@
-const urlBase = 'https://api.colombochetty.com/'
-//const urlBase = 'http://localhost:5000/'
+import { ApiClient } from './fetch_api_client';
+import { FetchErrorHandler } from './fetch_error_handling';
+
+
+//const urlBase = 'https://api.colombochetty.com/'
+const urlBase = 'http://localhost:5000/'
 const loginUrl = urlBase + 'api/authenticate';
 const logoutUrl = urlBase + 'auth/logout';
 const refreshUrl = urlBase + 'auth/refresh_token';
@@ -9,14 +13,12 @@ const restUrlBase = urlBase + 'api/tree/';
 const MEMBERSPACE_TOKEN = "MemberSpaceWidget.token"
 const ACCOUNT_PAGE = "/account"
 
-DEFAULT_EMAIL = ''
-DEFAULT_ID =''
-
-
 const apiClient = new ApiClient();
 const errorHandler = new FetchErrorHandler(loginUrl, refreshUrl, logoutUrl, MEMBERSPACE_TOKEN, ACCOUNT_PAGE, apiClient);
 
-async function getRestDataWrapper(restUrl) {
+export async function getRestDataWrapper(url_end) {
+    var restUrl = restUrlBase + url_end;
+
     try {
         return await apiClient.getRestData(restUrl);
     } catch (error) {
@@ -26,7 +28,7 @@ async function getRestDataWrapper(restUrl) {
     }
 }
 
-async function getGraphQLDataWrapper(graphQLUrl, query) {
+export async function getGraphQLDataWrapper(query) {
     try {
         return await apiClient.getGraphQLData(graphQLUrl, query);
     } catch (error) {
@@ -35,3 +37,5 @@ async function getGraphQLDataWrapper(graphQLUrl, query) {
         return await errorHandler.handleGraphQLError(error, graphQLUrl, query);
     }
 }
+
+export { apiClient, logoutUrl }

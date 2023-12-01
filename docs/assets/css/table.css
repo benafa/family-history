@@ -1,0 +1,14 @@
+.sorted-asc::after {
+  content: " ▲";
+  color: green;
+}
+
+.sorted-desc::after {
+  content: " ▼";
+  color: red;
+}
+
+.sorted-none::after {
+  content: " ▲▼";
+  color: grey;
+}
