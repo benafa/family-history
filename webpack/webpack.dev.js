@@ -7,7 +7,7 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   plugins: [
     new Dotenv({
-      defaut: `./.env.common`,
+      defaults: `./.env.defaults`,
       path: `./.env.dev`, // Path to .env file
       systemvars: true, // to set dev configs in terminal 
     }),

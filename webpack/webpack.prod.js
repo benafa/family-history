@@ -12,7 +12,7 @@ module.exports = merge(common, {
       cleanOnceBeforeBuildPatterns: ['js/*', 'css/*'], // Clean only js and css subdirectories
     }),
     new Dotenv({
-       defaut: `./.env.common`,
+      defaults: `./.env.defaults`,
       path: `./.env.prod`, // Path to .env file 
     }),
   ],
