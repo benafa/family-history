@@ -1,5 +1,5 @@
-var DEFAULT_EMAIL = ''
-var DEFAULT_ID =''
+var DEFAULT_EMAIL = process.env.DEFAULT_EMAIL || '';
+var DEFAULT_ID = process.env.DEFAULT_ID || '';
 
 // Function to wait until MemberSpace is defined
 function waitForMemberSpace() {

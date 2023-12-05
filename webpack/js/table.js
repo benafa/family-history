@@ -1,3 +1,4 @@
+
 function sortTable(column) {
   const table = document.getElementById("myTable");
   const headers = table.querySelectorAll("th");
