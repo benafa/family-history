@@ -1,17 +1,15 @@
 import { ApiClient } from './fetch_api_client';
 import { FetchErrorHandler } from './fetch_error_handling';
 
-
-//const urlBase = 'https://api.colombochetty.com/'
-const urlBase = 'http://localhost:5000/'
+const urlBase = process.env.URL_BASE || 'http://localhost:5000/';
 const loginUrl = urlBase + 'api/authenticate';
 const logoutUrl = urlBase + 'auth/logout';
 const refreshUrl = urlBase + 'auth/refresh_token';
 const graphQLUrl = urlBase + 'graphql';
 const restUrlBase = urlBase + 'api/tree/';
 
-const MEMBERSPACE_TOKEN = "MemberSpaceWidget.token"
-const ACCOUNT_PAGE = "/account"
+const MEMBERSPACE_TOKEN = process.env.MEMBERSPACE_TOKEN || "MemberSpaceWidget.token"
+const ACCOUNT_PAGE = process.env.ACCOUNT_PAGE ||  "/account"
 
 const apiClient = new ApiClient();
 const errorHandler = new FetchErrorHandler(loginUrl, refreshUrl, logoutUrl, MEMBERSPACE_TOKEN, ACCOUNT_PAGE, apiClient);

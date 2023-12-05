@@ -2,7 +2,6 @@ import { getPeopleList } from './list_of_people';
 import { setTreeData } from './set_tree';
 import { activateAll } from './tree';
 
-
 document.addEventListener('DOMContentLoaded', async function() {
     await initDynamicTree();
 });
@@ -16,7 +15,6 @@ async function initDynamicTree() {
     document.getElementById('activate_all').addEventListener('click', function() {
           activateAll();
       });
-    console.log("Hi")
 
     try {
         // init view
