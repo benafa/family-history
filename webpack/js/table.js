@@ -1,42 +1,9 @@
-
-function sortTable(column) {
-  const table = document.getElementById("myTable");
-  const headers = table.querySelectorAll("th");
-  const rows = Array.from(table.querySelectorAll("tr:not(:first-child)"));
-  const currentHeader = headers[column];
-
-  // Determine the sort direction
-  const currentDir = currentHeader.dataset.sortDir || "none";
-  const newDir = currentDir === "asc" ? "desc" : "asc";
-
-  // Remove sorted classes from all headers and set the new sort direction
-  headers.forEach((header) => {
-    header.classList.remove("sorted-asc", "sorted-desc", "sorted-none");
-    header.dataset.sortDir = "none";
-    header.classList.add("sorted-none");
-  });
-
-  currentHeader.classList.remove("sorted-none");
-  currentHeader.classList.add(`sorted-${newDir}`);
-  currentHeader.dataset.sortDir = newDir;
-
-  // Sort the rows array based on the selected column
-  rows.sort((a, b) => {
-    const x = a.cells[column].textContent.trim();
-    const y = b.cells[column].textContent.trim();
-    const compareVal = isNaN(x) ? x.localeCompare(y) : parseFloat(x) - parseFloat(y);
-
-    return newDir === "asc" ? compareVal : -compareVal;
-  });
-
-  // Reinsert the sorted rows into the table
-  for (const row of rows) {
-    table.tBodies[0].appendChild(row);
-  }
-}
-
 window.addEventListener("DOMContentLoaded", function () {
-   // Add the 'sorted-none' class to all column headers
+  initTable();
+});
+
+export function initTable() {
+     // Add the 'sorted-none' class to all column headers
   var headers = document.getElementsByTagName("th");
   for (var i = 0; i < headers.length; i++) {
     headers[i].classList.add("sorted-none");
@@ -108,7 +75,44 @@ window.addEventListener("DOMContentLoaded", function () {
       }
     }, 100)
   );
-});
+}
+
+function sortTable(column) {
+  const table = document.getElementById("myTable");
+  const headers = table.querySelectorAll("th");
+  const rows = Array.from(table.querySelectorAll("tr:not(:first-child)"));
+  const currentHeader = headers[column];
+
+  // Determine the sort direction
+  const currentDir = currentHeader.dataset.sortDir || "none";
+  const newDir = currentDir === "asc" ? "desc" : "asc";
+
+  // Remove sorted classes from all headers and set the new sort direction
+  headers.forEach((header) => {
+    header.classList.remove("sorted-asc", "sorted-desc", "sorted-none");
+    header.dataset.sortDir = "none";
+    header.classList.add("sorted-none");
+  });
+
+  currentHeader.classList.remove("sorted-none");
+  currentHeader.classList.add(`sorted-${newDir}`);
+  currentHeader.dataset.sortDir = newDir;
+
+  // Sort the rows array based on the selected column
+  rows.sort((a, b) => {
+    const x = a.cells[column].textContent.trim();
+    const y = b.cells[column].textContent.trim();
+    const compareVal = isNaN(x) ? x.localeCompare(y) : parseFloat(x) - parseFloat(y);
+
+    return newDir === "asc" ? compareVal : -compareVal;
+  });
+
+  // Reinsert the sorted rows into the table
+  for (const row of rows) {
+    table.tBodies[0].appendChild(row);
+  }
+}
+
 
 function clearSearchAndResetRows() {
   searchInput.value = "";

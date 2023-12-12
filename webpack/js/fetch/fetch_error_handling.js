@@ -1,4 +1,4 @@
-import { getMemberSpaceCredentials } from './memberspace_info';
+import { getMemberSpaceCredentials } from '../memberspace/memberspace_info';
 
 const JWT_MISSING = "Missing cookie \"access_token_cookie\"";
 const JWT_EXPIRED = "Token has expired";
