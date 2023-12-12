@@ -8,6 +8,8 @@ title: List of all people
 {% endif %}
 
 <script src="{{ site.baseurl }}/assets/js/table.js"></script>
+<script src="{{ site.baseurl }}/assets/js/all_people.js"></script>
+
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/table_style.css" type="text/css">
 
 <style type="text/css">
@@ -37,14 +39,9 @@ title: List of all people
   <th onclick="sortTable(1)" style="display: none;">Last Name </th>
   <th onclick="sortTable(2)">Mother</th>
   <th onclick="sortTable(3)">Father</th>
-{% for person in site.person %}
-  <tr>
-    <td> <a href="{{ site.baseurl }}/person/{{ person.person_id }}" class="link">{{ person.first_name }} {{ person.last_name }} </a></td>
-    <td style="display: none;"> {{ person.last_name }}</td>
-    <td><a href="{{ site.baseurl }}/person/{{ person.mother_id }}" class="link"> {{ person.mother }} </a></td>
-    <td><a href="{{ site.baseurl }}/person/{{ person.father_id }}" class="link"> {{ person.father }} </a></td>
-  </tr>
-{% endfor %}
+  <tbody id="tableBody">
+    <!-- JavaScript will populate table rows here -->
+  </tbody>
 </table>
 
 <script>
