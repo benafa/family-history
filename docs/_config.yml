@@ -65,8 +65,6 @@ collections:
     output: true 
   tree:
     output: true 
-  person:
-    output: true
   marriage:
     output: true
     share: true
