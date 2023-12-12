@@ -8,6 +8,8 @@ title: List of all people (wide)
 {% endif %}
 
 <script src="{{ site.baseurl }}/assets/js/table.js"></script>
+<script src="{{ site.baseurl }}/assets/js/all_people_wide.js"></script>
+
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/table_style.css" type="text/css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
 
@@ -26,22 +28,9 @@ title: List of all people (wide)
   <th onclick="sortTable(2)">Partner/s </th>
   <th onclick="sortTable(3)">Mother</th>
   <th onclick="sortTable(4)">Father</th>
-  <th onclick="sortTable(5)">ID</th>
-{% for person in site.person %}
-  <tr>
-    <td> <a href="{{ site.baseurl }}/person/{{ person.person_id }}" class="link">{{ person.first_name }}</a></td>
-    <td> {{ person.last_name }}</td>
-    <td>
-      {% for partner in person.partner_ids %}
-        <a href="{{ site.baseurl }}/person/{{ partner }}" class="link"> {{ person.partners[forloop.index0] }} </a> </br>
-      {% endfor %}
-    </td>
-
-    <td><a href="{{ site.baseurl }}/person/{{ person.mother_id }}" class="link"> {{ person.mother }} </a></td>
-    <td><a href="{{ site.baseurl }}/person/{{ person.father_id }}" class="link"> {{ person.father }} </a></td>
-    <td> {{ person.person_id }}</td>
-  </tr>
-{% endfor %}
+  <tbody id="tableBody">
+    <!-- JavaScript will populate table rows here -->
+  </tbody>
 </table>
 
 <script>
