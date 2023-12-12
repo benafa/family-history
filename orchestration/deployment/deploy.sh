@@ -42,7 +42,12 @@ cd $PROJECT_DEV_PATH
 git checkout main
 # git pull
 
+# build webpack prod to get prod assets (js/css)
+cd webpack
+npm run prod-build
+
 # website is within docs folder
+cd $PROJECT_DEV_PATH
 cd docs
 
 # Create copy of the dev config
