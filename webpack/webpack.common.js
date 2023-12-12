@@ -7,6 +7,9 @@ module.exports = {
     // js
     dynamic_tree: './js/dynamic_tree.js', 
     tree: './js/static_tree.js',
+    person_routing: './js/person_routing.js',
+    all_people: './js/all_people.js',
+    all_people_wide: './js/all_people_wide.js',
     table: './js/table.js',
     account: './js/memberspace/account.js',
     posts: './js/memberspace/posts.js',

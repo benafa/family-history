@@ -1,6 +1,10 @@
 import { getPeopleList } from './requests/list_of_people';
 import { setTreeData } from './requests/set_tree';
 import { activateAll } from './tree';
+import { getFromLocalStorage } from "./local_storage"
+
+const LOCAL_STORAGE_TREE_KEY = process.env.LOCAL_STORAGE_TREE_KEY ||  "tree_id"
+const DEFAULT_TREE_ID = "I0001"
 
 document.addEventListener('DOMContentLoaded', async function() {
     await initDynamicTree();
@@ -13,20 +17,29 @@ async function initDynamicTree() {
     const dropdown = document.getElementById('dropdown');
     const selectedIdInput = document.getElementById('selected-id');
     document.getElementById('activate_all').addEventListener('click', function() {
-          activateAll();
-      });
+        activateAll();
+    });
 
     try {
         // init view
-        await setTreeData("I0001");
+        const tree_id = getTreeId()
+        await setTreeData(tree_id);
         const people = await loadAndSortPeople();
         searchInput.addEventListener('input', () => handleInput(searchInput, dropdown, selectedIdInput, people));
         searchInput.addEventListener('blur', () => handleBlur(dropdown));
     } catch(error) {
         //console.log("initDynamicTree failed")
-        //console.log(error)
+        console.log(error)
         //throw error
     } 
+}
+
+function getTreeId() {
+    const tree_id = getFromLocalStorage(LOCAL_STORAGE_TREE_KEY)
+    if (tree_id == null) {
+        return DEFAULT_TREE_ID
+    }
+    return tree_id
 }
 
 async function loadAndSortPeople() {
