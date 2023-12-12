@@ -1,5 +1,5 @@
-import { getPeopleList } from './list_of_people';
-import { setTreeData } from './set_tree';
+import { getPeopleList } from './requests/list_of_people';
+import { setTreeData } from './requests/set_tree';
 import { activateAll } from './tree';
 
 document.addEventListener('DOMContentLoaded', async function() {

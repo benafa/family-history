@@ -1,4 +1,4 @@
-import { getGraphQLDataWrapper } from './fetch_data';
+import { getGraphQLDataWrapper } from '../fetch/fetch_data';
 
 export async function getPeopleList() {
     const query = `

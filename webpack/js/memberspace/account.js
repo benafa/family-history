@@ -1,4 +1,4 @@
-import { apiClient, logoutUrl} from '../fetch_data';
+import { apiClient, logoutUrl} from '../fetch/fetch_data';
 
 const handleReady = ({ detail }) => {
   var elements = document.getElementsByClassName('account_info');
