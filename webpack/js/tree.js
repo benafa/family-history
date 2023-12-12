@@ -1,6 +1,4 @@
-
 function adjustHeight(parent_li, parent_ul, recursive) {
-  // Get all li elements within the ul
   const allLiElements = parent_ul.querySelectorAll(':scope > li');
 
   // Get the last li element
@@ -11,9 +9,12 @@ function adjustHeight(parent_li, parent_ul, recursive) {
   const correct_hi = liDim.bottom - parent_li_dim.bottom - liHeight_half;
   parent_ul.style.setProperty('--ul-before-margin', `${correct_hi}px`);
 
-  const parent_of_parent_ul = parent_ul.parentElement;
-  if (recursive & parent_of_parent_ul & parent_of_parent_ul.tagName === 'UL') {
-    adjustHeight(parent_of_parent_ul.previousElementSibling, parent_of_parent_ul, true)
+  const new_parent_ul = parent_ul.parentElement;
+  if (recursive & new_parent_ul !== null & new_parent_ul.tagName === 'UL') {
+    const new_parent_li = new_parent_ul.previousElementSibling;
+    if (new_parent_li !== null) {
+      adjustHeight(new_parent_li, new_parent_ul, true)
+    }
   }
 }
 
@@ -32,6 +33,7 @@ function recruseiveDeactivate(element) {
 function changeActiveClass(element) {
   // this will toggle active for all descendents 
   element.classList.toggle("active");
+  console.log("changeActiveClass")
 
   const parent_li = element.parentElement.parentElement.parentElement;
   const parent_ul = parent_li.nextElementSibling;
