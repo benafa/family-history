@@ -1,9 +1,13 @@
-import { getRestDataWrapper } from './fetch_data';
-import { runTreeCode } from './tree';
+import { getRestDataWrapper } from '../fetch/fetch_data';
+import { runTreeCode } from '../tree';
 
-async function setTreeData(url_end) {
+const TREE_ENDPOINT = "tree"
+const PROFILE_PAGE = process.env.PROFILE_PAGE ||  "/person/"
+
+
+async function setTreeData(person_id) {
     try {
-        const treeData = await getRestDataWrapper(url_end);
+        const treeData = await getRestDataWrapper(TREE_ENDPOINT, person_id);
 
         // Find the container element
         const container = document.getElementById('tree-content');
@@ -16,6 +20,12 @@ async function setTreeData(url_end) {
         document.querySelectorAll('.tree-link').forEach(function(element) {
             element.addEventListener('click', function() {
                 setTreeData(this.dataset.treeId);
+            });
+        });
+        document.querySelectorAll('.profile-link').forEach(function(element) {
+            element.addEventListener('click', function() {
+                const url = PROFILE_PAGE +  this.dataset.profileId;
+                window.location.href = url;
             });
         });
     } catch (error) {
