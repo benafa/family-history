@@ -1,7 +1,7 @@
 import { ApiClient } from './fetch_api_client';
 import { FetchErrorHandler } from './fetch_error_handling';
 
-const urlBase = process.env.URL_BASE || 'http://localhost:5000/';
+const urlBase = process.env.API_URL_BASE || 'http://localhost:5000/';
 const loginUrl = urlBase + 'api/authenticate';
 const logoutUrl = urlBase + 'auth/logout';
 const refreshUrl = urlBase + 'auth/refresh_token';
