@@ -6,7 +6,10 @@ import { getFromLocalStorage } from "./local_storage"
 const LOCAL_STORAGE_TREE_KEY = process.env.LOCAL_STORAGE_TREE_KEY ||  "tree_id"
 const DEFAULT_TREE_ID = "I0001"
 
+let tree_id = DEFAULT_TREE_ID;
+
 document.addEventListener('DOMContentLoaded', async function() {
+    tree_id = getTreeId();
     await initDynamicTree();
 });
 
@@ -21,8 +24,6 @@ async function initDynamicTree() {
     });
 
     try {
-        // init view
-        const tree_id = getTreeId()
         await setTreeData(tree_id);
         const people = await loadAndSortPeople();
         searchInput.addEventListener('input', () => handleInput(searchInput, dropdown, selectedIdInput, people));
@@ -35,11 +36,11 @@ async function initDynamicTree() {
 }
 
 function getTreeId() {
-    const tree_id = getFromLocalStorage(LOCAL_STORAGE_TREE_KEY)
-    if (tree_id == null) {
+    const prev_tree_id = getFromLocalStorage(LOCAL_STORAGE_TREE_KEY)
+    if (prev_tree_id === null) {
         return DEFAULT_TREE_ID
     }
-    return tree_id
+    return prev_tree_id
 }
 
 async function loadAndSortPeople() {
