@@ -30,6 +30,8 @@ fi
 
 # Assign commit message to variable
 COMMIT_MSG="$1"
+COMMIT_HASH=$(git rev-parse --short HEAD)
+deployment_commit_summary="${COMMIT_HASH}: ${COMMIT_MSG}"
 
 # Path to project-dev repository
 PROJECT_DEV_PATH=$DEV_PATH
@@ -84,5 +86,5 @@ rm $PROJECT_DEV_PATH/docs/_config_dev.yml
 # Commit and push changes to project-prod repository
 cd $PROJECT_PROD_PATH
 git add .
-git commit -m "$COMMIT_MSG"
+git commit -m "$deployment_commit_summary"
 git push
