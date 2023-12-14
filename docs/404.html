@@ -1,7 +1,13 @@
 ---
 permalink: /404.html
-layout: default
+layout: single
+title: Profile
 ---
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
+
+<script id="fetch_data" src="{{ site.baseurl }}/assets/js/routing_404.js"></script>
+
 
 <style type="text/css" media="screen">
   .container {
@@ -9,42 +15,24 @@ layout: default
     max-width: 600px;
     text-align: center;
   }
-  h1 {
+  h1.error {
     margin: 30px 0;
     font-size: 4em;
     line-height: 1;
     letter-spacing: -1px;
   }
+
+  #page-title {
+    display: none;
+  }
 </style>
 
 <div class="container" id="error-container">
-  <h1>404</h1>
+  <h1 class="error">404</h1>
 
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
 </div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var path = window.location.pathname;
-
-    // Check if the URL path starts with '/person'
-    if (path.startsWith('/person')) {
-      /// Create and append the div for person content
-      var personDiv = document.createElement('div');
-      personDiv.id = 'person-content';
-      document.body.appendChild(personDiv);
-
-      // Hide the default 404 content
-      var errorContainer = document.getElementById('error-container');
-      if (errorContainer) {
-        errorContainer.style.display = 'none';
-      }
-
-      // Include the person_routing.js
-      var script = document.createElement('script');
-      script.src = '{{ site.baseurl }}/assets/js/person_routing.js';
-      document.body.appendChild(script);
-    }
-  });
-</script>
+<div id="dynamic-content">
+</div>

@@ -22,12 +22,12 @@ function populateTable(persons) {
     let mother = person.parents.find(parent => parent.SEX === 'F');
     let father = person.parents.find(parent => parent.SEX === 'M');
 
-    let motherLink = mother ? `<a href="${SITE_BASE_URL}/person/${mother.id}" class="link">${mother.GIVN} ${mother.SURN}</a>` : 'Unknown';
-    let fatherLink = father ? `<a href="${SITE_BASE_URL}/person/${father.id}" class="link">${father.GIVN} ${father.SURN}</a>` : 'Unknown';
+    let motherLink = mother ? `<a href="${SITE_BASE_URL}/person?id=${mother.id}" class="link">${mother.GIVN} ${mother.SURN}</a>` : 'Unknown';
+    let fatherLink = father ? `<a href="${SITE_BASE_URL}/person?id=${father.id}" class="link">${father.GIVN} ${father.SURN}</a>` : 'Unknown';
     
     // Build the row string without updating the DOM yet
     rows += `<tr>
-               <td><a href="${SITE_BASE_URL}/person/${person.id}" class="link">${person.GIVN} ${person.SURN}</a></td>
+               <td><a href="${SITE_BASE_URL}/person?id=${person.id}" class="link">${person.GIVN} ${person.SURN}</a></td>
                <td style="display: none;">${person.SURN}</td>
                <td>${motherLink}</td>
                <td>${fatherLink}</td>

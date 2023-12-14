@@ -9,7 +9,7 @@ async function setPersonData(person_id) {
         const personData = await getRestDataWrapper(PERSON_ENDPOINT, person_id);
 
         // Find the container element
-        const container = document.getElementById('person-content');
+        const container = document.getElementById('dynamic-content');
         
         // Append the fetched data to the container
         container.innerHTML = personData; 

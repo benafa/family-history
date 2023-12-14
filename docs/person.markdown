@@ -11,5 +11,5 @@ search: false
 	
 </script>
 
-<div id="person-content">
+<div id="dynamic-content">
 </div>

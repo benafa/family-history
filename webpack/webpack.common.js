@@ -8,6 +8,7 @@ module.exports = {
     dynamic_tree: './js/dynamic_tree.js', 
     tree: './js/static_tree.js',
     person_routing: './js/person_routing.js',
+    routing_404: './js/routing_404.js',
     all_people: './js/all_people.js',
     all_people_wide: './js/all_people_wide.js',
     table: './js/table.js',
