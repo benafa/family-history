@@ -5,29 +5,35 @@ import { getFromLocalStorage } from "./local_storage"
 
 const LOCAL_STORAGE_TREE_KEY = process.env.LOCAL_STORAGE_TREE_KEY ||  "tree_id"
 const DEFAULT_TREE_ID = "I0001"
-
 let tree_id = DEFAULT_TREE_ID;
+let PAGE_INIT = false;
+
 
 document.addEventListener('DOMContentLoaded', async function() {
+    document.getElementById('activate_all').addEventListener('click', function() {
+        activateAll();
+    });
     tree_id = getTreeId();
     await initDynamicTree();
 });
 
-document.addEventListener('MemberSpace.member.info', initDynamicTree);
+document.addEventListener('MemberSpace.member.info', async function() {
+  if (!PAGE_INIT) {
+    await initDynamicTree();
+  }
+});
 
 async function initDynamicTree() {
     const searchInput = document.getElementById('search-input');
     const dropdown = document.getElementById('dropdown');
     const selectedIdInput = document.getElementById('selected-id');
-    document.getElementById('activate_all').addEventListener('click', function() {
-        activateAll();
-    });
 
     try {
         await setTreeData(tree_id);
         const people = await loadAndSortPeople();
         searchInput.addEventListener('input', () => handleInput(searchInput, dropdown, selectedIdInput, people));
         searchInput.addEventListener('blur', () => handleBlur(dropdown));
+        PAGE_INIT = true;
     } catch(error) {
         //console.log("initDynamicTree failed")
         console.log(error)
