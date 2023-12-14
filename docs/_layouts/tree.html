@@ -9,6 +9,30 @@ layout: single
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="{{ site.baseurl }}/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("{{ page.tree_id }}");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("{{ page.tree_id }}");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -69,6 +93,3 @@ layout: single
  {% include comment-section.html url=page.url %}
 
  <a href="{{ site.baseurl }}/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="{{ site.baseurl }}/assets/js/tree.js"></script>
