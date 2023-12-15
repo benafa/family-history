@@ -46,6 +46,7 @@ const people_queries = {
 };
 
 export async function getPeopleList(query_type = "basic") {
+    console.log("getPeopleList");
     const query = people_queries[query_type];
 
     try {

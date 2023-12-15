@@ -1,17 +1,10 @@
 import { setPersonData } from './requests/set_person';
 
-function getIdFromUrl() {
-    const path = window.location.pathname;
-    const pathParts = path.split('/');
-    // Assuming URL is like /person/id
-    return pathParts[pathParts.length - 1];
-}
-
 const SITE_BASE_URL = process.env.SITE_BASE_URL;
 
 document.addEventListener("DOMContentLoaded", async function() {
     var path = window.location.pathname;
-    console.log("hello")
+    console.log("routing 404")
     // Check if the URL path starts with '/person'
     if (path.startsWith(`${SITE_BASE_URL}/person`)) {
 		// Hide the default 404 content
@@ -33,3 +26,10 @@ document.addEventListener("DOMContentLoaded", async function() {
 
      }
 });
+
+function getIdFromUrl() {
+    const path = window.location.pathname;
+    const pathParts = path.split('/');
+    // Assuming URL is like /person/id
+    return pathParts[pathParts.length - 1];
+}

@@ -1,13 +1,12 @@
 import { getPeopleList } from './requests/list_of_people';
 import { setTreeData } from './requests/set_tree';
-import { activateAll } from './tree';
-import { getFromLocalStorage } from "./local_storage"
+import { activateAll } from './utilities/tree_helpers';
+import { getFromLocalStorage } from "./utilities/local_storage"
 
 const LOCAL_STORAGE_TREE_KEY = process.env.LOCAL_STORAGE_TREE_KEY ||  "tree_id"
 const DEFAULT_TREE_ID = "I0001"
 let tree_id = DEFAULT_TREE_ID;
 let PAGE_INIT = false;
-
 
 document.addEventListener('DOMContentLoaded', async function() {
     document.getElementById('activate_all').addEventListener('click', function() {

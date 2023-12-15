@@ -1,5 +1,5 @@
 import { getRestDataWrapper } from '../fetch/fetch_data';
-import { runTreeCode } from '../tree';
+import { runTreeCode } from '../utilities/tree_helpers';
 
 const TREE_ENDPOINT = "tree"
 const PROFILE_PAGE = process.env.PROFILE_PAGE ||  "/person?id="
