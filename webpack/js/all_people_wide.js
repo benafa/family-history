@@ -1,5 +1,5 @@
 import { getPeopleList } from './requests/list_of_people';
-import { initTable } from './table';
+import { initTable, sortTable } from './utilities/table_helpers';
 
 const SITE_BASE_URL = process.env.SITE_BASE_URL;
 let PAGE_INIT = false;
@@ -54,3 +54,5 @@ function populateTable(persons) {
   // Update the DOM once after building the entire table content
   tableBody.innerHTML = rows;
 }
+
+window.sortTable = sortTable;

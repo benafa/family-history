@@ -1,4 +1,4 @@
-import { activateAll } from './tree';
+import { activateAll } from './utilities/tree_helpers';
 import { setTreeData } from './requests/set_tree';
 
 async function initStaticTree(treeId) {
@@ -9,7 +9,7 @@ async function initStaticTree(treeId) {
   } catch(error) {
       //console.log("initDynamicTree failed")
       console.log(error)
-      //throw error
+      throw error
   } 
 }
 

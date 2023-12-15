@@ -1,8 +1,7 @@
 import { getPeopleList } from './requests/list_of_people';
-import { initTable } from './table';
+import { initTable, sortTable } from  './utilities/table_helpers';
 
 const SITE_BASE_URL = process.env.SITE_BASE_URL;
-
 let PAGE_INIT = false 
 
 document.addEventListener("DOMContentLoaded", initPeoplePage);
@@ -16,6 +15,7 @@ document.addEventListener('MemberSpace.member.info', async function() {
 
 async function initPeoplePage() {
   try {
+    console.log("initPeoplePage");
     const response = await getPeopleList("with_parents")
     const persons = response.data.individuals;
     populateTable(persons);
@@ -27,6 +27,7 @@ async function initPeoplePage() {
 }
 
 function populateTable(persons) {
+  console.log("populateTable");
   const tableBody = document.getElementById('tableBody');
   let rows = ''; // Initialize an empty string to accumulate rows
 
@@ -49,3 +50,5 @@ function populateTable(persons) {
   // Update the DOM once after building the entire table content
   tableBody.innerHTML = rows;
 }
+
+window.sortTable = sortTable;
