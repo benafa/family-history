@@ -39,7 +39,7 @@ I'm excited to unveil the new <a href="{{ site.baseurl }}/dynamic" class="link">
 </p>
 <p>
 
-  Taking this feedback seriously, I was motivated to enhance our family tree feature to offer a richer, more interactive experience.
+  With this feedback in mind, the family tree visualization has been enhanced to offer a richer, more interactive experience.
 </p>
 
 
