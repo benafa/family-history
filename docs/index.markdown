@@ -45,6 +45,10 @@ entries_layout: grid
   #contribute-button {
     background-color: #593622;
   }
+
+  .new-feature {
+    margin-top: 10px;
+  }
 </style>
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
@@ -55,8 +59,9 @@ entries_layout: grid
  <a href="{{ site.baseurl }}/contribute" class="btn btn--primary" id="contribute-button"> Contribute </a>
 </div>
 
-<div style="text-align: center;">
-<p> &#10024; NEW FEATURE: <a href="{{ site.baseurl }}/dynamic" class="link">Dynamic Descendant View</a> &#10024; </p>
+<div style="text-align: center;" class="new-feature">
+  &#10024;  NEW FEATURE: &#10024;<br>
+ <a href="{{ site.baseurl }}/dynamic" class="link">Dynamic Descendant View</a> <br>
 </div>
 
 Welcome to Colombo Chetty Genealogy! The website explores the history of the Colombo Chetty Community of Sri Lanka, and it includes information of families such as Adaman, Alles, Anandappa, Candappa, Casie Chetty, Laity Ramenaden, Tavarayan, Wijeratnam and more! Explore: 
