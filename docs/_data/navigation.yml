@@ -9,8 +9,6 @@ main:
     url: /records
   - title: "People"
     url: /people
-  - title: "Contribute"
-    url: /contribute
   - title: "Account"
     url: /account
  

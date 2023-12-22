@@ -1,9 +1,11 @@
 ---
 layout: commentable
-title:  "Photo of the Week #4: Casie Chetty - Fernandopulle Wedding"
+title:  "Joy Casie Chetty & Poomani Fernandopulle"
+permalink: members/:year/:month/:day/:title
 date:   2023-08-06
 member_only: true 
-permalink: members/:year/:month/:day/:title
+photo: true
+wedding: true 
 ---
 
 <style>

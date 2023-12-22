@@ -2,6 +2,8 @@
 layout: single
 ---
 <script id="fetch_data" src="{{ site.baseurl }}/assets/js/commentable.js"></script>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pagination_hidden.css" type="text/css">
+
 
 {{ content }}
 
@@ -12,4 +14,8 @@ layout: single
 <div class="comment-denied" style="display:none">
 	<h2>Comments</h2>
 	<p>Please <a href="{{ site.baseurl }}/account" class="link">sign up (or login)</a> to view and post comments</p>
+</div>
+
+<div class="back">
+ <a href="{{ site.baseurl }}/posts" class="btn btn--primary"> View all Posts </a>
 </div>

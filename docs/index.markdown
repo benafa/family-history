@@ -16,7 +16,7 @@ gallery:
 header:
   image: /assets/images/ben_annabelle_wedding.jpg
   overlay_filter: 0.5
-
+entries_layout: grid
 ---
 
 <style>
@@ -55,17 +55,20 @@ header:
  <a href="{{ site.baseurl }}/contribute" class="btn btn--primary" id="contribute-button"> Contribute </a>
 </div>
 
+<div style="text-align: center;">
+<p> &#10024; NEW FEATURE: <a href="{{ site.baseurl }}/dynamic" class="link">Dynamic Descendant View</a> &#10024; </p>
+</div>
 
-Welcome to Colombo Chetty Genealogy! The website explores the history of the Colombo Chetty Community of Sri Lanka, and it includes information of families such as Adaman, Alles, Anandappa, Candappa, Casie Chetty, Laity Ramenaden, Tavarayan, Wigeratnam and more! Explore: 
+Welcome to Colombo Chetty Genealogy! The website explores the history of the Colombo Chetty Community of Sri Lanka, and it includes information of families such as Adaman, Alles, Anandappa, Candappa, Casie Chetty, Laity Ramenaden, Tavarayan, Wijeratnam and more! Explore: 
 
 - <a href="{{ site.baseurl }}/records" class="link"> Historical documents</a>: 150+ marriage certificates and newspaper articles dating back to the early 1900s;
 
 - <a href="{{ site.baseurl }}/trees" class="link"> Family trees</a>: 50+ tree visualizations of the eldest known ancestors within the Colombo Chetty Community;
 
-- <a href="{{ site.baseurl }}/posts" class="link"> Blog posts</a>: Posts such as Photo of the Week.
+- <a href="{{ site.baseurl }}/posts" class="link"> Blog posts</a>: Posts such as wedding photos, family photos, profiles and announcements.
 
 
-To get access to all content and stay up to date, please <a href="{{ site.baseurl }}/account" class="link">sign up (or login)</a>. You are welcome to send any questions or content contributions to <a href = "mailto: ben@colombochetty.com" class="link">ben@colombochetty.com</a>. 
+To get access to all content and stay up to date, please <a href="{{ site.baseurl }}/account" class="link">sign up</a>. You are welcome to send any questions or content contributions to <a href = "mailto: ben@colombochetty.com" class="link">ben@colombochetty.com</a>. 
 
 
 <p style="text-align: center;"> <b>Higlighted Profile</b>  <br /> Anthony Xavier Anandappa <br /> <i> 150th Birth Anniversary in 2023 </i> <br /> <i> First President of the Colombo Chetty Association </i> </p> 
