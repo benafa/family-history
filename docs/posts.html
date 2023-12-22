@@ -23,11 +23,33 @@ title: Posts
 </div>
 
 <div>
-	
-	<b>Photos</b>
+	<b> Announcements </b>
 	{% for post in site.posts %}
 	<div> 
-		{% if post.member_only %}
+		{% if post.announcement %}
+			<a href="{{ post.url | prepend:site.baseurl }}" class="link">{{ post.title }}</a> 
+			<p class="date"> {{ post.date | date: "%-d %B %Y" }} </p>
+		{% endif %}	
+	</div>
+	{% endfor %}
+	<br>
+
+	<b> Profiles </b>
+	{% for post in site.posts %}
+	<div> 
+		{% if post.profile %}
+			<a href="{{ post.url | prepend:site.baseurl }}" class="link">{{ post.title }}</a> 
+			<p class="date"> {{ post.date | date: "%-d %B %Y" }} </p>
+		{% endif %}	
+	</div>
+	{% endfor %}
+
+	<br>
+
+	<b>Family Photos</b>
+	{% for post in site.posts %}
+	<div> 
+		{% if post.family %}
 			<a href="{{ post.url | prepend:site.baseurl }}" class="link">{{ post.title }}</a> 
 			<p class="date"> {{ post.date | date: "%-d %B %Y" }} </p>
 		{% endif %}	
@@ -35,12 +57,10 @@ title: Posts
 	{% endfor %}
 	
 	<br>
-	
-	<b> General </b>
+	<b>Wedding Photos</b>
 	{% for post in site.posts %}
 	<div> 
-		{% if post.member_only %}
-		{% else %}
+		{% if post.wedding %}
 			<a href="{{ post.url | prepend:site.baseurl }}" class="link">{{ post.title }}</a> 
 			<p class="date"> {{ post.date | date: "%-d %B %Y" }} </p>
 		{% endif %}	

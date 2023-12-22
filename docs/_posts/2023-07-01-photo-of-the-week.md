@@ -1,10 +1,11 @@
 ---
 layout: commentable
-title:  "Photo of the Week #1: Anandappa - Casie Chetty Wedding"
+title:  "Benson Anandappa & Rajie Casie Chetty"
+permalink: members/:year/:month/:day/:title
 date:   2023-07-01 
 member_only: true 
-permalink: members/:year/:month/:day/:title
-
+photo: true
+wedding: true 
 image:
   path: /assets/images/rajie_benson_for_post.jpg
 ---

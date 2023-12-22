@@ -5,9 +5,12 @@ layout: single
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
 
-Discover family trees of various  Colombo Chetty families below!
+Discover family trees of various Colombo Chetty families below!
 
 While the website is designed to be veiwed on any device, we recommend a laptop/tablet for the best viewing experience due to the large amount of information. We hope you enjoy exploring! 
+
+<h2> NEW FEATURE! </h2>
+Check out the new <a href="{{ site.baseurl }}/dynamic" class="link">Dynamic Descendant View</a> for a more interactive experience - clicking a name refocuses the tree rather than viewing a profile.
 
 <h2> Guide: Viewing trees </h2>
 

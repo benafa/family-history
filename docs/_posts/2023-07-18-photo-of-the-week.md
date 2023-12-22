@@ -1,9 +1,11 @@
 ---
 layout: commentable
-title:  "Photo of the Week #3: An Anandappa Wedding"
+title:  "Ben Anandappa & Anna Anandappa"
+permalink: members/:year/:month/:day/:title
 date:   2023-07-18 
 member_only: true 
-permalink: members/:year/:month/:day/:title
+photo: true
+wedding: true 
 ---
 
 <style>

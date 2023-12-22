@@ -69,8 +69,6 @@ collections:
     output: true
     share: true
 
-
-
 defaults:
   # _portfolio
   - scope:

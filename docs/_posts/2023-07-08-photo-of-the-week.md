@@ -1,9 +1,11 @@
 ---
 layout: commentable
-title:  "Photo of the Week #2: The Adaman Family"
+title:  "The Adaman Family"
+permalink: members/:year/:month/:day/:title
 date:   2023-07-08 
 member_only: true 
-permalink: members/:year/:month/:day/:title
+photo: true
+family: true 
 ---
 
 <style>
