@@ -16,12 +16,6 @@ document.addEventListener('DOMContentLoaded', async function() {
     await initDynamicTree();
 });
 
-document.addEventListener('MemberSpace.member.info', async function() {
-  if (!PAGE_INIT) {
-    await initDynamicTree();
-  }
-});
-
 async function initDynamicTree() {
     const searchInput = document.getElementById('search-input');
     const dropdown = document.getElementById('dropdown');

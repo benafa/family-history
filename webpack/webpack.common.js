@@ -12,9 +12,10 @@ module.exports = {
     all_people: './js/all_people.js',
     all_people_wide: './js/all_people_wide.js',
     table: './js/table.js',
-    account: './js/memberspace/account.js',
-    posts: './js/memberspace/posts.js',
-    commentable: './js/memberspace/commentable.js',
+    account: './js/auth/account.js',
+    posts: './js/auth/posts.js',
+    commentable: './js/auth/commentable.js',
+    gate: './js/auth/gate.js',
     // css
     layout_common: "./css/layout_common.css",
     pagination_hidden: "./css/pagination-hidden.css",

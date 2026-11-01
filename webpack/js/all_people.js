@@ -6,12 +6,6 @@ let PAGE_INIT = false
 
 document.addEventListener("DOMContentLoaded", initPeoplePage);
 
-document.addEventListener('MemberSpace.member.info', async function() {
-  if (!PAGE_INIT) {
-    await initPeoplePage();
-  }
-});
-
 
 async function initPeoplePage() {
   try {

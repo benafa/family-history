@@ -1,17 +1,4 @@
 export class ApiClient {
-    async login(loginUrl, credential_data) {
-        const loginResponse = await fetch(loginUrl, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(credential_data), 
-            credentials: 'include'
-        });
-
-        if (!loginResponse.ok) {
-            throw loginResponse;
-        }
-    }
-
     async logout(logoutUrl) {
         const logoutResponse = await fetch(logoutUrl, {
             method: 'POST',

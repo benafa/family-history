@@ -1,15 +1,11 @@
-import { getMemberSpaceCredentials } from '../memberspace/memberspace_info';
-
 const JWT_MISSING = "Missing cookie \"access_token_cookie\"";
 const JWT_EXPIRED = "Token has expired";
 const JWT_SIG_FAILURE = "Signature verification failed";
 
 export class FetchErrorHandler {
-    constructor(loginUrl, refreshUrl, logoutUrl, tokenName, redirectPage, apiClient) {
-        this.loginUrl = loginUrl;
+    constructor(refreshUrl, logoutUrl, redirectPage, apiClient) {
         this.logoutUrl = logoutUrl;
         this.refreshUrl = refreshUrl;
-        this.memberspace_tokenName = tokenName;
         this.redirectPage = redirectPage;
         this.apiClient = apiClient;
     }
@@ -57,8 +53,8 @@ export class FetchErrorHandler {
         if (errorBody.msg === JWT_EXPIRED) {
             await this.handleRefresh();
         } else if (errorBody.msg === JWT_MISSING) {
-            const credentialData = await getMemberSpaceCredentials();
-            await this.apiClient.login(this.loginUrl, credentialData);
+            window.location.href = this.redirectPage;
+            throw error;
         } else {
             throw error;
         }
@@ -74,7 +70,6 @@ export class FetchErrorHandler {
     }
 
     async handleLogout() {
-        localStorage.removeItem(this.memberspace_tokenName);
         await this.apiClient.logout(this.logoutUrl);
         window.location.href = this.redirectPage;
     }

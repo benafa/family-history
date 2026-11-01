@@ -3,6 +3,8 @@ title: Profile
 layout: single
 search: false
 ---
+
+{% include member-gate.html %}
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/links.css" type="text/css">
 
 <script id="fetch_data" src="{{ site.baseurl }}/assets/js/person_routing.js"></script>

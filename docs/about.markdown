@@ -54,6 +54,6 @@ I appreciate everyone's support and your contributions mean a lot; I'm so happy 
   <h4>A note on Website Creation</h4>
 
   <div class="disclaimer">
-  {{ site.data.ui-text[site.locale].powered_by | default: "Colombo Chetty Genealogy was created by Ben A.F. Anandappa with the help of" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>. Membership is set up through <a href="https://www.memberspace.com/"> MemberSpace</a>.
+  {{ site.data.ui-text[site.locale].powered_by | default: "Colombo Chetty Genealogy was created by Ben A.F. Anandappa with the help of" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
   </div>
 

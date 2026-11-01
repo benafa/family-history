@@ -7,12 +7,6 @@ document.addEventListener("DOMContentLoaded", async function() {
     await initPerson();
 });
 
-document.addEventListener('MemberSpace.member.info', async function() {
-  	if (!PAGE_INIT) {
-	  	await initPerson();
-	}
-});
-
 async function initPerson() {
 	try {
     	var path = window.location.pathname;
