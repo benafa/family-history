@@ -1,24 +1,38 @@
-import { apiClient, urlBase, refreshUrl } from '../fetch/fetch_data';
+import { apiClient, urlBase, refreshUrl, ACCOUNT_PAGE } from '../fetch/fetch_data';
 
-const ACCOUNT_PAGE = process.env.ACCOUNT_PAGE || "/account";
 const NEXT_PAGE_KEY = "next_page";
+const NEXT_PAGE_MAX_AGE_MS = 24 * 60 * 60 * 1000;
 
 async function fetchMember() {
     return fetch(urlBase + 'api/auth/me', { credentials: 'include' });
 }
 
-// Asks the API whether this visitor is signed in, renewing an expired session if possible
-export async function getMember() {
+async function loadMember() {
     try {
         let response = await fetchMember();
         if (response.status === 401) {
             await apiClient.refreshToken(refreshUrl);
             response = await fetchMember();
         }
-        return response.ok ? await response.json() : { logged_in: false };
+        if (response.ok) {
+            return await response.json();
+        }
+        return { logged_in: false, unknown: response.status >= 500 };
     } catch (error) {
-        return { logged_in: false };
+        // A rejected refresh means signed out; anything else means the API could not answer
+        const signedOut = error instanceof Response && error.status < 500;
+        return { logged_in: false, unknown: !signedOut };
     }
+}
+
+// Shared on window because each page's scripts are separate bundles
+export function getMember() {
+    window.memberCheck = window.memberCheck || loadMember();
+    return window.memberCheck;
+}
+
+export function hasSessionCookie() {
+    return Boolean(apiClient.getCookie('csrf_refresh_token'));
 }
 
 export function redirectToAccount() {
@@ -26,15 +40,21 @@ export function redirectToAccount() {
     window.location.replace(`${ACCOUNT_PAGE}?next=${encodeURIComponent(next)}`);
 }
 
-// Only paths on this site, so a crafted link cannot send someone elsewhere after sign-in
-function isSafeNextPage(next) {
-    return typeof next === 'string' && next.startsWith('/') && !next.startsWith('//') && !next.includes('\\');
+// Resolves the path the way the browser will, so a crafted link cannot leave this site
+function toSameSitePath(next) {
+    try {
+        const url = new URL(next, window.location.origin);
+        return url.origin === window.location.origin ? url.pathname + url.search : null;
+    } catch (error) {
+        return null;
+    }
 }
 
 export function rememberNextPage(next) {
+    const path = next && toSameSitePath(next);
     try {
-        if (isSafeNextPage(next)) {
-            localStorage.setItem(NEXT_PAGE_KEY, next);
+        if (path) {
+            localStorage.setItem(NEXT_PAGE_KEY, JSON.stringify({ path, savedAt: Date.now() }));
         }
     } catch (error) {
         // Without storage, sign-in still works and lands on the account page
@@ -43,9 +63,10 @@ export function rememberNextPage(next) {
 
 export function takeNextPage() {
     try {
-        const next = localStorage.getItem(NEXT_PAGE_KEY);
+        const saved = JSON.parse(localStorage.getItem(NEXT_PAGE_KEY));
         localStorage.removeItem(NEXT_PAGE_KEY);
-        return isSafeNextPage(next) ? next : ACCOUNT_PAGE;
+        const isRecent = saved && Date.now() - saved.savedAt < NEXT_PAGE_MAX_AGE_MS;
+        return (isRecent && toSameSitePath(saved.path)) || ACCOUNT_PAGE;
     } catch (error) {
         return ACCOUNT_PAGE;
     }

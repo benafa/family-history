@@ -1,4 +1,15 @@
 export class ApiClient {
+    async postJson(url, body) {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body),
+            credentials: 'include'
+        });
+        const data = await response.json().catch(() => ({}));
+        return { ok: response.ok, data };
+    }
+
     async logout(logoutUrl) {
         const logoutResponse = await fetch(logoutUrl, {
             method: 'POST',

@@ -28,6 +28,22 @@
 <meta name="description" content="">
 
 
+{% if page.path == "account.html" %}
+<script>
+  // Moves one-time links out of the address bar before analytics reads it
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    window.authLink = { token: params.get('token'), review: params.get('review') };
+    if (window.authLink.token || window.authLink.review) {
+      params.delete('token');
+      params.delete('review');
+      var query = params.toString();
+      window.history.replaceState({}, '', window.location.pathname + (query ? '?' + query : ''));
+    }
+  })();
+</script>
+{% endif %}
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHVN8RCX7D"></script>
 <script>

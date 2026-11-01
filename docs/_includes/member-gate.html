@@ -1,4 +1,4 @@
 <meta name="robots" content="noindex, nofollow">
 <style>html.member-gate-pending body { visibility: hidden; }</style>
 <script>document.documentElement.classList.add('member-gate-pending');</script>
-<script src="{{ site.baseurl }}/assets/js/gate.js"></script>
+<script src="{{ site.baseurl }}/assets/js/gate.js" onerror="document.documentElement.classList.remove('member-gate-pending')"></script>

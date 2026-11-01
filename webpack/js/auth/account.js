@@ -1,7 +1,7 @@
-import { apiClient, urlBase, logoutUrl } from '../fetch/fetch_data';
+import { apiClient, urlBase, logoutUrl, ACCOUNT_PAGE } from '../fetch/fetch_data';
 import { getMember, rememberNextPage, takeNextPage } from './member';
 
-const ACCOUNT_PAGE = process.env.ACCOUNT_PAGE || "/account";
+const GENERIC_ERROR = 'Something went wrong. Please try again.';
 
 function show(id) {
     document.getElementById(id).style.display = 'block';
@@ -21,43 +21,64 @@ function setMessage(id, text) {
     message.style.display = 'block';
 }
 
-async function postJson(path, body) {
-    const response = await fetch(urlBase + path, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body),
-        credentials: 'include'
-    });
-    const data = await response.json().catch(() => ({}));
-    return { ok: response.ok, msg: data.msg };
+function postAuth(path, body) {
+    return apiClient.postJson(urlBase + 'api/auth/' + path, body);
 }
 
-async function finishSignIn(token) {
-    setTitle('Signing you in...');
-    // Clean the one-time link out of the address bar and browser history
-    window.history.replaceState({}, '', ACCOUNT_PAGE);
+// Waits for a click because email security scanners open links and run the page
+function showConfirmSignIn(token) {
+    setTitle('Sign in');
+    show('confirm-sign-in-panel');
+    document.getElementById('confirm-sign-in').addEventListener('click', async (event) => {
+        event.target.disabled = true;
+        try {
+            const result = await postAuth('verify', { token });
+            if (result.ok) {
+                window.location.replace(takeNextPage());
+                return;
+            }
+            setMessage('account-error', result.data.msg || GENERIC_ERROR);
+        } catch (error) {
+            setMessage('account-error', GENERIC_ERROR);
+        }
+        hide('confirm-sign-in-panel');
+        showSignIn();
+    });
+}
+
+function describeApplicant(details) {
+    const place = details.city ? ` from ${details.city}` : '';
+    const source = details.how_heard ? ` Heard about the site from: ${details.how_heard}.` : '';
+    return `${details.first_name} ${details.last_name} (${details.email})${place}.${source}`;
+}
+
+async function showReview(token) {
+    setTitle('Review signup');
+    show('review-panel');
     try {
-        const result = await postJson('api/auth/verify', { token });
-        if (result.ok) {
-            window.location.replace(takeNextPage());
+        const details = await postAuth('review', { token });
+        if (!details.ok) {
+            hide('review-buttons');
+            setMessage('review-result', details.data.msg || GENERIC_ERROR);
             return;
         }
-        setMessage('account-error', result.msg);
+        setMessage('review-details', describeApplicant(details.data));
     } catch (error) {
-        setMessage('account-error', 'Something went wrong. Please try again.');
+        hide('review-buttons');
+        setMessage('review-result', GENERIC_ERROR);
+        return;
     }
-    showSignIn();
-}
 
-function showReview(token) {
-    setTitle('Review signup');
-    window.history.replaceState({}, '', ACCOUNT_PAGE);
-    show('review-panel');
+    show('review-buttons');
     for (const decision of ['approve', 'reject']) {
         document.getElementById(`review-${decision}`).addEventListener('click', async () => {
-            const result = await postJson('api/auth/decide', { token, decision });
             hide('review-buttons');
-            setMessage('review-result', result.msg || 'Something went wrong.');
+            try {
+                const result = await postAuth('decide', { token, decision });
+                setMessage('review-result', result.data.msg || GENERIC_ERROR);
+            } catch (error) {
+                setMessage('review-result', GENERIC_ERROR);
+            }
         });
     }
 }
@@ -85,31 +106,29 @@ function connectForm(formId, path, messageId, readBody) {
         const button = form.querySelector('button');
         button.disabled = true;
         try {
-            const result = await postJson(path, readBody(new FormData(form)));
-            setMessage(messageId, result.msg || 'Something went wrong. Please try again.');
-            if (result.ok) {
-                form.style.display = 'none';
-            }
+            const result = await postAuth(path, readBody(new FormData(form)));
+            setMessage(messageId, result.data.msg || GENERIC_ERROR);
         } catch (error) {
-            setMessage(messageId, 'Something went wrong. Please try again.');
+            setMessage(messageId, GENERIC_ERROR);
         }
         button.disabled = false;
     });
 }
 
 async function initAccountPage() {
-    connectForm('sign-in-form', 'api/auth/request_link', 'sign-in-message',
+    connectForm('sign-in-form', 'request_link', 'sign-in-message',
         (data) => ({ email: data.get('email') }));
-    connectForm('sign-up-form', 'api/auth/signup', 'sign-up-message',
+    connectForm('sign-up-form', 'signup', 'sign-up-message',
         (data) => Object.fromEntries(data.entries()));
 
-    const params = new URLSearchParams(window.location.search);
-    rememberNextPage(params.get('next'));
+    rememberNextPage(new URLSearchParams(window.location.search).get('next'));
 
-    if (params.get('token')) {
-        await finishSignIn(params.get('token'));
-    } else if (params.get('review')) {
-        showReview(params.get('review'));
+    // The page head moves these out of the address bar before analytics loads
+    const { token, review } = window.authLink || {};
+    if (token) {
+        showConfirmSignIn(token);
+    } else if (review) {
+        await showReview(review);
     } else {
         const member = await getMember();
         if (member.logged_in) {

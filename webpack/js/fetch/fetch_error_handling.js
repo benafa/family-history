@@ -53,7 +53,8 @@ export class FetchErrorHandler {
         if (errorBody.msg === JWT_EXPIRED) {
             await this.handleRefresh();
         } else if (errorBody.msg === JWT_MISSING) {
-            window.location.href = this.redirectPage;
+            const next = window.location.pathname + window.location.search;
+            window.location.href = `${this.redirectPage}?next=${encodeURIComponent(next)}`;
             throw error;
         } else {
             throw error;

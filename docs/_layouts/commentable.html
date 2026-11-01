@@ -8,14 +8,7 @@ layout: single
 
 {{ content }}
 
-<div class="comment-allowed" style="display:none">
-	{% include comment-section.html url=page.url %}
-</div>
-
-<div class="comment-denied" style="display:none">
-	<h2>Comments</h2>
-	<p>Please <a href="{{ site.baseurl }}/account" class="link">sign up (or login)</a> to view and post comments</p>
-</div>
+{% include comment-section.html url=page.url %}
 
 <div class="back">
  <a href="{{ site.baseurl }}/posts" class="btn btn--primary"> View all Posts </a>

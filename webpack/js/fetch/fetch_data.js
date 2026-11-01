@@ -40,4 +40,4 @@ export async function getGraphQLDataWrapper(query) {
     }
 }
 
-export { apiClient, urlBase, logoutUrl, refreshUrl }
+export { apiClient, urlBase, logoutUrl, refreshUrl, ACCOUNT_PAGE }

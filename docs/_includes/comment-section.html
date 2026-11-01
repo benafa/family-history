@@ -601,7 +601,7 @@
 		  })
 		}).then(response => {
 			{%- comment -%}
-			// Do not want to reset these as they are we're setting them with memberspace
+			// Do not want to reset these as they are set from the signed-in member
 			//setValue("comment-name", '');
 			//setValue("comment-email", '');
 			{%- endcomment -%}
@@ -656,13 +656,13 @@
 			{%- endif -%}
 				<ul>
 					<li>
-						<input class="default-cursor" id="comment-name" name="username" type="text" placeholder="Name" required="" value="" data-ms-member-info="name" readonly>
+						<input class="default-cursor" id="comment-name" name="username" type="text" placeholder="Name" required="" value="" readonly>
 						{%- if comment_replies_enabled -%}
 						<p id="comment-reply-info"></p>
 						{%- endif -%}
 					</li>
 					<li>
-						<input id="comment-email" name="email" type="hidden" placeholder="Email" required="" value="" data-ms-member-info="email" readonly>
+						<input id="comment-email" name="email" type="hidden" placeholder="Email" required="" value="" readonly>
 					</li>
 					<li><textarea id="comment-comment" name="comment" placeholder="Comment" required=""></textarea></li>
 					<li><button id="comment-submit" type="submit" class="btn btn--info">Submit</button></li>
