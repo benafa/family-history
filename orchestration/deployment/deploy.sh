@@ -1,17 +1,36 @@
 #!/bin/bash
 
-# Source environment variables from file
-source deployment-env-variables 
+# Usage:
+#   ./deploy.sh "commit message"   Build the latest commit on main and publish it
+#   ./deploy.sh --dry-run          Build and check the current commit, publish nothing
+#
+# The site is built in a temporary copy of the last commit, so uncommitted work
+# never ships and a failed build leaves this repo and project-prod untouched.
 
-# Check if DEV_PATH environment variable is set
-if [ -z "$DEV_PATH" ]; then
-  echo "Error: DEV_PATH environment variable is not set. Please set DEV_PATH to the path of your project-dev repository."
-  exit 1
+# Stop on the first error, so a failed build can never reach project-prod
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Source environment variables from file
+source "$SCRIPT_DIR/deployment-env-variables"
+
+DRY_RUN=false
+if [ "${1:-}" = "--dry-run" ]; then
+  DRY_RUN=true
+  shift
 fi
 
-# Check if PROD_PATH environment variable is set
-if [ -z "$PROD_PATH" ]; then
-  echo "Error: PROD_PATH environment variable is not set. Please set PROD_PATH to the path of your project-prod repository."
+# Check that the required variables and tools are set
+for var in DEV_PATH PROD_PATH RUBY_BIN PYTHON_BIN BUNDLE_GEMFILE BUNDLE_PATH; do
+  if [ -z "${!var:-}" ]; then
+    echo "Error: $var is not set. Please set it in deployment-env-variables."
+    exit 1
+  fi
+done
+
+if [ ! -x "$RUBY_BIN/bundle" ] || [ ! -x "$PYTHON_BIN" ]; then
+  echo "Error: Ruby or Python not found. Check RUBY_BIN and PYTHON_BIN in deployment-env-variables."
   exit 1
 fi
 
@@ -21,70 +40,111 @@ if [ "$DEV_PATH" = "$PROD_PATH" ]; then
   exit 1
 fi
 
-# Check if commit message is provided as argument
-if [ -z "$1" ]; then
-  echo "Error: Commit message not provided."
-  echo "Please provide a commit message as an argument."
-  exit 1
+export PATH="$RUBY_BIN:$PATH"
+export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
+export BUNDLE_GEMFILE BUNDLE_PATH
+export BUNDLE_APP_CONFIG="$(dirname "$BUNDLE_GEMFILE")/.bundle"
+
+cd "$DEV_PATH"
+
+if [ "$DRY_RUN" = true ]; then
+  if [ -n "$(git status --porcelain)" ]; then
+    echo "Note: uncommitted changes are not part of this build."
+  fi
+else
+  # Check if commit message is provided as argument
+  if [ -z "${1:-}" ]; then
+    echo "Error: Commit message not provided."
+    echo "Please provide a commit message as an argument."
+    exit 1
+  fi
+
+  if [ "$(git rev-parse --abbrev-ref HEAD)" != "main" ]; then
+    echo "Error: Switch to main before deploying."
+    exit 1
+  fi
+
+  if [ -n "$(git status --porcelain)" ]; then
+    echo "Error: Commit your changes before deploying."
+    git status --short
+    exit 1
+  fi
+
+  if [ "$(git -C "$PROD_PATH" rev-parse --abbrev-ref HEAD)" != "main" ]; then
+    echo "Error: project-prod is not on main."
+    exit 1
+  fi
+
+  git -C "$PROD_PATH" fetch --quiet
+  if [ "$(git -C "$PROD_PATH" rev-list --count HEAD..@{u})" != "0" ]; then
+    echo "Error: project-prod is behind GitHub. Run git pull there first."
+    exit 1
+  fi
+
+  if [ "$(git rev-list --count @{u}..HEAD)" != "0" ]; then
+    echo "Warning: main has commits that are not pushed to GitHub yet."
+  fi
 fi
 
-# Assign commit message to variable
-COMMIT_MSG="$1"
 COMMIT_HASH=$(git rev-parse --short HEAD)
-deployment_commit_summary="${COMMIT_HASH}: ${COMMIT_MSG}"
 
-# Path to project-dev repository
-PROJECT_DEV_PATH=$DEV_PATH
+# Build in a temporary copy of the last commit
+BUILD_PATH=$(mktemp -d)
+trap 'rm -rf "$BUILD_PATH"' EXIT
 
-# Path to project-prod repository
-PROJECT_PROD_PATH=$PROD_PATH
-
-# Make sure the main branch of project-dev is up-to-date
-cd $PROJECT_DEV_PATH
-git checkout main
-# git pull
+git archive HEAD docs webpack orchestration | tar -x -C "$BUILD_PATH"
+cp "$DEV_PATH"/webpack/.env.* "$BUILD_PATH/webpack/"
+ln -s "$DEV_PATH/webpack/node_modules" "$BUILD_PATH/webpack/node_modules"
 
 # build webpack prod to get prod assets (js/css)
-cd webpack
+cd "$BUILD_PATH/webpack"
 npm run prod-build
 
+"$PYTHON_BIN" "$BUILD_PATH/orchestration/deployment/update_baseurl.py" "$BUILD_PATH/docs/_config.yml" "" "https://colombochetty.com/"
+echo "Updated baseurl in _config.yml."
+
 # website is within docs folder
-cd $PROJECT_DEV_PATH
-cd docs
+cd "$BUILD_PATH/docs"
+bundle exec jekyll build
 
-# Create copy of the dev config
-cp $PROJECT_DEV_PATH/docs/_config.yml $PROJECT_DEV_PATH/docs/_config_dev.yml
+# Check the build looks complete before touching project-prod
+SITE_PATH="$BUILD_PATH/docs/_site"
+for required in index.html people.html trees.html assets/js/dynamic_tree.js assets/css/main.css; do
+  if [ ! -s "$SITE_PATH/$required" ]; then
+    echo "Error: build is missing $required. Nothing was published."
+    exit 1
+  fi
+done
 
-if python3 $PROJECT_DEV_PATH/orchestration/deployment/update_baseurl.py $PROJECT_DEV_PATH/docs/_config.yml "" "https://colombochetty.com/"; then
-  echo "Updated baseurl in _config.yml."
-else
-  echo "Error: Failed to update baseurl in _config.yml."
+BUILT_FILES=$(find "$SITE_PATH" -type f | wc -l | tr -d ' ')
+PROD_FILES=$(find "$PROD_PATH" -type f -not -path '*/\.*' | wc -l | tr -d ' ')
+if [ "$BUILT_FILES" -lt $((PROD_FILES * 9 / 10)) ]; then
+  echo "Error: build has $BUILT_FILES files but project-prod has $PROD_FILES. Nothing was published."
   exit 1
 fi
 
-# Build Jekyll website in project-dev repository
-# Install Jekyll dependencies if Gemfile.lock does not exist
-if [ ! -f "$PROJECT_DEV_PATH/docs/Gemfile.lock" ]; then
-  bundle install
+if [ "$DRY_RUN" = true ]; then
+  echo "Dry run passed for $COMMIT_HASH: built $BUILT_FILES files (project-prod has $PROD_FILES). Nothing was published."
+  exit 0
 fi
-bundle exec jekyll build
+
+deployment_commit_summary="${COMMIT_HASH}: $1"
 
 # Delete old contents of project-prod repository (excluding .git and _config.yml)
-cd $PROJECT_PROD_PATH
+cd "$PROD_PATH"
 find . -type f -not -path '*/\.*' -delete
 find . -type d -empty -delete
 
-# Copy new contents from project-dev to project-prod
-cp -r $PROJECT_DEV_PATH/docs/_site/* $PROJECT_PROD_PATH
+# Copy new contents from the build to project-prod
+cp -r "$SITE_PATH"/* "$PROD_PATH"
 
-cp $PROJECT_DEV_PATH/orchestration/deployment/CNAME $PROJECT_PROD_PATH
-
-# Copy back the dev config 
-cp $PROJECT_DEV_PATH/docs/_config_dev.yml $PROJECT_DEV_PATH/docs/_config.yml
-rm $PROJECT_DEV_PATH/docs/_config_dev.yml
+cp "$DEV_PATH/orchestration/deployment/CNAME" "$PROD_PATH"
 
 # Commit and push changes to project-prod repository
-cd $PROJECT_PROD_PATH
 git add .
+if git diff --cached --quiet; then
+  echo "Nothing changed, so there is nothing to publish."
+  exit 0
+fi
 git commit -m "$deployment_commit_summary"
 git push

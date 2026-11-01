@@ -5,3 +5,13 @@ DEV_PATH=/Users/benanandappa/family_tree_repos/family-history
 
 # Path to project-prod repository
 PROD_PATH=/Users/benanandappa/family_tree_repos/family-history-prod
+
+# Homebrew Ruby used to build the site
+RUBY_BIN=/opt/homebrew/opt/ruby@3.3/bin
+
+# Python with PyYAML, used by update_baseurl.py
+PYTHON_BIN=/Users/benanandappa/family_tree_repos/.ruby-local/pyenv/bin/python
+
+# Apple Silicon copy of docs/Gemfile and the folder holding its gems
+BUNDLE_GEMFILE=/Users/benanandappa/family_tree_repos/.ruby-local/Gemfile
+BUNDLE_PATH=/Users/benanandappa/family_tree_repos/.ruby-local/gems
