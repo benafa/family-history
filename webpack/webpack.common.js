@@ -16,6 +16,7 @@ module.exports = {
     posts: './js/auth/posts.js',
     commentable: './js/auth/commentable.js',
     gate: './js/auth/gate.js',
+    track: './js/auth/track.js',
     // css
     layout_common: "./css/layout_common.css",
     pagination_hidden: "./css/pagination-hidden.css",
