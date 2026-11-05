@@ -17,10 +17,11 @@ export class FetchErrorHandler {
                 await this.handleUnauthorizedError(error);
                 return await this.apiClient.getGraphQLData(graphQLUrl, query);
             } else {
+                // Only a bad token signs the member out; a missing page or a busy server should not
                 if (this.isSigFailure(error)) {
                     console.log("Signature failure error");
+                    await this.handleLogout();
                 }
-                await this.handleLogout();
                 throw error;
             }
         } catch(error) {
@@ -36,10 +37,11 @@ export class FetchErrorHandler {
                 await this.handleUnauthorizedError(error);
                 return await this.apiClient.getRestData(restUrl);
             } else {
+                // Only a bad token signs the member out; a missing page or a busy server should not
                 if (this.isSigFailure(error)) {
                     console.log("Signature failure error");
+                    await this.handleLogout();
                 }
-                await this.handleLogout();
                 throw error;
             }
         } catch(error) {
@@ -51,6 +53,9 @@ export class FetchErrorHandler {
     async handleUnauthorizedError(error) {
         const errorBody = await error.json();
         if (errorBody.msg === JWT_EXPIRED) {
+            await this.handleRefresh();
+        } else if (errorBody.msg === JWT_MISSING && this.apiClient.getCookie('csrf_refresh_token')) {
+            // The access cookie lapses after 15 minutes, while the refresh cookie lasts 14 days
             await this.handleRefresh();
         } else if (errorBody.msg === JWT_MISSING) {
             const next = window.location.pathname + window.location.search;
@@ -65,14 +70,17 @@ export class FetchErrorHandler {
         try {
             await this.apiClient.refreshToken(this.refreshUrl);
         } catch(error) {
-            this.handleLogout();
+            await this.handleLogout();
             throw error;
         }
     }
 
     async handleLogout() {
-        await this.apiClient.logout(this.logoutUrl);
-        window.location.href = this.redirectPage;
+        try {
+            await this.apiClient.logout(this.logoutUrl);
+        } finally {
+            window.location.href = this.redirectPage;
+        }
     }
 
     isUnauthorizedError(error) {

@@ -7,15 +7,22 @@ async function fetchMember() {
     return fetch(urlBase + 'api/auth/me', { credentials: 'include' });
 }
 
+async function readMember() {
+    const response = await fetchMember();
+    const member = response.ok ? await response.json() : null;
+    return { response, member };
+}
+
 async function loadMember() {
     try {
-        let response = await fetchMember();
-        if (response.status === 401) {
+        let { response, member } = await readMember();
+        // The access cookie lapses after 15 minutes, so a returning member may only have the refresh cookie
+        if (response.status === 401 || (member && !member.logged_in && hasSessionCookie())) {
             await apiClient.refreshToken(refreshUrl);
-            response = await fetchMember();
+            ({ response, member } = await readMember());
         }
-        if (response.ok) {
-            return await response.json();
+        if (member) {
+            return member;
         }
         return { logged_in: false, unknown: response.status >= 500 };
     } catch (error) {

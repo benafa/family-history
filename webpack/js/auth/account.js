@@ -88,8 +88,12 @@ function showAccount(member) {
     document.getElementById('account-email').textContent = member.email;
     show('account-panel');
     document.getElementById('sign-out').addEventListener('click', async () => {
-        await apiClient.logout(logoutUrl);
-        window.location.replace(ACCOUNT_PAGE);
+        try {
+            await apiClient.logout(logoutUrl);
+            window.location.replace(ACCOUNT_PAGE);
+        } catch (error) {
+            setMessage('account-error', GENERIC_ERROR);
+        }
     });
 }
 
