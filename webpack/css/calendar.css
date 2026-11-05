@@ -1,0 +1,173 @@
+.fcal {
+  --fcal-accent: #2f6f8f;
+  --fcal-accent-soft: #e8f1f5;
+  --fcal-gold: #b8862b;
+  --fcal-gold-soft: #fbf3e2;
+  --fcal-line: #e3e6e8;
+  --fcal-muted: #7a8288;
+  --fcal-card: #fff;
+  margin-top: 1em;
+  font-size: 0.9em;
+}
+
+.fcal-intro { color: var(--fcal-muted, #7a8288); font-size: 0.85em; }
+
+/* On this day and coming up */
+.fcal-spotlight {
+  background: linear-gradient(135deg, var(--fcal-gold-soft), #fff);
+  border: 1px solid #f0e2c2;
+  border-radius: 14px;
+  padding: 1em 1.2em 0.4em;
+  margin-bottom: 1.5em;
+}
+.fcal-spotlight h2 {
+  margin: 0 0 0.6em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fcal-gold);
+  border: 0;
+}
+.fcal-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.7em; margin-bottom: 0.8em; }
+.fcal-cards .fcal-event { background: var(--fcal-card); border-color: #f0e2c2; }
+.fcal-badge {
+  display: block;
+  width: max-content;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: var(--fcal-gold);
+  background: var(--fcal-gold-soft);
+  border-radius: 999px;
+  padding: 0.1em 0.6em;
+  margin-bottom: 0.4em;
+}
+
+/* Search and month strip */
+.fcal-search {
+  width: 100%;
+  padding: 0.6em 0.9em;
+  border: 1px solid var(--fcal-line);
+  border-radius: 10px;
+  font-size: 0.95em;
+  margin-bottom: 0.8em;
+}
+.fcal-months { display: grid; grid-template-columns: repeat(12, 1fr); gap: 4px; margin-bottom: 1em; }
+.fcal-month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.35em 0;
+  border: 1px solid var(--fcal-line);
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.75em;
+  line-height: 1.3;
+  color: inherit;
+}
+.fcal-month small { color: var(--fcal-muted); font-size: 0.85em; }
+.fcal-month.fcal-empty { opacity: 0.5; }
+.fcal-month:hover { border-color: var(--fcal-accent); }
+.fcal-month[aria-selected="true"] { background: var(--fcal-accent); border-color: var(--fcal-accent); color: #fff; }
+.fcal-month[aria-selected="true"] small { color: #dce9ef; }
+
+/* Month heading */
+.fcal-header { display: flex; align-items: center; justify-content: space-between; margin: 0.2em 0 0.1em; }
+.fcal-title { margin: 0; font-size: 1.4em; border: 0; }
+.fcal-nav {
+  width: 2.2em;
+  height: 2.2em;
+  border-radius: 50%;
+  border: 1px solid var(--fcal-line);
+  background: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+  color: inherit;
+}
+.fcal-nav:hover { border-color: var(--fcal-accent); color: var(--fcal-accent); }
+.fcal-summary { text-align: center; color: var(--fcal-muted); font-size: 0.85em; margin: 0 0 0.8em; }
+
+/* Month grid */
+.fcal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin-bottom: 1.5em; }
+.fcal-weekday { text-align: center; font-size: 0.7em; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fcal-muted); padding-bottom: 2px; }
+.fcal-cell {
+  min-height: 76px;
+  border: 1px solid var(--fcal-line);
+  border-radius: 8px;
+  padding: 4px 5px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  overflow: hidden;
+}
+.fcal-blank { border: 0; background: none; }
+.fcal-daynum { font-size: 0.75em; color: var(--fcal-muted); }
+.fcal-has { cursor: pointer; background: var(--fcal-accent-soft); border-color: #cfe0e8; }
+.fcal-has:hover { border-color: var(--fcal-accent); }
+.fcal-has .fcal-daynum { color: var(--fcal-accent); font-weight: 600; }
+.fcal-today { box-shadow: inset 0 0 0 2px var(--fcal-gold); }
+.fcal-today .fcal-daynum { color: var(--fcal-gold); font-weight: 700; }
+.fcal-selected { background: var(--fcal-accent); border-color: var(--fcal-accent); }
+.fcal-selected .fcal-daynum, .fcal-selected .fcal-chip, .fcal-selected .fcal-more { color: #fff; }
+.fcal-chip {
+  font-size: 0.65em;
+  line-height: 1.25;
+  color: #234f66;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fcal-more { font-size: 0.62em; color: var(--fcal-muted); }
+
+/* Day list */
+.fcal-day {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fcal-muted);
+  margin: 1.2em 0 0.4em;
+  border: 0;
+}
+.fcal-event {
+  border: 1px solid var(--fcal-line);
+  border-radius: 10px;
+  padding: 0.7em 0.9em;
+  margin-bottom: 0.5em;
+  background: var(--fcal-card);
+}
+.fcal-couple { font-weight: 600; text-decoration: none; }
+.fcal-couple:hover { text-decoration: underline; }
+.fcal-amp { color: var(--fcal-gold); font-weight: 400; }
+.fcal-meta, .fcal-trees { margin: 0.25em 0 0; font-size: 0.8em; color: var(--fcal-muted); }
+.fcal-trees a { color: var(--fcal-accent); }
+.fcal-none { color: var(--fcal-muted); text-align: center; padding: 1em 0; }
+.fcal-showall {
+  margin-top: 0.6em;
+  border: 1px solid var(--fcal-accent);
+  color: var(--fcal-accent);
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.35em 1em;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+@media (max-width: 640px) {
+  .fcal-months { grid-template-columns: repeat(6, 1fr); }
+  .fcal-cell { min-height: 44px; padding: 3px; }
+  .fcal-chip, .fcal-more { display: none; }
+  .fcal-has::after { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--fcal-accent); margin: 2px auto 0; }
+  .fcal-selected::after { background: #fff; }
+}
+
+/* The theme adds space under paragraphs and underlines links; cards stay compact */
+.fcal .fcal-event p { margin-bottom: 0; }
+.fcal .fcal-event > :last-child { margin-bottom: 0; }
+.fcal .fcal-trees a, .fcal .fcal-couple { text-decoration: none; }
+.fcal .fcal-trees a:hover { text-decoration: underline; }
+.fcal-trees::before { content: "In the tree: "; }

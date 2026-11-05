@@ -10,7 +10,7 @@ partner_2_last: Rodrigo Candappa
 partner_2_father_first: Francis
 partner_2_father_last: Rodrigo Candappa
 image_file: casie_chetty_henry_candappa_anna_page_885_year_1903
-date: January 25, 1903
+date: 1903-01-25
 categories: marriage
 ---
 

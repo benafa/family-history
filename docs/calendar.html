@@ -1,0 +1,21 @@
+---
+layout: membership
+title: Family Calendar
+classes: wide
+---
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/calendar_style.css" type="text/css">
+<script src="{{ site.baseurl }}/assets/js/calendar.js" defer></script>
+
+<p class="fcal-intro">Wedding anniversaries from the {{ site.marriage | size }} marriage records on this site. Pick a month, tap a day, or search for a family name.</p>
+
+<div id="family-calendar" class="fcal"></div>
+
+<script id="calendar-data" type="application/json">
+[{% for m in site.marriage %}{% assign first_tree = true %}
+{"url": {{ m.url | prepend: site.baseurl | jsonify }},
+ "a": {{ m.partner_1_first | append: " " | append: m.partner_1_last | strip | jsonify }},
+ "b": {{ m.partner_2_first | append: " " | append: m.partner_2_last | strip | jsonify }},
+ "date": "{{ m.date | date: '%Y-%m-%d' }}",
+ "trees": [{% for t in site.tree %}{% assign tree_id = t.id | split: "/" | last %}{% if m.rel_trees contains tree_id %}{% unless first_tree %},{% endunless %}{"url": {{ t.url | prepend: site.baseurl | jsonify }}, "title": {{ t.title | jsonify }}}{% assign first_tree = false %}{% endif %}{% endfor %}]}{% unless forloop.last %},{% endunless %}{% endfor %}
+]
+</script>

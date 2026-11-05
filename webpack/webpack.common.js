@@ -17,13 +17,15 @@ module.exports = {
     commentable: './js/auth/commentable.js',
     gate: './js/auth/gate.js',
     track: './js/auth/track.js',
+    calendar: './js/calendar.js',
     // css
     layout_common: "./css/layout_common.css",
     pagination_hidden: "./css/pagination-hidden.css",
     pagination: "./css/pagination.css",
     links: "./css/links.css",
     table_style: "./css/table.css",
-    tree_style: "./css/tree.css"
+    tree_style: "./css/tree.css",
+    calendar_style: "./css/calendar.css"
   },
   output: {
     filename: 'js/[name].js', // Output bundle

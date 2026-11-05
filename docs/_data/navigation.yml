@@ -7,6 +7,8 @@ main:
     url: /trees
   - title: "Records"
     url: /records
+  - title: "Calendar"
+    url: /calendar
   - title: "People"
     url: /people
   - title: "Account"
