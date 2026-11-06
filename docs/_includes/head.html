@@ -46,6 +46,10 @@
 
 <script defer src="{{ site.baseurl }}/assets/js/track.js"></script>
 
+{% comment %} Members-only pages name living people, so their addresses and titles are never sent to Google Analytics {% endcomment %}
+{% assign members_only_layouts = "membership,marriage,testamentary,tree,commentable,dynamictree" | split: "," %}
+{% assign members_only_pages = "people.html,people_wide.html,person.markdown" | split: "," %}
+{% unless members_only_layouts contains page.layout or members_only_pages contains page.path %}
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHVN8RCX7D"></script>
 <script>
@@ -55,4 +59,5 @@
 
   gtag('config', 'G-DHVN8RCX7D');
 </script>
+{% endunless %}
 
